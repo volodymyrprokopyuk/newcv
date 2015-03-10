@@ -1,0 +1,19 @@
+#!/usr/bin/env runghc
+import Development.Shake
+import Development.Shake.Command
+import Development.Shake.FilePath
+import Development.Shake.Util
+
+main :: IO ()
+main = shakeArgs shakeOptions { shakeFiles = ".build/" } $ do
+  want [ "pdf/cv.pdf" ]
+
+  "pdf/*.pdf" %> \ target -> do
+    putNormal "** compiling PDFs"
+    let source = ("tex" </>) . (-<.> "tex") . takeFileName $ target
+    need [ source ]
+    cmd "bash -c" [ "cd pdf && context " ++ ".." </> source ]
+
+  "clean" ~> do
+    putNormal "** removing PDFs"
+    removeFilesAfter "pdf" [ "*" ]
