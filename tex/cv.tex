@@ -1,3 +1,33 @@
+\setuplayout[topspace=0pt]
+\showframe
+
+\setuppagenumbering[location=]
+
+\definelayer[Background][state=repeat,x=0pt,y=0pt,width=\paperwidth,
+  height=\paperheight]
+
+\setupbackgrounds[page][background={color,Background},
+  backgroundcolor=lightgray]
+
 \starttext
+
+\setlayer[Background][preset=lefttop]
+  {\framed[width=40pt,height=\paperheight,frame=off,
+    background=color,backgroundcolor=cyan]{}}
+\setlayer[Background][preset=lefttop]
+  {\framed[width=\paperwidth,align=left,frame=off,
+    background=color,backgroundcolor=blue,
+    foreground=color,foregroundcolor=white]
+    {\bfxx CURRICULUM VITAE\hspace[medium]}}
+\setlayer[Background][preset=leftbottom]
+  {\framed[width=\paperwidth,height=10px,frame=off,
+    background=color,backgroundcolor=blue]{}}
+\setlayer[Background][preset=rightbottom,y=16pt]
+  {\rotate[90]{\framed[frame=off]{\tfxx Typeset with \CONTEXT}}}
+
 Svitlana
+
+\page
+
+Volodymyr
 \stoptext
