@@ -1,3 +1,17 @@
+\mainlanguage[en]
+
+\definefontsynonym[Awesome][name:fontawesome]
+\definesymbol[AwOK][\getnamedglyphdirect{Awesome}{ok}]
+\define\AwOK{\symbol[AwOK]}
+
+\starttypescript[sans][SourcePro]
+\definefontsynonym[Sans][name:sourcesanspro]
+\definefontsynonym[SansBold][name:sourcesansprobold]
+\definefontsynonym[SansItalic][name:sourcesansproit]
+\stoptypescript
+\definetypeface[SourcePro][ss][sans][SourcePro]
+\setupbodyfont[SourcePro,sans,14pt]
+
 \setuplayout[backspace=5pt,edge=0pt,edgedistance=0pt,margin=0pt,
    margindistance=5pt,width=fit,
    topspace=0pt,top=0pt,topdistance=0pt,header=1pt,headerdistance=25pt,
@@ -16,6 +30,9 @@
 \setupbackgrounds[page][background={color,Background},
   backgroundcolor=lightgray]
 
+%\usemodule[fnt-10]
+%\ShowCompleteFont{name:fontawesome}{20pt}{1}
+
 \starttext
 
 \setlayer[Background][preset=lefttop]
@@ -32,7 +49,7 @@
 \setlayer[Background][preset=rightbottom,y=16pt]
   {\rotate[90]{\framed[frame=off]{\tfxx Typeset with \CONTEXT}}}
 
-Svitlana
+Svitlana \AwOK
 
 \page
 
