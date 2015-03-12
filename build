@@ -12,7 +12,7 @@ main = shakeArgs shakeOptions { shakeFiles = ".build/" } $ do
     putNormal "** compiling PDFs"
     let source = ("tex" </>) . (-<.> "tex") . takeFileName $ target
     need [ source ]
-    cmd "bash -c" [ "cd pdf && context " ++ ".." </> source ]
+    cmd "bash -c" [ "cd pdf && context --path=../tex " ++ ".." </> source ]
 
   "clean" ~> do
     putNormal "** removing PDFs"
