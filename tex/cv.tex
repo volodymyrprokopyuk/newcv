@@ -30,6 +30,10 @@
 \setupbackgrounds[page][background={color,Background},
   backgroundcolor=lightgray]
 
+\defineparagraphs[MyPar][n=3,before={\blank},after={\blank}]
+\setupparagraphs[MyPar][1][width=0.1\textwidth]
+\setupparagraphs[MyPar][2][width=0.3\textwidth]
+
 %\usemodule[fnt-10]
 %\ShowCompleteFont{name:fontawesome}{20pt}{1}
 
@@ -49,7 +53,18 @@
 \setlayer[Background][preset=rightbottom,y=16pt]
   {\rotate[90]{\framed[frame=off]{\tfxx Typeset with \CONTEXT}}}
 
-Svitlana \AwOK
+\framed[frame=on,width=\textwidth,height=40pt,loffset=40pt,
+  roffset=40pt,boffset=10pt,toffset=10pt]
+  {Svitlana \AwOK}
+
+\startMyPar
+\framed[width=0.1\textwidth,align=flushleft]
+  {\rotate[90]{First\hspace[big]\AwOK}}\MyPar
+Second\MyPar
+Hendrik van Vianden was pressed by other towns not to agree with the charter. It
+took Hasselt a long period of time to convince the Bishop. After supporting the
+Bishop in a small war against the Drents, the charter was released.
+\stopMyPar
 
 \page
 
