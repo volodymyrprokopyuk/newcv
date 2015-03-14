@@ -1,0 +1,111 @@
+{
+  "firstName": "Volodymyr"
+  , "lastName": "Prokopyuk"
+  , "position": "Project manager/Software architect"
+  , "mobile": "+(34) 663 564 178"
+  , "home": "+(34) 912 373 588"
+  , "email": "volodymyrprokopyuk@gmail.com"
+  , "address": "C/ Virgen de los Remedios, 5, 2B, Alcorcón, Madrid, 28921"
+  , "objective": "Position in IT department as project manager/software architect"
+  , "education": [
+     { "degree": "Master of Business Administration"
+       , "school": { "name": "Escuela de Administración de Empresas"
+         , "url": "http://www.eae.es/", "location": "Madrid" }
+       , "subject": "Business Administration"
+       , "description": "Strategy, project management, marketing, accounting and finance, human resources"
+       , "from": "2012-09-01", to: "in course" }
+     , { "degree": "Master of Science, with honors"
+       , "school": { "name": "National Technical University ofOil and Gas"
+         , "url": "http://eng.nung.edu.ua/", "location":  "Ukraine" }
+       , "subject": "Computer Systems and Networking"
+       , "description": "Computer systems architecture and design. Computer networks routing algorithms optimization"
+       , "from": "2007-09-01", to: "2008-06-01" }
+     , { "degree": "Bachelor of Science, with honors"
+       , "school": { "name": "National Technical University ofOil and Gas"
+         , "url": "http://eng.nung.edu.ua/", "location":  "Ukraine" }
+       , "subject": "Computer Science"
+       , "description": "Architecture, design and implementation of general purpose computer systems"
+       , "from": "2003-09-01", to: "2007-06-01" } ]
+  , "emplyment": [
+    { "position": "Program Analyst"
+      , "company": { "name": "Amadeus Spain", "url": "http://www.amadeus.com/", "location": "Madrid" }
+      , "department": "Department of Technology and IT Solutions"
+      , "from": "2009-04-01", "to": "current"
+      , "responsabilities": [
+        "Requirements analysis, specification, complete solution design, development and testing of distributed, transactional, concurrent applications for Amadeus GDS (Global Distribution System)"
+        , "Payment systems integration and security"
+        , "REST web API design and web applications development (Node.js and AngularJS)"
+        , "Database design of PNR (Passenger Name Record) processing server-side applications"
+        , "Information quality control process implementation"
+        , "Information presentation for client-side applications (HTML5/CSS3, PDF via LaTeX/TikZ)"
+        , "Third party system integration with Amadeus (SOAP/REST)"
+        , "Implementation languages: Java, C#, C++, SQL, JavaScript, Ruby" ]
+      , "achievements": [ "Hight client satisfaction, high reliability of our solutions working 24/7" ] }
+    , { "position": "Software Developer"
+      , "company": { "name": "KibiTech S. L.", "url": "", "location": "Madrid" }
+      , "department": "Department of Software Development"
+      , "from": "2009-01-01", "to": "2009-03-01"
+      , "responsabilities": [
+        "Development of rendering engine for SVG (Scalable Vector Graphics) based browser"
+        , "Development platform: Ubuntu Linux"
+        , "Technologies: Cairo, OpenGL, GLSL (OpenGL Shading Language) and GStreamer"
+        , "Implementation language: C++" ]
+      , "achievements": [ ] }
+    , { "position": "Software Developer"
+      , "company": { "name": "GlobalLogic", "url": "https://www.globallogic.com/", "location": "Kiev, Ukraine"
+      , "department": "Department of Telecommunications"
+      , "from": "2008-01-01", "to": "2008-06-01"
+      , "responsabilities": [
+        "Telecommunication systems development based on IBM Mainframe System/390 and z/Architecture"
+        , "Implementation language: IBM Mainframe Assembler" ]
+      , "achievements": [ ] } ]
+  , "experience": [
+    { "domain": "Project management"
+      , "description": {
+        "before": "Experience in planning, managing, executing and controlling collaborative projects in teams of 2—5 members with effective objectives achievement based on clean methodology and humanity. Practical application of methodologies promoted by COBIT and PMBOK"
+        , "experiences": [ ], "after": "" } }
+    , { "domain": "Software architecture"
+      , "description": {
+        "before": "Experience in software architecture design of server-side solutions for Amadeus GDS:"
+        , "experiences": [
+          "Concurrent multithreaded and event-based servers design and implementation"
+          , "Relational and document-oriented datase design and implementation"
+          , "REST web API design and implementation with Node.js"
+          , "SPA (Single Page Application) design and implementation with AngularJS" ]
+        , "after": "Functional and object-oriented programming paradigms. Software design patterns and functional programming techniques" } } ]
+  , "proficiency": [
+    { "domain": "Planform/Language", "subdomains": [
+      { "subdomain": "Operating systems"
+        , "frameworks": [ { "name": "GNU/Linux", "url": "https://www.kernel.org/" }
+          , { "name": "Ubuntu", "url": "http://www.ubuntu.com/" }
+          , { "name": "Windows", "url": "http://windows.microsoft.com/" } ] }
+      , { "subdomain": "Programming languages"
+        , "frameworks": [ "Haskell", "SQL, PL/SQL", "JavaScript, Node.js"
+          , "Regexp", "C/C++, STL, Boost", "Ruby", "Python", "Java, Spring", "/C#, .NET" ] } ] }
+    , { "domain": "Database", "subdomains": [
+      { "subdomain": "Relational SQL databases"
+        , "frameworks": [ "PostgreSQL", "SQL Server" ] }
+      , { "subdomain": "Document noSQL databases"
+        , "frameworks": [ "Redis" ] } ] }
+    , { "domain": "Web development", "subdomains": [
+      { "subdomain": "Web frameworks"
+        , "frameworks": [ "Node.js", "Express", "React.js", "Angular.js", "JQuery.js", "D3.js" ] }
+      , { "subdomain": "Web design"
+        , "frameworks": [  "Bootstrap", "Foundation", "Inkscape", "GIMP", "Scribus" ] } ] }
+    , { "domain": "Makrup/Template", "subdomains": [
+      { "subdomain": "Markup languages"
+        , "frameworks": [ "HTML5", "CSS3", "XML", "JSON", "ConTeXt", "MetaPost", "Markdown" ] }
+      , { "subdomain": "Templating engines"
+        , "frameworks": [ "Jade", "Nunjucks", "Stylus" ] } ] }
+    , { "domain": "Development tools", "subdomains": [
+      { "subdomain": "Version control/Automation"
+        , "frameworks": [ "Git", "tig", "Gitolite", "Shake", "GNU Bash" ] }
+      , { "subdomain": "Text editors/Tools"
+        , "frameworks": [ "Vim", "Emacs", "Tmux", "Ediff" ] } ] } ]
+  , "languages": [
+    { "language": "Ukrainian", "level": "mothertongue" }
+    , { "language": "Russian", "level": "mothertongue" }
+    , { "language": "Spanish", "level": "bilingual" }
+    , { "language": "English", "level": "fluent" }
+    , { "language": "French", "level": "intermediate" } ]
+}

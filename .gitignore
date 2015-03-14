@@ -1,4 +1,5 @@
 *~
+.tern-port
 .build/
 node_modules/
 pdf/
