@@ -16,19 +16,22 @@
    margindistance=5pt,width=fit,
    topspace=0pt,top=0pt,topdistance=0pt,header=1pt,headerdistance=25pt,
    footer=20pt,footerdistance=5pt,bottom=1pt,bottomdistance=10pt,height=fit]
-%\showframe
+\showframe
 
 \setuppagenumbering[location=]
 
-\setupfootertexts[{\tfx
-  \hfill C/ Virgen de los remedios, 5, 2B, Alcorcón
-  \hfill+(34) 663 564 178\hfill volodymyrprokopyuk@gmail.com\hfill}]
+\setupfootertexts[{\tfxx
+  \hfill {{ mobile }}\hfill {{ email }}\hfill {{ address }}\hfill}]
 
 \definelayer[Background][state=repeat,x=0pt,y=0pt,width=\paperwidth,
   height=\paperheight]
 
 \setupbackgrounds[page][background={color,Background},
   backgroundcolor=lightgray]
+
+\setupinteraction[state=start]
+
+\useURL[url:context][http://contextgarden.net][\CONTEXT]
 
 \defineparagraphs[MyPar][n=3,before={\blank},after={\blank}]
 \setupparagraphs[MyPar][1][width=0.1\textwidth]
@@ -51,7 +54,7 @@
   {\framed[width=\paperwidth,height=10px,frame=off,
     background=color,backgroundcolor=blue]{}}
 \setlayer[Background][preset=rightbottom,y=16pt]
-  {\rotate[90]{\framed[frame=off]{\tfxx Typeset with \CONTEXT}}}
+  {\rotate[90]{\framed[frame=off]{\tfxx Typeset with \from[url:context]}}}
 
 \framed[frame=on,width=\textwidth,height=40pt,loffset=40pt,
   roffset=40pt,boffset=10pt,toffset=10pt]

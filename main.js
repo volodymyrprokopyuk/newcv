@@ -37,7 +37,7 @@ var readSourceFile = function(opts) {
 readSourceFile = _.partial(readSourceFile, commander);
 
 var processSourceFile = function(cv) {
-  cv.lastName = cv.lastName + ' *';
+
   return cv;
 };
 
@@ -52,7 +52,6 @@ var writeTargetFile = function(opts, content) {
         : reject('no target file supplied');
     });
   };
-  console.log(content);
   var writeFileContent = _.partial(writeFile, _, content);
   return pipe([ getTargetFile, writeFileContent ]);
 };
