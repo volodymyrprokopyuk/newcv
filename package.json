@@ -1,0 +1,17 @@
+{
+  "name": "newcv"
+  , "version": "0.1.0"
+  , "author": "Volodymyr Prokopyuk <volodymyrprokopyuk@gmail.com>"
+  , "description": "Application for generating CVs in PDF"
+  , "keywords": [ "CV", "PDF" ]
+  , "main": "bin/x"
+  , "repository": {
+    "type": "git", "url": "https://github.com/volodymyrprokopyuk/newcv.git"
+  }, "licence": "MIT"
+  , "dependencies": {
+    "moment": "^2.9.x"
+    , "lodash": "^3.5.x"
+    , "bluebird": "^2.9.x"
+    , "nunjucks": "^1.2.x"
+  }
+}
