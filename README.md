@@ -1,3 +1,4 @@
 # New CV
 
-Application for generating CVs in PDF from JSON
+Application for generating CVs in PDF from JSON using
+[ConTeXt](http://contextgarden.net)

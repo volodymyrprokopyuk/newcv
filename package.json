@@ -2,8 +2,8 @@
   "name": "newcv"
   , "version": "0.1.0"
   , "author": "Volodymyr Prokopyuk <volodymyrprokopyuk@gmail.com>"
-  , "description": "Application for generating CVs in PDF from JSON"
-  , "keywords": [ "CV", "PDF", "JSON" ]
+  , "description": "Application for generating CVs in PDF from JSON using ConTeXt"
+  , "keywords": [ "CV", "PDF", "JSON", "ConTeXt" ]
   , "main": "bin/render"
   , "repository": {
     "type": "git", "url": "https://github.com/volodymyrprokopyuk/newcv.git"
