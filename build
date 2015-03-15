@@ -6,14 +6,23 @@ import Development.Shake.Util
 
 main :: IO ()
 main = shakeArgs shakeOptions { shakeFiles = ".build/" } $ do
-  want [ "pdf/cv.pdf" ]
+  want [ "pdf/cv-volodymyr.pdf" ]
+
+  "tex/cv-*.tex" %> \ target -> do
+    putNormal "** rendering TeX"
+    let source = ("json" </>) . (-<.> "json") . takeFileName $ target
+    need [ source, "tex/cv.tex" ]
+    cmd "bash -c"
+      [ "./bin/render --source=" ++ source ++ " --target=" ++ target ]
 
   "pdf/*.pdf" %> \ target -> do
-    putNormal "** compiling PDFs"
+    putNormal "** compiling PDF"
     let source = ("tex" </>) . (-<.> "tex") . takeFileName $ target
     need [ source ]
-    cmd "bash -c" [ "cd pdf && context --path=../tex " ++ ".." </> source ]
+    cmd "bash -c"
+      [ "cd pdf && context --path=../tex " ++ ".." </> source ]
 
   "clean" ~> do
-    putNormal "** removing PDFs"
+    putNormal "** removing PDF"
     removeFilesAfter "pdf" [ "*" ]
+    removeFilesAfter "tex" [ "cv-*.tex" ]
