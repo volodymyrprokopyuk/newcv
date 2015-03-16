@@ -26,7 +26,7 @@
        , "subject": "Computer Science"
        , "description": "Architecture, design and implementation of general purpose computer systems"
        , "from": "2003-09-01", "to": "2007-06-01" } ]
-  , "emplyment": [
+  , "employment": [
     { "position": "Program Analyst"
       , "company": { "name": "Amadeus Spain"
         , "url": "http://www.amadeus.com/", "location": "Madrid" }

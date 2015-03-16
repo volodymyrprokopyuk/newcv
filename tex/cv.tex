@@ -1,9 +1,12 @@
+%% language
 \mainlanguage[en]
 
+%% FontAwesome symbols
 \definefontsynonym[Awesome][name:fontawesome]
 \definesymbol[AwOK][\getnamedglyphdirect{Awesome}{ok}]
 \define\AwOK{\symbol[AwOK]}
 
+%% SourcePro font
 \starttypescript[sans][SourcePro]
 \definefontsynonym[Sans][name:sourcesanspro]
 \definefontsynonym[SansBold][name:sourcesansprobold]
@@ -12,36 +15,44 @@
 \definetypeface[SourcePro][ss][sans][SourcePro]
 \setupbodyfont[SourcePro,sans,14pt]
 
+%% layout
 \setuplayout[backspace=5pt,edge=0pt,edgedistance=0pt,margin=0pt,
-   margindistance=5pt,width=fit,
-   topspace=0pt,top=0pt,topdistance=0pt,header=1pt,headerdistance=25pt,
-   footer=20pt,footerdistance=5pt,bottom=1pt,bottomdistance=10pt,height=fit]
+  margindistance=5pt,width=fit,
+  topspace=0pt,top=0pt,topdistance=0pt,header=1pt,headerdistance=25pt,
+  footer=20pt,footerdistance=5pt,bottom=1pt,bottomdistance=10pt,height=fit]
 \showframe
-
 \setuppagenumbering[location=]
+\setupfootertexts[{\tfxx\hfill {{ mobile }}\hfill {{ email }}
+  \hfill {{ address }}\hfill}]
 
-\setupfootertexts[{\tfxx
-  \hfill {{ mobile }}\hfill {{ email }}\hfill {{ address }}\hfill}]
-
+%% Background
 \definelayer[Background][state=repeat,x=0pt,y=0pt,width=\paperwidth,
   height=\paperheight]
-
 \setupbackgrounds[page][background={color,Background},
   backgroundcolor=lightgray]
 
+%% interaction
 \setupinteraction[state=start]
+\useURL[url:context][http://contextgarden.net][][\CONTEXT]
 
-\useURL[url:context][http://contextgarden.net][\CONTEXT]
+%% Section
+\defineparagraphs[Section][n=2,after={\blank}]
+\setupparagraphs[Section][1][width=0.05\textwidth]
 
-\defineparagraphs[MyPar][n=3,before={\blank},after={\blank}]
-\setupparagraphs[MyPar][1][width=0.1\textwidth]
-\setupparagraphs[MyPar][2][width=0.3\textwidth]
+%% SubSection
+\defineparagraphs[SubSection][n=2,after={\blank}]
+\setupparagraphs[SubSection][1][width=0.2\textwidth,align=flushright]
+
+%% Profile
+\defineparagraphs[Profile][n=2,after={\blank}]
+\setupparagraphs[Profile][1][width=0.4\textwidth]
 
 %\usemodule[fnt-10]
 %\ShowCompleteFont{name:fontawesome}{20pt}{1}
 
 \starttext
 
+%% Background
 \setlayer[Background][preset=lefttop]
   {\framed[width=40pt,height=\paperheight,frame=off,
     background=color,backgroundcolor=cyan]{}}
@@ -53,23 +64,74 @@
 \setlayer[Background][preset=leftbottom]
   {\framed[width=\paperwidth,height=10px,frame=off,
     background=color,backgroundcolor=blue]{}}
-\setlayer[Background][preset=rightbottom,y=16pt]
-  {\rotate[90]{\framed[frame=off]{\tfxx Typeset with \from[url:context]}}}
+\setlayer[Background][preset=rightbottom,y=36pt]
+  {\rotate[90]{\framed[frame=off]{\tfxx Typeset with \CONTEXT}}}
 
-\framed[frame=on,width=\textwidth,height=40pt,loffset=40pt,
-  roffset=40pt,boffset=10pt,toffset=10pt]
-  {Svitlana \AwOK}
+%% Profile
+\startSection
+\AwOK\crlf\Section
+\startProfile
+{{ firstName }} {{ lastName }}\blank
+{{ position }}\Profile
+{{ mobile }} {% if home -%}{{ home }}{%- endif %}\crlf
+{{ email }}\crlf
+{{ address }}
+\stopProfile
+\stopSection
 
-\startMyPar
-\framed[width=0.1\textwidth,align=flushleft]
-  {\rotate[90]{First\hspace[big]\AwOK}}\MyPar
-Second\MyPar
-Hendrik van Vianden was pressed by other towns not to agree with the charter. It
-took Hasselt a long period of time to convince the Bishop. After supporting the
-Bishop in a small war against the Drents, the charter was released.
-\stopMyPar
+%% objective
+\startSection
+\AwOK\crlf\Section
+\startSubSection
+Objective\SubSection
+{{ objective }}
+\stopSubSection
+\stopSection
 
-\page
+%% education
+\startSection
+\AwOK\crlf\rotate[90]{Education}\Section
+\startSubSection
+Education\SubSection
+Education ...
+\stopSubSection
+\stopSection
 
-Volodymyr {{ lastName }}
+%% employment
+\startSection
+\AwOK\crlf\rotate[90]{Employment}\Section
+\startSubSection
+Employment\SubSection
+Employment ...
+\stopSubSection
+\stopSection
+
+%% experience
+\startSection
+\AwOK\crlf\rotate[90]{Experience}\Section
+\startSubSection
+Experience\SubSection
+Experience ...
+\stopSubSection
+\stopSection
+
+%% proficiency
+{% if proficiency -%}
+\startSection
+\AwOK\crlf\rotate[90]{Technical Proficiency}\Section
+\startSubSection
+Technical Proficiency\SubSection
+Technical Proficiency ...
+\stopSubSection
+\stopSection
+{%- endif %}
+
+%% languages
+\startSection
+\AwOK\crlf\rotate[90]{Languages}\Section
+\startSubSection
+Languages\SubSection
+Languages ...
+\stopSubSection
+\stopSection
 \stoptext
