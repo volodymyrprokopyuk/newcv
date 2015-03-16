@@ -24,6 +24,17 @@ var pipe = function(tasks, seed) {
     , function(arg, task) { return task(arg); }, seed || null);
 };
 
+var pwhile = function(pred, act, seed) {
+  return new Promise(function(resolve, reject) {
+    (function loop(item) {
+      var forward = function(item) {
+        return pred(item) ? act(item).then(loop) : resolve(item);
+      };
+      return Promise.resolve(item).then(forward);
+    })(seed).catch(reject);
+  });
+};
+
 var readSourceFile = function(opts) {
   var getSourceFile = function() {
     return new Promise(function(resolve, reject) {
