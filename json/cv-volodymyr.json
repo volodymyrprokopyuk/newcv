@@ -32,7 +32,7 @@
         , "url": "http://www.amadeus.com/", "location": "Madrid" }
       , "department": "Department of Technology and IT Solutions"
       , "from": "2009-04-01", "to": "current"
-      , "responsabilities": [
+      , "responsibilities": [
         "Requirements analysis, specification, complete solution design, development and testing of distributed, transactional, concurrent applications for Amadeus GDS (Global Distribution System)"
         , "Payment systems integration and security"
         , "REST web API design and web applications development (Node.js and AngularJS)"
@@ -48,7 +48,7 @@
         , "url": "", "location": "Madrid" }
       , "department": "Department of Software Development"
       , "from": "2009-01-01", "to": "2009-03-01"
-      , "responsabilities": [
+      , "responsibilities": [
         "Development of rendering engine for SVG (Scalable Vector Graphics) based browser"
         , "Development platform: Ubuntu Linux"
         , "Technologies: Cairo, OpenGL, GLSL (OpenGL Shading Language) and GStreamer"
@@ -59,7 +59,7 @@
         , "url": "https://www.globallogic.com/", "location": "Kiev, Ukraine" }
       , "department": "Department of Telecommunications"
       , "from": "2008-01-01", "to": "2008-06-01"
-      , "responsabilities": [
+      , "responsibilities": [
         "Telecommunication systems development based on IBM Mainframe System/390 and z/Architecture"
         , "Implementation language: IBM Mainframe Assembler" ]
       , "achievements": [ ] } ]
@@ -142,9 +142,9 @@
           , { "name": "Emacs", "url": "http://www.gnu.org/software/emacs/" }
           , { "name": "Tmux", "url": "http://tmux.sourceforge.net/" } ] } ] } ]
   , "languages": [
-    { "language": "Ukrainian", "level": "mothertongue" }
-    , { "language": "Russian", "level": "mothertongue" }
+    { "language": "English", "level": "fluent" }
+    , { "language": "Ukrainian", "level": "mothertongue" }
     , { "language": "Spanish", "level": "bilingual" }
-    , { "language": "English", "level": "fluent" }
+    , { "language": "Russian", "level": "mothertongue" }
     , { "language": "French", "level": "intermediate" } ]
 }

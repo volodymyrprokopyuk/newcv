@@ -19,6 +19,14 @@ var logError = function(err) {
   process.exit(-1);
 };
 
+var recursive = function(obj, proc, pred) {
+  pred = pred || _.partial(_.identity, true);
+  (function recurse(parent, val, key) {
+    _.isObject(val) ? _.map(val, _.partial(recurse, val))
+      : pred(val) && (parent[key] = proc(val));
+  })(null, obj);
+};
+
 var pipe = function(tasks, seed) {
   return Promise.reduce(tasks
     , function(arg, task) { return task(arg); }, seed || null);
@@ -48,8 +56,17 @@ var readSourceFile = function(opts) {
 readSourceFile = _.partial(readSourceFile, commander);
 
 var processSourceFile = function(cv) {
-
-  return cv;
+  var escapeTeX = function(cv) {
+    var escape = function(str) {
+      return str.replace(/[&%#_\$\{\}]/g, function(m) {
+        return '\\' + m;
+      });
+    };
+    recursive(cv, escape, _.isString);
+    return cv;
+  };
+  var process = _.flow(escapeTeX);
+  return process(cv);
 };
 
 var renderTargetFile = function(cv) {

@@ -11,7 +11,7 @@ main = shakeArgs shakeOptions { shakeFiles = ".build/" } $ do
   "tex/cv-*.tex" %> \ target -> do
     putNormal "** rendering TeX"
     let source = ("json" </>) . (-<.> "json") . takeFileName $ target
-    need [ source, "tex/cv.tex" ]
+    need [ source, "tex/cv.tex", "main.js", "bin/render" ]
     cmd "bash -c"
       [ "./bin/render --source=" ++ source ++ " --target=" ++ target ]
 

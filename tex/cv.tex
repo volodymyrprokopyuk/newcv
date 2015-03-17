@@ -13,27 +13,29 @@
 \definefontsynonym[SansItalic][name:sourcesansproit]
 \stoptypescript
 \definetypeface[SourcePro][ss][sans][SourcePro]
-\setupbodyfont[SourcePro,sans,14pt]
+\setupbodyfont[SourcePro,sans,10pt]
 
 %% layout
 \setuplayout[backspace=5pt,edge=0pt,edgedistance=0pt,margin=0pt,
   margindistance=5pt,width=fit,
   topspace=0pt,top=0pt,topdistance=0pt,header=1pt,headerdistance=25pt,
   footer=20pt,footerdistance=5pt,bottom=1pt,bottomdistance=10pt,height=fit]
-\showframe
+%\showframe
 \setuppagenumbering[location=]
-\setupfootertexts[{\tfxx\hfill {{ mobile }}\hfill {{ email }}
+\setupfootertexts[{
+  \hfill {{ mobile }}
+  \hfill {{ email }}
   \hfill {{ address }}\hfill}]
+
+%% interaction
+\setupinteraction[state=start]
+\useURL[url:context][http://contextgarden.net][][\CONTEXT]
 
 %% Background
 \definelayer[Background][state=repeat,x=0pt,y=0pt,width=\paperwidth,
   height=\paperheight]
 \setupbackgrounds[page][background={color,Background},
   backgroundcolor=lightgray]
-
-%% interaction
-\setupinteraction[state=start]
-\useURL[url:context][http://contextgarden.net][][\CONTEXT]
 
 %% Section
 \defineparagraphs[Section][n=2,after={\blank}]
@@ -47,12 +49,24 @@
 \defineparagraphs[Profile][n=2,after={\blank}]
 \setupparagraphs[Profile][1][width=0.4\textwidth]
 
+%% Languages
+\defineparagraphs[Languages][n=2,after={\blank}]
+\setupparagraphs[Languages][1][width=0.3\textwidth]
+
+%% Domains
+\defineparagraphs[Domains][n=2,after={\blank}]
+\setupparagraphs[Domains][1][width=0.35\textwidth]
+
+%% Frameworks
+\defineparagraphs[Frameworks][n=2,after={\blank}]
+\setupparagraphs[Frameworks][1][width=0.17\textwidth]
+
 %\usemodule[fnt-10]
 %\ShowCompleteFont{name:fontawesome}{20pt}{1}
 
 \starttext
 
-%% Background
+%% BACKGROUND %%
 \setlayer[Background][preset=lefttop]
   {\framed[width=40pt,height=\paperheight,frame=off,
     background=color,backgroundcolor=cyan]{}}
@@ -67,71 +81,133 @@
 \setlayer[Background][preset=rightbottom,y=36pt]
   {\rotate[90]{\framed[frame=off]{\tfxx Typeset with \CONTEXT}}}
 
-%% Profile
+%% PROFILE %%
 \startSection
 \AwOK\crlf\Section
+
 \startProfile
 {{ firstName }} {{ lastName }}\blank
 {{ position }}\Profile
-{{ mobile }} {% if home -%}{{ home }}{%- endif %}\crlf
+{{ mobile }} {% if home %}{{ home }}{% endif %}\crlf
 {{ email }}\crlf
 {{ address }}
 \stopProfile
 \stopSection
 
-%% objective
+%% OBJECTIVE %%
 \startSection
 \AwOK\crlf\Section
+
 \startSubSection
 Objective\SubSection
 {{ objective }}
 \stopSubSection
 \stopSection
 
-%% education
+%% EDUCATION %%
 \startSection
 \AwOK\crlf\rotate[90]{Education}\Section
+
 \startSubSection
 Education\SubSection
-Education ...
 \stopSubSection
+{% for edu in education %}
+\startSubSection
+{{ edu.from }} -- {{ edu.to }}\SubSection
+{{ edu.degree }}\crlf
+{{ edu.school.name}}, {{ edu.school.location }}\crlf
+{{ edu.subject }}\crlf
+{{ edu.description }}
+\stopSubSection
+{% endfor -%}
 \stopSection
 
-%% employment
+%% EMPLOYMENT %%
 \startSection
 \AwOK\crlf\rotate[90]{Employment}\Section
+
 \startSubSection
 Employment\SubSection
-Employment ...
 \stopSubSection
+{% for emp in employment %}
+\startSubSection
+{{ emp.from }} -- {{ emp.to }}\SubSection
+{{ emp.position }}\crlf
+{{ emp.company.name }}, {{ emp.company.location }}\crlf
+{{ emp.department }}
+  \startitemize
+  {% for resp in emp.responsibilities -%}
+  \item {{ resp }}
+  {% endfor -%}
+  \stopitemize
+\stopSubSection
+{% endfor -%}
 \stopSection
 
-%% experience
+%% EXPERIENCE %%
 \startSection
 \AwOK\crlf\rotate[90]{Experience}\Section
+
 \startSubSection
 Experience\SubSection
-Experience ...
 \stopSubSection
+{% for exp in experience %}
+\startSubSection
+{{ exp.domain }}\SubSection
+{{ exp.description.before }}
+{%- if exp.description.experiences.length %}
+  \startitemize
+  {% for ex in exp.description.experiences -%}
+  \item {{ ex }}
+  {% endfor -%}
+  \stopitemize
+{%- endif %}
+{{ exp.description.after }}
+\stopSubSection
+{% endfor -%}
 \stopSection
 
-%% proficiency
+%% PROFICIENCY %%
 {% if proficiency -%}
 \startSection
 \AwOK\crlf\rotate[90]{Technical Proficiency}\Section
+
 \startSubSection
 Technical Proficiency\SubSection
-Technical Proficiency ...
 \stopSubSection
+{% for prof in proficiency %}
+\startSubSection
+{{ prof.domain }}\SubSection
+\startDomains
+{%- for subdom in prof.subdomains %}
+{{ subdom.subdomain }}
+\startFrameworks
+{%- for framework in subdom.frameworks %}
+{{ framework.name }}\crlf
+{%- if loop.index0 == loop.length // 2 - 1 %}\Frameworks{% endif -%}
+{% endfor %}
+\stopFrameworks
+{%- if loop.index0 == loop.length // 2 - 1 %}\Domains{% endif -%}
+{% endfor %}
+\stopDomains
+\stopSubSection
+{% endfor -%}
 \stopSection
 {%- endif %}
 
-%% languages
+%% LANGUAGES %%
 \startSection
 \AwOK\crlf\rotate[90]{Languages}\Section
+
 \startSubSection
 Languages\SubSection
-Languages ...
+
+\startLanguages
+{%- for lang in languages %}
+{{ lang.language }} {{ lang.level }}\crlf
+{%- if loop.index0 == loop.length // 2 - 1 %}\Languages{% endif -%}
+{% endfor %}
+\stopLanguages
 \stopSubSection
 \stopSection
 \stoptext
