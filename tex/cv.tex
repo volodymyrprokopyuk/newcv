@@ -38,17 +38,21 @@
 \setupbodyfont[SourcePro,sans,10pt]
 
 %% layout
-\setuplayout[backspace=5pt,edge=0pt,edgedistance=0pt,margin=0pt,
-  margindistance=5pt,width=fit,
-  topspace=0pt,top=0pt,topdistance=0pt,header=1pt,headerdistance=25pt,
-  footer=20pt,footerdistance=5pt,bottom=1pt,bottomdistance=10pt,height=fit]
+\setuplayout[backspace=5pt,edge=0pt,edgedistance=0pt,margin=1pt,
+  leftmargindistance=5pt,rightmargindistance=10pt,width=fit,
+  topspace=0pt,top=0pt,topdistance=0pt,header=1pt,headerdistance=22pt,
+  footer=16pt,footerdistance=5pt,bottom=1pt,bottomdistance=8pt,height=fit]
 %\showframe
 \setupwhitespace[small]
+\definehspace[1pt][1pt]
 \definehspace[20pt][20pt]
 \definehspace[30pt][30pt]
+\definehspace[40pt][40pt]
+
+%% header/footer
 \setuppagenumbering[location=]
 \setupfootertexts[{\tfx
-  \hspace[30pt]{\darkgray\AwMobile}\hspace[medium]{{ mobile }}
+  \hspace[40pt]{\darkgray\AwMobile}\hspace[medium]{{ mobile }}
   \hfill{\darkgray\AwEmail}\hspace[medium]{{ email }}
   \hfill{\darkgray\AwLocation}\hspace[medium]{{ address }}\hspace[20pt]}]
 
@@ -57,7 +61,7 @@
 
 %% interaction
 \setupinteraction[state=start]
-\useURL[url:context][http://contextgarden.net][][\CONTEXT]
+{{ urls.join('\n') }}
 
 %% Background
 \definelayer[Background][state=repeat,x=0pt,y=0pt,width=\paperwidth,
@@ -106,7 +110,7 @@
 \setlayer[Background][preset=leftbottom]
   {\framed[width=\paperwidth,height=8px,frame=off,
     background=color,backgroundcolor=blue]{}}
-\setlayer[Background][preset=rightbottom,y=14pt]
+\setlayer[Background][preset=rightbottom,y=12pt]
   {\rotate[90]{\framed[frame=off]{\tfxx Typeset with \CONTEXT}}}
 
 %% PROFILE %%
@@ -137,8 +141,8 @@
 
 %% EDUCATION %%
 \startSection
-{\tfd\darkgray\AwEducation}\crlf
-\rotate[90]{\bfd\darkgray Education}\Section
+{\tfc\darkgray\AwEducation}\crlf
+\rotate[90]{\bfd\darkgray Education\hspace[1pt]}\Section
 
 \startSubSection
 {\bfc\darkgray Education}\SubSection
@@ -147,7 +151,7 @@
 \startSubSection
 {{ edu.from }} -- {{ edu.to }}\SubSection
 {{ edu.degree }}\crlf
-{{ edu.school.name}}, {{ edu.school.location }}\crlf
+{{ edu.school }}\crlf
 {{ edu.subject }}\crlf
 {{ edu.description }}
 \stopSubSection
@@ -156,8 +160,8 @@
 
 %% EMPLOYMENT %%
 \startSection
-{\tfd\darkgray\AwEmployment}\crlf
-\rotate[90]{\bfd\darkgray Employment}\Section
+{\tfc\darkgray\AwEmployment}\crlf
+\rotate[90]{\bfd\darkgray Employment\hspace[small]}\Section
 
 \startSubSection
 {\bfc\darkgray Employment}\SubSection
@@ -166,7 +170,7 @@
 \startSubSection
 {{ emp.from }} -- {{ emp.to }}\SubSection
 {{ emp.position }}\crlf
-{{ emp.company.name }}, {{ emp.company.location }}\crlf
+{{ emp.company }}\crlf
 {{ emp.department }}
   \startitemize[joinedup,nowhite]
   {% for resp in emp.responsibilities -%}
@@ -180,7 +184,7 @@
 %% EXPERIENCE %%
 \startSection
 {\tfd\darkgray\AwExperience}\crlf
-\rotate[90]{\bfd\darkgray Experience}\Section
+\rotate[90]{\bfd\darkgray Experience\hspace[small]}\Section
 
 \startSubSection
 {\bfc\darkgray Experience}\SubSection
@@ -205,7 +209,7 @@
 {% if proficiency -%}
 \startSection
 {\tfd\darkgray\AwProficiency}\crlf
-\rotate[90]{\bfd\darkgray Technical Proficiency}\Section
+\rotate[90]{\bfd\darkgray Technical Proficiency\hspace[small]}\Section
 
 \startSubSection
 {\bfc\darkgray Technical Proficiency}\SubSection
@@ -218,7 +222,7 @@
 {{ subdom.subdomain }}
 \startFrameworks
 {%- for framework in subdom.frameworks %}
-{{ framework.name }}\crlf
+{{ framework }}\crlf
 {%- if loop.index0 == loop.length // 2 - 1 %}\Frameworks{% endif -%}
 {% endfor %}
 \stopFrameworks
@@ -233,7 +237,7 @@
 %% LANGUAGES %%
 \startSection
 {\tfd\darkgray\AwLanguages}\crlf
-\rotate[90]{\bfd\darkgray Languages}\Section
+\rotate[90]{\bfd\darkgray Languages\hspace[small]}\Section
 
 \startSubSection
 {\bfc\darkgray Languages}\SubSection

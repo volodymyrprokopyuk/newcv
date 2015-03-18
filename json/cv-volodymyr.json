@@ -9,27 +9,23 @@
   , "objective": "Position in IT department as project manager/software architect"
   , "education": [
      { "degree": "Master of Business Administration"
-       , "school": { "name": "Escuela de Administración de Empresas"
-         , "url": "http://www.eae.es/", "location": "Madrid" }
+       , "school": "[Escuela de Administración de Empresas, Madrid](http://www.eae.es/)"
        , "subject": "Business Administration"
        , "description": "Strategy, project management, marketing, accounting and finance, human resources"
        , "from": "2012-09-01", "to": "in course" }
      , { "degree": "Master of Science, with honors"
-       , "school": { "name": "National Technical University ofOil and Gas"
-         , "url": "http://eng.nung.edu.ua/", "location": "Ukraine" }
+       , "school": "[National Technical University of Oil and Gas, Ukraine](http://eng.nung.edu.ua/)"
        , "subject": "Computer Systems and Networking"
        , "description": "Computer systems architecture and design. Computer networks routing algorithms optimization"
        , "from": "2007-09-01", "to": "2008-06-01" }
      , { "degree": "Bachelor of Science, with honors"
-       , "school": { "name": "National Technical University ofOil and Gas"
-         , "url": "http://eng.nung.edu.ua/", "location": "Ukraine" }
+       , "school": "[National Technical University of Oil and Gas, Ukraine](http://eng.nung.edu.ua/)"
        , "subject": "Computer Science"
        , "description": "Architecture, design and implementation of general purpose computer systems"
        , "from": "2003-09-01", "to": "2007-06-01" } ]
   , "employment": [
     { "position": "Program Analyst"
-      , "company": { "name": "Amadeus Spain"
-        , "url": "http://www.amadeus.com/", "location": "Madrid" }
+      , "company": "[Amadeus Spain, Madrid](http://www.amadeus.com/)"
       , "department": "Department of Technology and IT Solutions"
       , "from": "2009-04-01", "to": "current"
       , "responsibilities": [
@@ -44,8 +40,7 @@
       , "achievements": [
         "Hight client satisfaction, high reliability of our solutions working 24/7" ] }
     , { "position": "Software Developer"
-      , "company": { "name": "KibiTech S. L."
-        , "url": "", "location": "Madrid" }
+      , "company": "KibiTech S. L., Madrid"
       , "department": "Department of Software Development"
       , "from": "2009-01-01", "to": "2009-03-01"
       , "responsibilities": [
@@ -55,8 +50,7 @@
         , "Implementation language: C++" ]
       , "achievements": [ ] }
     , { "position": "Software Developer"
-      , "company": { "name": "GlobalLogic"
-        , "url": "https://www.globallogic.com/", "location": "Kiev, Ukraine" }
+      , "company": "[GlobalLogic, Kiev, Ukraine](https://www.globallogic.com/)"
       , "department": "Department of Telecommunications"
       , "from": "2008-01-01", "to": "2008-06-01"
       , "responsibilities": [
@@ -66,7 +60,7 @@
   , "experience": [
     { "domain": "Project management"
       , "description": {
-        "before": "Experience in planning, managing, executing and controlling collaborative projects in teams of 2—5 members with effective objectives achievement based on clean methodology and humanity. Practical application of methodologies promoted by COBIT and PMBOK"
+        "before": "Experience in planning, managing, executing and controlling collaborative projects in teams of 2—5 members with effective objectives achievement based on clean methodology and humanity. Practical application of methodologies promoted by [COBIT](http://www.isaca.org/cobit) and [PMBOK](http://www.pmi.org/PMBOK-Guide-and-Standards.aspx)"
         , "experiences": [ ], "after": "" } }
     , { "domain": "Software architecture"
       , "description": {
@@ -80,67 +74,53 @@
   , "proficiency": [
     { "domain": "Planform/Language", "subdomains": [
       { "subdomain": "Operating systems"
-        , "frameworks": [
-          { "name": "Linux", "url": "https://www.kernel.org/" }
-          , { "name": "Ubuntu", "url": "http://www.ubuntu.com/" }
-          , { "name": "Windows", "url": "http://windows.microsoft.com/" } ] }
+        , "frameworks": [ "[Linux](https://www.kernel.org/)"
+          , "[Ubuntu](http://www.ubuntu.com/)"
+          , "[Windows](http://windows.microsoft.com/)" ] }
       , { "subdomain": "Programming languages"
-        , "frameworks": [
-          { "name": "Haskell", "url": "https://www.haskell.org/" }
-          , { "name": "SQL, PL/SQL", "url": "http://www.postgresql.org/" }
-          , { "name": "JavaScript, Node.js", "url": "https://nodejs.org/" }
-          , { "name": "Regexp", "url": "" }
-          , { "name": "C/C++, STL, Boost", "url": "" }
-          , { "name": "Java, Spring", "url": "" }
-          , { "name": "/C#, .NET", "url": "" } ] } ] }
+        , "frameworks": [ "[Haskell](https://www.haskell.org/)"
+          , "[SQL, PL/SQL](http://www.postgresql.org/)"
+          , "[JavaScript, Node.js](https://nodejs.org/)"
+          , "RegExp", "C/C++, STL, Boost", "Java, Spring", "C#, .NET" ] } ] }
     , { "domain": "Database", "subdomains": [
       { "subdomain": "Relational SQL databases"
-        , "frameworks": [
-          { "name": "PostgreSQL", "url": "http://www.postgresql.org/" }
-          , { "name": "SQL Server", "url": "" } ] }
+        , "frameworks": [ "[PostgreSQL](http://www.postgresql.org/)"
+          , "[SQL Server](www.microsoft.com/es-es/server-cloud/products/sql-server/)" ] }
       , { "subdomain": "Document noSQL databases"
-        , "frameworks": [
-          { "name": "Redis", "url": "http://redis.io/" } ] } ] }
+        , "frameworks": [ "[Redis](http://redis.io/)" ] } ] }
     , { "domain": "Web development", "subdomains": [
       { "subdomain": "Web frameworks"
-        , "frameworks": [
-          { "name": "Node.js", "url": "https://nodejs.org/" }
-          , { "name": "Express.js", "url": "http://expressjs.com/" }
-          , { "name": "React.js", "url": "http://facebook.github.io/react/" }
-          , { "name": "Angular.js", "url": "https://angularjs.org/" }
-          , { "name": "JQuery.js", "url": "http://jquery.com/" }
-          , { "name": "D3.js", "url": "http://d3js.org/" } ] }
+        , "frameworks": [ "[Node.js](https://nodejs.org/)"
+          , "[Express.js](http://expressjs.com/)"
+          , "[React.js](http://facebook.github.io/react/)"
+          , "[Angular.js](https://angularjs.org/)"
+          , "[JQuery.js](http://jquery.com/)"
+          , "[D3.js](http://d3js.org/)" ] }
       , { "subdomain": "Web design"
-        , "frameworks": [
-          { "name": "Bootstrap", "url": "http://getbootstrap.com/" }
-          , { "name": "Foundation", "url": "http://foundation.zurb.com/" }
-          , { "name": "Inkscape", "url": "https://inkscape.org/" }
-          , { "name": "GIMP", "url": "http://www.gimp.org/" } ] } ] }
+        , "frameworks": [ "[Bootstrap](http://getbootstrap.com/)"
+          , "[Foundation](http://foundation.zurb.com/)"
+          , "[Inkscape](https://inkscape.org/)"
+          , "[GIMP](http://www.gimp.org/)" ] } ] }
     , { "domain": "Makrup/Template", "subdomains": [
       { "subdomain": "Markup languages"
-        , "frameworks": [
-          { "name": "HTML5/CSS3", "url": "" }
-          , { "name": "JSON/XML", "url": "" }
-          , { "name": "ConTeXt", "url": "http://contextgarden.net/" }
-          , { "name": "MetaPost", "url": "http://www.tug.org/metapost.html" } ] }
+        , "frameworks": [ "HTML5/CSS3", "JSON/XML"
+          , "[ConTeXt](http://contextgarden.net/)"
+          , "[MetaPost](http://www.tug.org/metapost.html)" ] }
       , { "subdomain": "Templating engines"
-        , "frameworks": [
-          { "name": "Jade", "url": "http://jade-lang.com/" }
-          , { "name": "Nunjucks", "url": "http://mozilla.github.io/nunjucks/" }
-          , { "name": "Stylus", "url": "http://learnboost.github.io/stylus/" } ] } ] }
+        , "frameworks": [ "[Jade](http://jade-lang.com/)"
+          , "[Nunjucks](http://mozilla.github.io/nunjucks/)"
+          , "[Stylus](http://learnboost.github.io/stylus/)" ] } ] }
     , { "domain": "Development tools", "subdomains": [
       { "subdomain": "Version control/Automation"
-        , "frameworks": [
-          { "name": "Git", "url": "http://git-scm.com/" }
-          , { "name": "tig", "url": "https://github.com/jonas/tig" }
-          , { "name": "Gitolite", "url": "https://github.com/sitaramc/gitolite" }
-          , { "name": "Shake", "url": "http://shakebuild.com/" }
-          , { "name": "GNU Bash", "url": "http://www.gnu.org/software/bash/" } ] }
+        , "frameworks": [ "[Git](http://git-scm.com/)"
+          , "[tig](https://github.com/jonas/tig)"
+          , "[Gitolite](https://github.com/sitaramc/gitolite)"
+          , "[Shake](http://shakebuild.com/)"
+          , "[GNU Bash](http://www.gnu.org/software/bash/)" ] }
       , { "subdomain": "Text editors/Tools"
-        , "frameworks": [
-          { "name": "Vim", "url": "http://www.vim.org/" }
-          , { "name": "Emacs", "url": "http://www.gnu.org/software/emacs/" }
-          , { "name": "Tmux", "url": "http://tmux.sourceforge.net/" } ] } ] } ]
+        , "frameworks": [ "[Vim](http://www.vim.org/)"
+          , "[Emacs](http://www.gnu.org/software/emacs/)"
+          , "[Tmux](http://tmux.sourceforge.net/)" ] } ] } ]
   , "languages": [
     { "language": "English", "level": "fluent" }
     , { "language": "Ukrainian", "level": "mothertongue" }

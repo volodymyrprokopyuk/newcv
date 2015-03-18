@@ -1,3 +1,4 @@
+var format = require('util').format;
 var fs = require('fs');
 var moment = require('moment');
 var _ = require('lodash');
@@ -65,7 +66,23 @@ var processSourceFile = function(cv) {
     recursive(cv, escape, _.isString);
     return cv;
   };
-  var process = _.flow(escapeTeX);
+  var processURLs = function(cv) {
+    var counter = 0;
+    var processURL = function(str) {
+      return str.replace(/\[([^\]]+)\]\(([^\)]+)\)/g
+        , function(markup, name, url) {
+        ++counter;
+        var useURL = format('\\useURL[url:auto%s][%s][][%s]'
+          , counter, url, name);
+        cv.urls.push(useURL);
+        return format('\\from[url:auto%s]', counter);
+      });
+    };
+    cv.urls = [ ];
+    recursive(cv, processURL, _.isString);
+    return cv;
+  };
+  var process = _.flow(processURLs, escapeTeX);
   return process(cv);
 };
 
