@@ -8,9 +8,9 @@
 
 %% SourcePro font
 \starttypescript[sans][SourcePro]
-\definefontsynonym[Sans][name:sourcesanspro]
+\definefontsynonym[Sans][name:sourcesansprolight]
 \definefontsynonym[SansBold][name:sourcesansprobold]
-\definefontsynonym[SansItalic][name:sourcesansproit]
+\definefontsynonym[SansItalic][name:sourcesansprolightit]
 \stoptypescript
 \definetypeface[SourcePro][ss][sans][SourcePro]
 \setupbodyfont[SourcePro,sans,10pt]
@@ -21,11 +21,15 @@
   topspace=0pt,top=0pt,topdistance=0pt,header=1pt,headerdistance=25pt,
   footer=20pt,footerdistance=5pt,bottom=1pt,bottomdistance=10pt,height=fit]
 %\showframe
+\setupwhitespace[small]
 \setuppagenumbering[location=]
 \setupfootertexts[{
   \hfill {{ mobile }}
   \hfill {{ email }}
   \hfill {{ address }}\hfill}]
+
+%% lists
+\definesymbol[1][{\AwOK}]
 
 %% interaction
 \setupinteraction[state=start]
@@ -38,28 +42,28 @@
   backgroundcolor=lightgray]
 
 %% Section
-\defineparagraphs[Section][n=2,after={\blank}]
+\defineparagraphs[Section][n=2,distance=20pt]
 \setupparagraphs[Section][1][width=0.05\textwidth]
 
 %% SubSection
-\defineparagraphs[SubSection][n=2,after={\blank}]
+\defineparagraphs[SubSection][n=2,distance=20pt]
 \setupparagraphs[SubSection][1][width=0.2\textwidth,align=flushright]
 
 %% Profile
-\defineparagraphs[Profile][n=2,after={\blank}]
+\defineparagraphs[Profile][n=2,distance=10pt]
 \setupparagraphs[Profile][1][width=0.4\textwidth]
 
-%% Languages
-\defineparagraphs[Languages][n=2,after={\blank}]
-\setupparagraphs[Languages][1][width=0.3\textwidth]
-
 %% Domains
-\defineparagraphs[Domains][n=2,after={\blank}]
+\defineparagraphs[Domains][n=2,distance=10pt]
 \setupparagraphs[Domains][1][width=0.35\textwidth]
 
 %% Frameworks
-\defineparagraphs[Frameworks][n=2,after={\blank}]
+\defineparagraphs[Frameworks][n=2,distance=10pt]
 \setupparagraphs[Frameworks][1][width=0.17\textwidth]
+
+%% Languages
+\defineparagraphs[Languages][n=2,distance=20pt]
+\setupparagraphs[Languages][1][width=0.3\textwidth]
 
 %\usemodule[fnt-10]
 %\ShowCompleteFont{name:fontawesome}{20pt}{1}
@@ -99,17 +103,17 @@
 \AwOK\crlf\Section
 
 \startSubSection
-Objective\SubSection
+{\bfc\darkgray Objective}\SubSection
 {{ objective }}
 \stopSubSection
 \stopSection
 
 %% EDUCATION %%
 \startSection
-\AwOK\crlf\rotate[90]{Education}\Section
+\AwOK\crlf\rotate[90]{\bfd\darkgray Education}\Section
 
 \startSubSection
-Education\SubSection
+{\bfc\darkgray Education}\SubSection
 \stopSubSection
 {% for edu in education %}
 \startSubSection
@@ -124,10 +128,10 @@ Education\SubSection
 
 %% EMPLOYMENT %%
 \startSection
-\AwOK\crlf\rotate[90]{Employment}\Section
+\AwOK\crlf\rotate[90]{\bfd\darkgray Employment}\Section
 
 \startSubSection
-Employment\SubSection
+{\bfc\darkgray Employment}\SubSection
 \stopSubSection
 {% for emp in employment %}
 \startSubSection
@@ -135,7 +139,7 @@ Employment\SubSection
 {{ emp.position }}\crlf
 {{ emp.company.name }}, {{ emp.company.location }}\crlf
 {{ emp.department }}
-  \startitemize
+  \startitemize[joinedup,nowhite]
   {% for resp in emp.responsibilities -%}
   \item {{ resp }}
   {% endfor -%}
@@ -146,17 +150,17 @@ Employment\SubSection
 
 %% EXPERIENCE %%
 \startSection
-\AwOK\crlf\rotate[90]{Experience}\Section
+\AwOK\crlf\rotate[90]{\bfd\darkgray Experience}\Section
 
 \startSubSection
-Experience\SubSection
+{\bfc\darkgray Experience}\SubSection
 \stopSubSection
 {% for exp in experience %}
 \startSubSection
 {{ exp.domain }}\SubSection
 {{ exp.description.before }}
 {%- if exp.description.experiences.length %}
-  \startitemize
+  \startitemize[joinedup,nowhite]
   {% for ex in exp.description.experiences -%}
   \item {{ ex }}
   {% endfor -%}
@@ -170,10 +174,10 @@ Experience\SubSection
 %% PROFICIENCY %%
 {% if proficiency -%}
 \startSection
-\AwOK\crlf\rotate[90]{Technical Proficiency}\Section
+\AwOK\crlf\rotate[90]{\bfd\darkgray Technical Proficiency}\Section
 
 \startSubSection
-Technical Proficiency\SubSection
+{\bfc\darkgray Technical Proficiency}\SubSection
 \stopSubSection
 {% for prof in proficiency %}
 \startSubSection
@@ -197,10 +201,10 @@ Technical Proficiency\SubSection
 
 %% LANGUAGES %%
 \startSection
-\AwOK\crlf\rotate[90]{Languages}\Section
+\AwOK\crlf\rotate[90]{\bfd\darkgray Languages}\Section
 
 \startSubSection
-Languages\SubSection
+{\bfc\darkgray Languages}\SubSection
 
 \startLanguages
 {%- for lang in languages %}
