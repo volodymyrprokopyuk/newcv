@@ -3,8 +3,30 @@
 
 %% FontAwesome symbols
 \definefontsynonym[Awesome][name:fontawesome]
-\definesymbol[AwOK][\getnamedglyphdirect{Awesome}{ok}]
-\define\AwOK{\symbol[AwOK]}
+\definesymbol[AwItem][\getnamedglyphdirect{Awesome}{ok}]
+\define\AwItem{\symbol[AwItem]}
+\definesymbol[AwProfile][\getnamedglyphdirect{Awesome}{user}]
+\define\AwProfile{\symbol[AwProfile]}
+\definesymbol[AwMobile][\getnamedglyphdirect{Awesome}{mobile_phone}]
+\define\AwMobile{\symbol[AwMobile]}
+\definesymbol[AwPhone][\getnamedglyphdirect{Awesome}{phone}]
+\define\AwPhone{\symbol[AwPhone]}
+\definesymbol[AwEmail][\getnamedglyphdirect{Awesome}{envelope}]
+\define\AwEmail{\symbol[AwEmail]}
+\definesymbol[AwLocation][\getnamedglyphdirect{Awesome}{map_marker}]
+\define\AwLocation{\symbol[AwLocation]}
+\definesymbol[AwObjective][\getnamedglyphdirect{Awesome}{star}]
+\define\AwObjective{\symbol[AwObjective]}
+\definesymbol[AwEducation][\getnamedglyphdirect{Awesome}{_388}]
+\define\AwEducation{\symbol[AwEducation]}
+\definesymbol[AwEmployment][\getnamedglyphdirect{Awesome}{cogs}]
+\define\AwEmployment{\symbol[AwEmployment]}
+\definesymbol[AwExperience][\getnamedglyphdirect{Awesome}{cog}]
+\define\AwExperience{\symbol[AwExperience]}
+\definesymbol[AwProficiency][\getnamedglyphdirect{Awesome}{wrench}]
+\define\AwProficiency{\symbol[AwProficiency]}
+\definesymbol[AwLanguages][\getnamedglyphdirect{Awesome}{globe}]
+\define\AwLanguages{\symbol[AwLanguages]}
 
 %% SourcePro font
 \starttypescript[sans][SourcePro]
@@ -22,14 +44,16 @@
   footer=20pt,footerdistance=5pt,bottom=1pt,bottomdistance=10pt,height=fit]
 %\showframe
 \setupwhitespace[small]
+\definehspace[20pt][20pt]
+\definehspace[30pt][30pt]
 \setuppagenumbering[location=]
-\setupfootertexts[{
-  \hfill {{ mobile }}
-  \hfill {{ email }}
-  \hfill {{ address }}\hfill}]
+\setupfootertexts[{\tfx
+  \hspace[30pt]{\darkgray\AwMobile}\hspace[medium]{{ mobile }}
+  \hfill{\darkgray\AwEmail}\hspace[medium]{{ email }}
+  \hfill{\darkgray\AwLocation}\hspace[medium]{{ address }}\hspace[20pt]}]
 
 %% lists
-\definesymbol[1][{\AwOK}]
+\definesymbol[1][{\darkgray\AwItem}]
 
 %% interaction
 \setupinteraction[state=start]
@@ -72,35 +96,38 @@
 
 %% BACKGROUND %%
 \setlayer[Background][preset=lefttop]
-  {\framed[width=40pt,height=\paperheight,frame=off,
+  {\framed[width=30pt,height=\paperheight,frame=off,
     background=color,backgroundcolor=cyan]{}}
 \setlayer[Background][preset=lefttop]
   {\framed[width=\paperwidth,align=left,frame=off,
     background=color,backgroundcolor=blue,
     foreground=color,foregroundcolor=white]
-    {\bfxx CURRICULUM VITAE\hspace[medium]}}
+    {\bfx CURRICULUM VITAE\hspace[big]}}
 \setlayer[Background][preset=leftbottom]
-  {\framed[width=\paperwidth,height=10px,frame=off,
+  {\framed[width=\paperwidth,height=8px,frame=off,
     background=color,backgroundcolor=blue]{}}
-\setlayer[Background][preset=rightbottom,y=36pt]
+\setlayer[Background][preset=rightbottom,y=14pt]
   {\rotate[90]{\framed[frame=off]{\tfxx Typeset with \CONTEXT}}}
 
 %% PROFILE %%
 \startSection
-\AwOK\crlf\Section
+{\tfd\darkgray\AwProfile}\crlf\Section
 
 \startProfile
 {{ firstName }} {{ lastName }}\blank
 {{ position }}\Profile
-{{ mobile }} {% if home %}{{ home }}{% endif %}\crlf
-{{ email }}\crlf
-{{ address }}
+{\darkgray\AwMobile}\hspace[big]{{ mobile }}
+{%- if home %}
+\hspace[30pt]{\darkgray\AwPhone}\hspace[big]{{ home }}
+{%- endif %}\crlf
+{\darkgray\AwEmail}\hspace[medium]{{ email }}\crlf
+{\darkgray\AwLocation}\hspace[big]{{ address }}
 \stopProfile
 \stopSection
 
 %% OBJECTIVE %%
 \startSection
-\AwOK\crlf\Section
+{\tfd\darkgray\AwObjective}\crlf\Section
 
 \startSubSection
 {\bfc\darkgray Objective}\SubSection
@@ -110,7 +137,8 @@
 
 %% EDUCATION %%
 \startSection
-\AwOK\crlf\rotate[90]{\bfd\darkgray Education}\Section
+{\tfd\darkgray\AwEducation}\crlf
+\rotate[90]{\bfd\darkgray Education}\Section
 
 \startSubSection
 {\bfc\darkgray Education}\SubSection
@@ -128,7 +156,8 @@
 
 %% EMPLOYMENT %%
 \startSection
-\AwOK\crlf\rotate[90]{\bfd\darkgray Employment}\Section
+{\tfd\darkgray\AwEmployment}\crlf
+\rotate[90]{\bfd\darkgray Employment}\Section
 
 \startSubSection
 {\bfc\darkgray Employment}\SubSection
@@ -150,7 +179,8 @@
 
 %% EXPERIENCE %%
 \startSection
-\AwOK\crlf\rotate[90]{\bfd\darkgray Experience}\Section
+{\tfd\darkgray\AwExperience}\crlf
+\rotate[90]{\bfd\darkgray Experience}\Section
 
 \startSubSection
 {\bfc\darkgray Experience}\SubSection
@@ -174,7 +204,8 @@
 %% PROFICIENCY %%
 {% if proficiency -%}
 \startSection
-\AwOK\crlf\rotate[90]{\bfd\darkgray Technical Proficiency}\Section
+{\tfd\darkgray\AwProficiency}\crlf
+\rotate[90]{\bfd\darkgray Technical Proficiency}\Section
 
 \startSubSection
 {\bfc\darkgray Technical Proficiency}\SubSection
@@ -201,7 +232,8 @@
 
 %% LANGUAGES %%
 \startSection
-\AwOK\crlf\rotate[90]{\bfd\darkgray Languages}\Section
+{\tfd\darkgray\AwLanguages}\crlf
+\rotate[90]{\bfd\darkgray Languages}\Section
 
 \startSubSection
 {\bfc\darkgray Languages}\SubSection
