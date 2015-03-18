@@ -1,6 +1,16 @@
 %% language
 \mainlanguage[{{ meta.locale }}]
 
+%% colors
+\setupcolor[hex]
+\definecolor[DarkerGray][h=787875]
+\definecolor[DarkGray][h=a6a6a8]
+\definecolor[Gray][h=c7c9c7]
+\definecolor[LightGray][h=e5e5e5]
+\definecolor[LighterGray][h=f7f7fa]
+\definecolor[Blue][h=005eb8]
+\definecolor[Cherry][h=ce0058]
+
 %% FontAwesome symbols
 \definefontsynonym[Awesome][name:fontawesome]
 \definesymbol[AwItem][\getnamedglyphdirect{Awesome}{ok}]
@@ -60,14 +70,14 @@
 \definesymbol[1][{\darkgray\AwItem}]
 
 %% interaction
-\setupinteraction[state=start,color=darkblue,style={\it}]
+\setupinteraction[state=start,color=Blue,style={\it}]
 {{ urls.join('\n') }}
 
 %% Background
 \definelayer[Background][state=repeat,x=0pt,y=0pt,width=\paperwidth,
   height=\paperheight]
 \setupbackgrounds[page][background={color,Background},
-  backgroundcolor=lightgray]
+  backgroundcolor=LightGray]
 
 %% Section
 \defineparagraphs[Section][n=2,distance=10pt]
@@ -104,12 +114,12 @@
     background=color,backgroundcolor=cyan]{}}
 \setlayer[Background][preset=lefttop]
   {\framed[width=\paperwidth,align=left,frame=off,
-    background=color,backgroundcolor=blue,
+    background=color,backgroundcolor=Blue,
     foreground=color,foregroundcolor=white]
     {\bfx CURRICULUM VITAE\hspace[big]}}
 \setlayer[Background][preset=leftbottom]
   {\framed[width=\paperwidth,height=8px,frame=off,
-    background=color,backgroundcolor=blue]{}}
+    background=color,backgroundcolor=Blue]{}}
 \setlayer[Background][preset=rightbottom,y=12pt]
   {\rotate[90]{\framed[frame=off]{\tfxx {{ locale.typesetWith }} \CONTEXT}}}
 
