@@ -1,5 +1,5 @@
 %% language
-\mainlanguage[en]
+\mainlanguage[{{ meta.locale }}]
 
 %% FontAwesome symbols
 \definefontsynonym[Awesome][name:fontawesome]
@@ -60,7 +60,7 @@
 \definesymbol[1][{\darkgray\AwItem}]
 
 %% interaction
-\setupinteraction[state=start]
+\setupinteraction[state=start,color=darkblue,style={\it}]
 {{ urls.join('\n') }}
 
 %% Background
@@ -70,7 +70,7 @@
   backgroundcolor=lightgray]
 
 %% Section
-\defineparagraphs[Section][n=2,distance=20pt]
+\defineparagraphs[Section][n=2,distance=10pt]
 \setupparagraphs[Section][1][width=0.05\textwidth]
 
 %% SubSection
@@ -111,7 +111,7 @@
   {\framed[width=\paperwidth,height=8px,frame=off,
     background=color,backgroundcolor=blue]{}}
 \setlayer[Background][preset=rightbottom,y=12pt]
-  {\rotate[90]{\framed[frame=off]{\tfxx Typeset with \CONTEXT}}}
+  {\rotate[90]{\framed[frame=off]{\tfxx {{ locale.typesetWith }} \CONTEXT}}}
 
 %% PROFILE %%
 \startSection
@@ -134,7 +134,7 @@
 {\tfd\darkgray\AwObjective}\crlf\Section
 
 \startSubSection
-{\bfc\darkgray Objective}\SubSection
+{\bfc\darkgray\unhyphenated{ {{ locale.objective }} }}\SubSection
 {{ objective }}
 \stopSubSection
 \stopSection
@@ -142,14 +142,14 @@
 %% EDUCATION %%
 \startSection
 {\tfc\darkgray\AwEducation}\crlf
-\rotate[90]{\bfd\darkgray Education\hspace[1pt]}\Section
+\rotate[90]{\bfd\darkgray {{ locale.education }}\hspace[1pt]}\Section
 
 \startSubSection
-{\bfc\darkgray Education}\SubSection
+{\bfc\darkgray\unhyphenated{ {{ locale.education }} }}\SubSection
 \stopSubSection
 {% for edu in education %}
 \startSubSection
-{{ edu.from }} -- {{ edu.to }}\SubSection
+{{ edu.from }} \endash\ {{ edu.to }}\SubSection
 {{ edu.degree }}\crlf
 {{ edu.school }}\crlf
 {{ edu.subject }}\crlf
@@ -161,14 +161,14 @@
 %% EMPLOYMENT %%
 \startSection
 {\tfc\darkgray\AwEmployment}\crlf
-\rotate[90]{\bfd\darkgray Employment\hspace[small]}\Section
+\rotate[90]{\bfd\darkgray {{ locale.employment }}\hspace[small]}\Section
 
 \startSubSection
-{\bfc\darkgray Employment}\SubSection
+{\bfc\darkgray\unhyphenated{ {{ locale.employment }} }}\SubSection
 \stopSubSection
 {% for emp in employment %}
 \startSubSection
-{{ emp.from }} -- {{ emp.to }}\SubSection
+{{ emp.from }} \endash\ {{ emp.to }}\SubSection
 {{ emp.position }}\crlf
 {{ emp.company }}\crlf
 {{ emp.department }}
@@ -184,10 +184,10 @@
 %% EXPERIENCE %%
 \startSection
 {\tfd\darkgray\AwExperience}\crlf
-\rotate[90]{\bfd\darkgray Experience\hspace[small]}\Section
+\rotate[90]{\bfd\darkgray {{ locale.experience }}\hspace[small]}\Section
 
 \startSubSection
-{\bfc\darkgray Experience}\SubSection
+{\bfc\darkgray\unhyphenated{ {{ locale.experience }} }}\SubSection
 \stopSubSection
 {% for exp in experience %}
 \startSubSection
@@ -209,10 +209,10 @@
 {% if proficiency -%}
 \startSection
 {\tfd\darkgray\AwProficiency}\crlf
-\rotate[90]{\bfd\darkgray Technical Proficiency\hspace[small]}\Section
+\rotate[90]{\bfd\darkgray {{ locale.proficiency }}\hspace[small]}\Section
 
 \startSubSection
-{\bfc\darkgray Technical Proficiency}\SubSection
+{\bfc\darkgray\unhyphenated{ {{ locale.proficiency }} }}\SubSection
 \stopSubSection
 {% for prof in proficiency %}
 \startSubSection
@@ -237,10 +237,10 @@
 %% LANGUAGES %%
 \startSection
 {\tfd\darkgray\AwLanguages}\crlf
-\rotate[90]{\bfd\darkgray Languages\hspace[small]}\Section
+\rotate[90]{\bfd\darkgray {{ locale.languages }}\hspace[small]}\Section
 
 \startSubSection
-{\bfc\darkgray Languages}\SubSection
+{\bfc\darkgray\unhyphenated{ {{ locale.languages }} }}\SubSection
 
 \startLanguages
 {%- for lang in languages %}

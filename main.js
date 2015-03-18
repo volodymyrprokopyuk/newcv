@@ -44,6 +44,19 @@ var pwhile = function(pred, act, seed) {
   });
 };
 
+var locales = { };
+
+locales.en = { typesetWith: 'Typeset with', objective: 'Objective'
+  , education: 'Education', employment: 'Employment'
+  , experience: 'Experience', proficiency: 'Technical proficiency'
+  , languages: 'Languages'
+};
+
+locales.es = { typesetWith: 'Tipografía', objective: 'Objetivo'
+  , education: 'Formación', employment: 'Experiencia laboral'
+  , experience: 'Experiencia profecional', proficiency: 'Conocimientos técnicos'
+  , languages: 'Idiomas' };
+
 var readSourceFile = function(opts) {
   var getSourceFile = function() {
     return new Promise(function(resolve, reject) {
@@ -57,13 +70,21 @@ var readSourceFile = function(opts) {
 readSourceFile = _.partial(readSourceFile, commander);
 
 var processSourceFile = function(cv) {
-  var escapeTeX = function(cv) {
-    var escape = function(str) {
-      return str.replace(/[&%#_\$\{\}]/g, function(m) {
-        return '\\' + m;
-      });
+  var processLocale = function(cv) {
+    cv.locale = locales[cv.meta.locale] || locales['en'];
+    return cv;
+  };
+  var processDates = function(cv) {
+    moment.locale('es', { monthsShort:
+      'Ene_Feb_Mar_Abr_May_Jun_Jul_Ago_Sep_Oct_Nov_Dic'.split('_') });
+    moment.locale(cv.meta.locale);
+    var isDate = function(val) {
+      return _.isString(val) && /^\d{4}-\d{2}-\d{2}$/.test(val);
     };
-    recursive(cv, escape, _.isString);
+    var processDate = function(date) {
+      return moment(date).format('MMM YYYY');
+    };
+    recursive(cv, processDate, isDate);
     return cv;
   };
   var processURLs = function(cv) {
@@ -82,7 +103,16 @@ var processSourceFile = function(cv) {
     recursive(cv, processURL, _.isString);
     return cv;
   };
-  var process = _.flow(processURLs, escapeTeX);
+  var escapeTeX = function(cv) {
+    var escape = function(str) {
+      return str.replace(/[&%#_\$\{\}]/g, function(m) {
+        return '\\' + m;
+      });
+    };
+    recursive(cv, escape, _.isString);
+    return cv;
+  };
+  var process = _.flow(processLocale, processDates, processURLs, escapeTeX);
   return process(cv);
 };
 
