@@ -3,13 +3,11 @@
 
 %% colors
 \setupcolor[hex]
-\definecolor[DarkerGray][h=787875]
-\definecolor[DarkGray][h=a6a6a8]
-\definecolor[Gray][h=c7c9c7]
-\definecolor[LightGray][h=e5e5e5]
-\definecolor[LighterGray][h=f7f7fa]
-\definecolor[Blue][h=005eb8]
-\definecolor[Cherry][h=ce0058]
+\definecolor[Base][h=184be5]
+\definecolor[Lighter][h=7c9af7]
+\definecolor[Light][h=4670ef]
+\definecolor[Dark][h=0a33ab]
+\definecolor[Darker][h=09216a]
 
 %% FontAwesome symbols
 \definefontsynonym[Awesome][name:fontawesome]
@@ -43,6 +41,7 @@
 \definefontsynonym[Sans][name:sourcesansprolight]
 \definefontsynonym[SansBold][name:sourcesansprobold]
 \definefontsynonym[SansItalic][name:sourcesansprolightit]
+\definefontsynonym[SansBoldItalic][name:sourcesansprosemiboldit]
 \stoptypescript
 \definetypeface[SourcePro][ss][sans][SourcePro]
 \setupbodyfont[SourcePro,sans,10pt]
@@ -61,46 +60,48 @@
 
 %% header/footer
 \setuppagenumbering[location=]
-\setupfootertexts[{\tfx
-  \hspace[40pt]{\darkgray\AwMobile}\hspace[medium]{{ mobile }}
-  \hfill{\darkgray\AwEmail}\hspace[medium]{{ email }}
-  \hfill{\darkgray\AwLocation}\hspace[medium]{{ address }}\hspace[20pt]}]
+\setupfootertexts[{\tfx\Dark
+  \hspace[40pt]{\Lighter\AwMobile}\hspace[medium]{{ mobile }}
+  \hfill{\Lighter\AwEmail}\hspace[medium]{{ email }}
+  \hfill{\Lighter\AwLocation}\hspace[medium]{{ address }}\hspace[20pt]}]
 
 %% lists
-\definesymbol[1][{\darkgray\AwItem}]
+\definesymbol[1][{\Lighter\AwItem}]
 
 %% interaction
-\setupinteraction[state=start,color=Blue,style={\it}]
+\setupinteraction[state=start,color=Base,style={\bi}]
 {{ urls.join('\n') }}
 
 %% Background
 \definelayer[Background][state=repeat,x=0pt,y=0pt,width=\paperwidth,
   height=\paperheight]
-\setupbackgrounds[page][background=Background]
+\setupbackgrounds[page][background={color,Background},
+  backgroundcolor=white]
 
 %% Section
-\defineparagraphs[Section][n=2,distance=10pt]
+\defineparagraphs[Section][n=2,distance=5pt]
 \setupparagraphs[Section][1][width=0.05\textwidth]
 
 %% SubSection
-\defineparagraphs[SubSection][n=2,distance=20pt]
+\defineparagraphs[SubSection][n=2,distance=14pt]
 \setupparagraphs[SubSection][1][width=0.2\textwidth,align=flushright]
 
 %% Profile
-\defineparagraphs[Profile][n=2,distance=10pt]
-\setupparagraphs[Profile][1][width=0.4\textwidth]
+\defineparagraphs[Profile][n=3,distance=10pt]
+\setupparagraphs[Profile][1][width=0.05\textwidth]
+\setupparagraphs[Profile][2][width=0.45\textwidth]
 
 %% Domains
 \defineparagraphs[Domains][n=2,distance=10pt]
-\setupparagraphs[Domains][1][width=0.35\textwidth]
+\setupparagraphs[Domains][1][width=0.34\textwidth]
 
 %% Frameworks
 \defineparagraphs[Frameworks][n=2,distance=10pt]
-\setupparagraphs[Frameworks][1][width=0.17\textwidth]
+\setupparagraphs[Frameworks][1][width=0.15\textwidth]
 
 %% Languages
-\defineparagraphs[Languages][n=2,distance=20pt]
-\setupparagraphs[Languages][1][width=0.3\textwidth]
+\defineparagraphs[Languages][n=2,distance=10pt]
+\setupparagraphs[Languages][1][width=0.34\textwidth]
 
 %\usemodule[fnt-10]
 %\ShowCompleteFont{name:fontawesome}{20pt}{1}
@@ -110,58 +111,61 @@
 %% BACKGROUND %%
 \setlayer[Background][preset=lefttop]
   {\framed[width=30pt,height=\paperheight,frame=off,
-    background=color,backgroundcolor=cyan]{}}
+    background=color,backgroundcolor=Lighter]{}}
 \setlayer[Background][preset=lefttop]
   {\framed[width=\paperwidth,align=left,frame=off,
-    background=color,backgroundcolor=Blue,
+    background=color,backgroundcolor=Base,
     foreground=color,foregroundcolor=white]
     {\bfx CURRICULUM VITAE\hspace[big]}}
 \setlayer[Background][preset=leftbottom]
   {\framed[width=\paperwidth,height=8px,frame=off,
-    background=color,backgroundcolor=Blue]{}}
+    background=color,backgroundcolor=Base]{}}
 \setlayer[Background][preset=rightbottom,y=12pt]
-  {\rotate[90]{\framed[frame=off]{\tfxx {{ locale.typesetWith }} \CONTEXT}}}
+  {\rotate[90]{\framed[frame=off]{\tfxx\Dark {{ locale.typesetWith }} \CONTEXT}}}
 
 %% PROFILE %%
 \startSection
-{\tfd\darkgray\AwProfile}\crlf\Section
+{\tfd\Light\AwProfile}\crlf\Section
 
 \startProfile
-{{ firstName }} {{ lastName }}\blank
-{{ position }}\Profile
-{\darkgray\AwMobile}\hspace[big]{{ mobile }}
+\Profile
+{\bfc\Dark {{ firstName }} {{ lastName }} }\blank
+{\tfa\Base {{ position }} }\Profile
+\startcolor[Base]
+{\Lighter\AwMobile}\hspace[big]{{ mobile }}
 {%- if home %}
-\hspace[30pt]{\darkgray\AwPhone}\hspace[big]{{ home }}
+\hspace[30pt]{\Lighter\AwPhone}\hspace[big]{{ home }}
 {%- endif %}\crlf
-{\darkgray\AwEmail}\hspace[medium]{{ email }}\crlf
-{\darkgray\AwLocation}\hspace[big]{{ address }}
+{\Lighter\AwEmail}\hspace[medium]{{ email }}\crlf
+{\Lighter\AwLocation}\hspace[big]{{ address }}
+\stopcolor
 \stopProfile
 \stopSection
 
 %% OBJECTIVE %%
 \startSection
-{\tfd\darkgray\AwObjective}\crlf\Section
+{\tfd\Light\AwObjective}\crlf\Section
 
 \startSubSection
-{\bfc\darkgray\unhyphenated{ {{ locale.objective }} }}\SubSection
+{\bfc\Lighter\unhyphenated{ {{ locale.objective }} }}\SubSection
 {{ objective }}
 \stopSubSection
 \stopSection
 
 %% EDUCATION %%
 \startSection
-{\tfc\darkgray\AwEducation}\crlf
-\rotate[90]{\bfd\darkgray {{ locale.education }}\hspace[1pt]}\Section
+{\tfc\Light\AwEducation}\crlf
+\rotate[90]{\bfd\Light {{ locale.education }}\hspace[1pt]}\Section
 
 \startSubSection
-{\bfc\darkgray\unhyphenated{ {{ locale.education }} }}\SubSection
+{\bfc\Lighter\unhyphenated{ {{ locale.education }} }}\SubSection
 \stopSubSection
 {% for edu in education %}
 \startSubSection
-{{ edu.from }} \endash\ {{ edu.to }}\SubSection
-{{ edu.degree }}\crlf
-{{ edu.school }}\crlf
-{{ edu.subject }}\crlf
+{\bi\Light {{ edu.from }} \endash\ {{ edu.to }} }\SubSection
+{\bfa\Dark {{ edu.degree }} }\crlf
+{\bi {{ edu.school }} }\crlf
+{\it {{ edu.subject }} }\crlf
 {{ edu.description }}
 \stopSubSection
 {% endfor -%}
@@ -169,18 +173,18 @@
 
 %% EMPLOYMENT %%
 \startSection
-{\tfc\darkgray\AwEmployment}\crlf
-\rotate[90]{\bfd\darkgray {{ locale.employment }}\hspace[small]}\Section
+{\tfc\Light\AwEmployment}\crlf
+\rotate[90]{\bfd\Light {{ locale.employment }}\hspace[small]}\Section
 
 \startSubSection
-{\bfc\darkgray\unhyphenated{ {{ locale.employment }} }}\SubSection
+{\bfc\Lighter\unhyphenated{ {{ locale.employment }} }}\SubSection
 \stopSubSection
 {% for emp in employment %}
 \startSubSection
-{{ emp.from }} \endash\ {{ emp.to }}\SubSection
-{{ emp.position }}\crlf
-{{ emp.company }}\crlf
-{{ emp.department }}
+{\bi\Light {{ emp.from }} \endash\ {{ emp.to }} }\SubSection
+{\bfa\Dark {{ emp.position }} }\crlf
+{\bi {{ emp.company }} }\crlf
+{\it {{ emp.department }} }
   \startitemize[joinedup,nowhite]
   {% for resp in emp.responsibilities -%}
   \item {{ resp }}
@@ -192,15 +196,15 @@
 
 %% EXPERIENCE %%
 \startSection
-{\tfd\darkgray\AwExperience}\crlf
-\rotate[90]{\bfd\darkgray {{ locale.experience }}\hspace[small]}\Section
+{\tfd\Light\AwExperience}\crlf
+\rotate[90]{\bfd\Light {{ locale.experience }}\hspace[small]}\Section
 
 \startSubSection
-{\bfc\darkgray\unhyphenated{ {{ locale.experience }} }}\SubSection
+{\bfc\Lighter\unhyphenated{ {{ locale.experience }} }}\SubSection
 \stopSubSection
 {% for exp in experience %}
 \startSubSection
-{{ exp.domain }}\SubSection
+{\bi\Light {{ exp.domain }} }\SubSection
 {{ exp.description.before }}
 {%- if exp.description.experiences.length %}
   \startitemize[joinedup,nowhite]
@@ -217,21 +221,21 @@
 %% PROFICIENCY %%
 {% if proficiency -%}
 \startSection
-{\tfd\darkgray\AwProficiency}\crlf
-\rotate[90]{\bfd\darkgray {{ locale.proficiency }}\hspace[small]}\Section
+{\tfd\Light\AwProficiency}\crlf
+\rotate[90]{\bfd\Light {{ locale.proficiency }}\hspace[small]}\Section
 
 \startSubSection
-{\bfc\darkgray\unhyphenated{ {{ locale.proficiency }} }}\SubSection
+{\bfc\Lighter\unhyphenated{ {{ locale.proficiency }} }}\SubSection
 \stopSubSection
 {% for prof in proficiency %}
 \startSubSection
-{{ prof.domain }}\SubSection
+{\bi\Light {{ prof.domain }} }\SubSection
 \startDomains
 {%- for subdom in prof.subdomains %}
-{{ subdom.subdomain }}
+{\bf\Dark {{ subdom.subdomain }} }
 \startFrameworks
 {%- for framework in subdom.frameworks %}
-{{ framework }}\crlf
+{\bi {{ framework }} }\crlf
 {%- if loop.index0 == loop.length // 2 - 1 %}\Frameworks{% endif -%}
 {% endfor %}
 \stopFrameworks
@@ -245,15 +249,15 @@
 
 %% LANGUAGES %%
 \startSection
-{\tfd\darkgray\AwLanguages}\crlf
-\rotate[90]{\bfd\darkgray {{ locale.languages }}\hspace[small]}\Section
+{\tfd\Light\AwLanguages}\crlf
+\rotate[90]{\bfd\Light {{ locale.languages }}\hspace[small]}\Section
 
 \startSubSection
-{\bfc\darkgray\unhyphenated{ {{ locale.languages }} }}\SubSection
+{\bfc\Lighter\unhyphenated{ {{ locale.languages }} }}\SubSection
 
 \startLanguages
 {%- for lang in languages %}
-{{ lang.language }} {{ lang.level }}\crlf
+{\bf\Dark {{ lang.language }} } {{ lang.level }}\crlf
 {%- if loop.index0 == loop.length // 2 - 1 %}\Languages{% endif -%}
 {% endfor %}
 \stopLanguages
