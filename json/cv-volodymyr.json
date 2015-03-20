@@ -61,7 +61,7 @@
   , "experience": [
     { "domain": "Project management"
       , "description": {
-        "before": "Experience in planning, managing, executing and controlling collaborative projects in teams of 2~\\endash~5 members with effective objectives achievement based on clean methodology and humanity. Practical application of methodologies promoted by [COBIT](http://www.isaca.org/cobit) and [PMBOK](http://www.pmi.org/PMBOK-Guide-and-Standards.aspx)"
+        "before": "Experience in planning, managing, executing and controlling collaborative projects in teams of 2 -- 5 members with effective objectives achievement based on clean methodology and humanity. Practical application of methodologies promoted by [COBIT](http://www.isaca.org/cobit) and [PMBOK](http://www.pmi.org/PMBOK-Guide-and-Standards.aspx)"
         , "experiences": [ ], "after": "" } }
     , { "domain": "Software architecture"
       , "description": {

@@ -103,6 +103,14 @@ var processSourceFile = function(cv) {
     recursive(cv, processURL, _.isString);
     return cv;
   };
+  var processChars = function(cv) {
+    var processChar = function(str) {
+      return str.replace(/ -- /, '~\\endash~')
+        .replace(/ --- /, '~\\emdash~');
+    };
+    recursive(cv, processChar, _.isString);
+    return cv;
+  };
   var escapeTeX = function(cv) {
     var escape = function(str) {
       return str.replace(/[&%#_\$\{\}]/g, function(m) {
@@ -112,7 +120,8 @@ var processSourceFile = function(cv) {
     recursive(cv, escape, _.isString);
     return cv;
   };
-  var process = _.flow(processLocale, processDates, processURLs, escapeTeX);
+  var process = _.flow(processLocale, processDates, processURLs, processChars
+    , escapeTeX);
   return process(cv);
 };
 
