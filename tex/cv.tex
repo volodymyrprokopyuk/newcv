@@ -164,7 +164,7 @@
 \startSubSection
 {\bi\Light {{ edu.from }} \endash\ {{ edu.to }} }\SubSection
 {\bfa\Dark {{ edu.degree }} }\crlf
-{\bi {{ edu.school }} }\crlf
+{\bi {{ edu.school.name }}}{\it {{ ', ' + edu.school.location }} }\crlf
 {\it {{ edu.subject }} }\crlf
 {{ edu.description }}
 \stopSubSection
@@ -183,8 +183,8 @@
 \startSubSection
 {\bi\Light {{ emp.from }} \endash\ {{ emp.to }} }\SubSection
 {\bfa\Dark {{ emp.position }} }\crlf
-{\bi {{ emp.company }} }\crlf
-{\it {{ emp.department }} }
+{\bi {{ emp.company.name }}}{\it {{ ', ' + emp.company.location }} }\crlf
+{\it {{ emp.company.description }} }
   \startitemize[joinedup,nowhite]
   {% for resp in emp.responsibilities -%}
   \item {{ resp }}

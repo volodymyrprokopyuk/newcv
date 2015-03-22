@@ -10,23 +10,32 @@
   , "objective": "Position in IT department as project manager/software architect"
   , "education": [
      { "degree": "Master of Business Administration"
-       , "school": "[Escuela de Administración de Empresas, Madrid](http://www.eae.es/)"
+       , "school": {
+         "name": "[Escuela de Administración de Empresas](http://www.eae.es/)"
+         , "location": "Madrid" }
        , "subject": "Business Administration"
        , "description": "Strategy, project management, marketing, accounting and finance, human resources"
        , "from": "2012-09-01", "to": "in course" }
      , { "degree": "Master of Science, with honors"
-       , "school": "[National Technical University of Oil and Gas, Ukraine](http://eng.nung.edu.ua/)"
+       , "school": {
+         "name": "[National Technical University of Oil and Gas](http://eng.nung.edu.ua/)"
+         , "location": "Ukraine" }
        , "subject": "Computer Systems and Networking"
        , "description": "Computer systems architecture and design. Computer networks routing algorithms optimization"
        , "from": "2007-09-01", "to": "2008-06-01" }
      , { "degree": "Bachelor of Science, with honors"
-       , "school": "[National Technical University of Oil and Gas, Ukraine](http://eng.nung.edu.ua/)"
+       , "school": {
+         "name": "[National Technical University of Oil and Gas](http://eng.nung.edu.ua/)"
+         , "location": "Ukraine" }
        , "subject": "Computer Science"
        , "description": "Architecture, design and implementation of general purpose computer systems"
        , "from": "2003-09-01", "to": "2007-06-01" } ]
   , "employment": [
     { "position": "Program Analyst"
-      , "company": "[Amadeus Spain, Madrid](http://www.amadeus.com/)"
+      , "company": {
+        "name": "[Amadeus IT Group](http://www.amadeus.com/)"
+        , "location": "Madrid"
+        , "description": "World's leading IT provider for the global travel and tourism industry" }
       , "department": "Department of Technology and IT Solutions"
       , "from": "2009-04-01", "to": "current"
       , "responsibilities": [
@@ -41,7 +50,10 @@
       , "achievements": [
         "Hight client satisfaction, high reliability of our solutions working 24/7" ] }
     , { "position": "Software Developer"
-      , "company": "KibiTech S. L., Madrid"
+      , "company": {
+        "name": "KibiTech S. L."
+        , "location": "Madrid"
+        , "description": "Computer entertainment technological startup" }
       , "department": "Department of Software Development"
       , "from": "2009-01-01", "to": "2009-03-01"
       , "responsibilities": [
@@ -50,8 +62,11 @@
         , "Technologies: Cairo, OpenGL, GLSL (OpenGL Shading Language) and GStreamer"
         , "Implementation language: C++" ]
       , "achievements": [ ] }
-    , { "position": "Software Developer"
-      , "company": "[GlobalLogic, Kiev, Ukraine](https://www.globallogic.com/)"
+    , { "position": "Software Developer (internship)"
+      , "company": {
+        "name": "[GlobalLogic](https://www.globallogic.com/)"
+        , "location": "Kiev, Ukraine"
+        , "description": "Full-lifecycle product development services worldwide provider" }
       , "department": "Department of Telecommunications"
       , "from": "2008-01-01", "to": "2008-06-01"
       , "responsibilities": [
