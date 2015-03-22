@@ -13,17 +13,17 @@
        , "school": {
          "name": "[Escuela de Administración de Empresas](http://www.eae.es/)"
          , "location": "Madrid" }
-       , "subject": "Business Administration"
+       , "subject": ""
        , "description": "Strategy, project management, marketing, accounting and finance, human resources"
        , "from": "2012-09-01", "to": "in course" }
-     , { "degree": "Master of Science, with honors"
+     , { "degree": "Master of Science with honors"
        , "school": {
          "name": "[National Technical University of Oil and Gas](http://eng.nung.edu.ua/)"
          , "location": "Ukraine" }
        , "subject": "Computer Systems and Networking"
        , "description": "Computer systems architecture and design. Computer networks routing algorithms optimization"
        , "from": "2007-09-01", "to": "2008-06-01" }
-     , { "degree": "Bachelor of Science, with honors"
+     , { "degree": "Bachelor of Science with honors"
        , "school": {
          "name": "[National Technical University of Oil and Gas](http://eng.nung.edu.ua/)"
          , "location": "Ukraine" }
