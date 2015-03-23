@@ -15,14 +15,14 @@
 \define\AwItem{\symbol[AwItem]}
 \definesymbol[AwProfile][\getnamedglyphdirect{Awesome}{user}]
 \define\AwProfile{\symbol[AwProfile]}
-\definesymbol[AwMobile][\getnamedglyphdirect{Awesome}{mobile_phone}]
-\define\AwMobile{\symbol[AwMobile]}
-\definesymbol[AwPhone][\getnamedglyphdirect{Awesome}{phone}]
-\define\AwPhone{\symbol[AwPhone]}
 \definesymbol[AwEmail][\getnamedglyphdirect{Awesome}{envelope}]
 \define\AwEmail{\symbol[AwEmail]}
-\definesymbol[AwLocation][\getnamedglyphdirect{Awesome}{map_marker}]
-\define\AwLocation{\symbol[AwLocation]}
+\definesymbol[AwPhone][\getnamedglyphdirect{Awesome}{phone}]
+\define\AwPhone{\symbol[AwPhone]}
+\definesymbol[AwWeb][\getnamedglyphdirect{Awesome}{github}]
+\define\AwWeb{\symbol[AwWeb]}
+\definesymbol[AwAddress][\getnamedglyphdirect{Awesome}{map_marker}]
+\define\AwAddress{\symbol[AwAddress]}
 \definesymbol[AwObjective][\getnamedglyphdirect{Awesome}{star}]
 \define\AwObjective{\symbol[AwObjective]}
 \definesymbol[AwEducation][\getnamedglyphdirect{Awesome}{_388}]
@@ -61,12 +61,15 @@
 %% header/footer
 \setuppagenumbering[location=]
 \setupfootertexts[{\tfx\Dark
-  \hfill{\Lighter\AwMobile}\hspace[medium]{{ mobile }}
   \hfill{\Lighter\AwEmail}\hspace[medium]{{ email }}
-  \hfill{\Lighter\AwLocation}\hspace[medium]{{ address }}\hfill}]
+  \hfill{\Lighter\AwPhone}\hspace[medium]{{ mobile }}
+  \hfill{\Lighter\AwAddress}\hspace[medium]{{ address }}\hfill}]
 
 %% lists
 \definesymbol[1][{\Lighter\AwItem}]
+
+%% tables
+\setuptables[distance=small]
 
 %% interaction
 \setupinteraction[state=start,color=Base,style={\bi}]
@@ -131,14 +134,12 @@
 \Profile
 {\bfc\Dark {{ firstName }} {{ lastName }} }\blank
 {\tfa\Base {{ position }} }\Profile
-\startcolor[Base]
-{\Lighter\AwMobile}\hspace[big]{{ mobile }}
-{%- if home %}
-\hspace[30pt]{\Lighter\AwPhone}\hspace[big]{{ home }}
-{%- endif %}\crlf
-{\Lighter\AwEmail}\hspace[medium]{{ email }}\crlf
-{\Lighter\AwLocation}\hspace[big]{{ address }}
-\stopcolor
+\starttable[|rs2|l|]
+\NC\Lighter\AwEmail\NC\Base {{ email }}\NC\FR
+\NC\Lighter\AwPhone\NC\Base {{ mobile }}\NC\MR
+{% if web %}\NC\Lighter\AwWeb\NC\Base {{ web }}\NC\MR{% endif %}
+\NC\Lighter\AwAddress\NC\Base {{ address }}\NC\LR
+\stoptable
 \stopProfile
 \stopSection
 
