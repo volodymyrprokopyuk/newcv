@@ -54,9 +54,6 @@
 %\showframe
 \setupwhitespace[small]
 \definehspace[1pt][1pt]
-\definehspace[20pt][20pt]
-\definehspace[30pt][30pt]
-\definehspace[40pt][40pt]
 
 %% header/footer
 \setuppagenumbering[location=]
@@ -133,7 +130,7 @@
 \startProfile
 \Profile
 {\bfc\Dark {{ firstName }} {{ lastName }} }\blank
-{\tfa\Base {{ position }} }\Profile
+{\tfa\Base {{ objective }} }\Profile
 \starttable[|rs2|l|]
 \NC\Lighter\AwEmail\NC\Base {{ email }}\NC\FR
 \NC\Lighter\AwPhone\NC\Base {{ mobile }}\NC\MR
@@ -149,7 +146,7 @@
 
 \startSubSection
 {\bfc\Lighter\unhyphenated{ {{ locale.objective }} }}\SubSection
-{{ objective }}
+{{ summary }}
 \stopSubSection
 \stopSection
 
