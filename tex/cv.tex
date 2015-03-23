@@ -62,7 +62,8 @@
 \setuppagenumbering[location=]
 \setupfootertexts[{\tfx\Dark
   \hfill{\Lighter\AwMobile}\hspace[medium]{{ mobile }}
-  \hspace[40pt]{\Lighter\AwEmail}\hspace[medium]{{ email }}\hfill}]
+  \hfill{\Lighter\AwEmail}\hspace[medium]{{ email }}
+  \hfill{\Lighter\AwLocation}\hspace[medium]{{ address }}\hfill}]
 
 %% lists
 \definesymbol[1][{\Lighter\AwItem}]
@@ -132,10 +133,11 @@
 {\tfa\Base {{ position }} }\Profile
 \startcolor[Base]
 {\Lighter\AwMobile}\hspace[big]{{ mobile }}
-{%- if not home %}
+{%- if home %}
 \hspace[30pt]{\Lighter\AwPhone}\hspace[big]{{ home }}
 {%- endif %}\crlf
-{\Lighter\AwEmail}\hspace[medium]{{ email }}
+{\Lighter\AwEmail}\hspace[medium]{{ email }}\crlf
+{\Lighter\AwLocation}\hspace[big]{{ address }}
 \stopcolor
 \stopProfile
 \stopSection
