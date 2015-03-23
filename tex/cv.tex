@@ -163,8 +163,9 @@
 {% for edu in education %}
 \startSubSection
 {\bi\Light {{ edu.from }} \endash\ {{ edu.to }} }\SubSection
-{\bfa\Dark {{ edu.degree }}
-{%- if edu.subject %}{{ ' in ' + edu.subject }}{% endif -%} }\crlf
+{\bfa\Dark {{ edu.degree.name }}
+{%- if edu.subject %}{{ ' in ' + edu.subject }}{% endif -%}
+{%- if edu.degree.short %}{{ ', ' + edu.degree.short }}{% endif -%} }\crlf
 {\bi {{ edu.school.name }}}{\it {{ ', ' + edu.school.location }} }\crlf
 {{ edu.description }}
 \stopSubSection
