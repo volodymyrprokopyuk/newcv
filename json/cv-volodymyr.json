@@ -3,11 +3,12 @@
   , "firstName": "Volodymyr"
   , "lastName": "Prokopyuk"
   , "position": "Project manager/Software architect"
+  , "summary": "TODO"
+  , "objective": "Position in IT department as project manager/software architect"
   , "mobile": "+(34) 663 564 178"
   , "home": "+(34) 912 373 588"
   , "email": "volodymyrprokopyuk@gmail.com"
   , "address": "Alcorcón, Madrid"
-  , "objective": "Position in IT department as project manager/software architect"
   , "education": [
      { "degree": "Master of Business Administration"
        , "school": {
@@ -148,5 +149,5 @@
     , "provided expert leadership to build new technology stack"
     , "delivered multiple new solutions ahead of schedule"
     , "achieved 90+% customer satisfaction"
-    , "leadership, interpersonal skills" ]
+    , "leadership, interpersonal skills, problem-solving skills" ]
 }
