@@ -11,7 +11,7 @@
   , "education": [
      { "degree": { "name": "Master of Business Administration", "short": "MBA" }
        , "subject": ""
-       , "description": "Strategy, project management, marketing, accounting and finance, human resources and business plans"
+       , "description": "Strategy, business leadership, project management, marketing, accounting and finance, human resources. Business plans"
        , "school": {
          "name": "[Escuela de Administración de Empresas](http://www.eae.es/)"
          , "location": "Madrid" }
@@ -39,14 +39,17 @@
       , "department": "Department of Technology and IT Solutions"
       , "from": "2009-04-01", "to": "current"
       , "responsibilities": [
-        "Requirements analysis, specification, complete solution design, development and testing of distributed, transactional, concurrent applications for Amadeus GDS (Global Distribution System)"
+        "Functions/products/customers"
+        , "Requirements analysis, specification, complete solution design, development and testing of distributed, transactional, concurrent applications for Amadeus GDS (Global Distribution System)"
         , "Payment systems integration and security"
         , "REST web API design and web applications development (Node.js and AngularJS)"
         , "Database design of PNR (Passenger Name Record) processing server-side applications"
         , "Information quality control process implementation"
         , "Information presentation for client-side applications (HTML5/CSS3, PDF via LaTeX/TikZ)"
         , "Third party system integration with Amadeus (SOAP/REST)"
-        , "Implementation languages: Java, C#, C++, SQL, JavaScript, Ruby" ]
+        , "Implementation languages: Java, C#, C++, SQL, JavaScript, Ruby"
+        , "Promotions (Sofware Developer, Software Engineer, Senior Software Engineer)"
+        , "Quantified accomplishments (demonstrating, confirming, manifesting, proving, verifying) competencies" ]
       , "achievements": [
         "Hight client satisfaction, high reliability of our solutions working 24/7" ] }
     , { "position": "Software Developer"
@@ -144,9 +147,18 @@
     , { "language": "Russian", "level": "mothertongue" }
     , { "language": "French", "level": "intermediate" } ]
 
-  , "notes": [ "led innovation and continuous improvement of solution development process that speeded up time-to-market by 50%"
+
+  , "accomplishments": [ "led innovation and continuous improvement of solution development process that speeded up time-to-market by 50%"
     , "provided expert leadership to build new technology stack"
     , "delivered multiple new solutions ahead of schedule"
     , "achieved 90+% customer satisfaction"
-    , "leadership, interpersonal skills, problem-solving skills" ]
+    , "increased revenues/saved money"
+    , "increased efficiency/productivity"
+    , "new solutions/products/platforms" ]
+  , "skills": [ "project management", "requirements analysis"
+    , "desktop publishing", "team coordination", "software design"
+    , "leadership", "interpersonal skills", "problem-solving skills" ]
+  , "competencies": [ "leading business meetings"
+    , "action planning organization and control"
+    , "technical innovation", "maintain customer satisfaction" ]
 }

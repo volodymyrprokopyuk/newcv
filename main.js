@@ -106,7 +106,8 @@ var processSourceFile = function(cv) {
   var processChars = function(cv) {
     var processChar = function(str) {
       return str.replace(/ -- /, '~\\endash~')
-        .replace(/ --- /, '~\\emdash~');
+        .replace(/ --- /, '~\\emdash~')
+        .replace(/ConTeXt/, '\\CONTEXT');
     };
     recursive(cv, processChar, _.isString);
     return cv;
