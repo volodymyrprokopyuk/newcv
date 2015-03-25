@@ -13,7 +13,7 @@
        , "subject": ""
        , "description": "Strategy, business leadership, project management, marketing, accounting and finance, human resources. Business plans"
        , "school": {
-         "name": "[Escuela de Administración de Empresas](http://www.eae.es/)"
+         "name": "[Escuela de Administración de Empresas, EAE](http://www.eae.es/)"
          , "location": "Madrid" }
        , "from": "2012-09-01", "to": "in course" }
      , { "degree": { "name": "Master of Science with honors", "short": "MSc" }
@@ -49,7 +49,9 @@
         , "Third party system integration with Amadeus (SOAP/REST)"
         , "Implementation languages: Java, C#, C++, SQL, JavaScript, Ruby"
         , "Promotions (Sofware Developer, Software Engineer, Senior Software Engineer)"
-        , "Quantified accomplishments (demonstrating, confirming, manifesting, proving, verifying) competencies" ]
+        , "Quantified accomplishments (demonstrating, confirming, manifesting, proving, verifying) competencies"
+        , "back office operations, front office operations, project planning, change management, lead development, client/server architecture"
+        , "Analytical Thinker, Problem Solver, Strategic Leader, Proven Planner" ]
       , "achievements": [
         "Hight client satisfaction, high reliability of our solutions working 24/7" ] }
     , { "position": "Software Developer"
