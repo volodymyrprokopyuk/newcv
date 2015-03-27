@@ -7,7 +7,7 @@
   , "web": "[https:/github.com/volodymyrprokopyuk](https:/github.com/volodymyrprokopyuk)"
   , "address": "Alcorcón, Madrid"
   , "objective": "Project manager/Software architect"
-  , "summary": "TODO"
+  , "summary": "Proved ability for design and develop high technology solutions"
   , "education": [
      { "degree": "Master of Business Administration, MBA"
        , "description": "Strategy, business leadership, project management, marketing, accounting and finance, human resources. Business plans"
@@ -35,23 +35,13 @@
         , "description": "World's leading IT provider for the global travel and tourism industry" }
       , "from": "2009-04-01", "to": "current"
       , "accomplishments": [
-         { "role": "Problem Solver", "competencies": [
-          "Functions/products/customers"
-          , "Requirements analysis, specification, complete solution design, development and testing of distributed, transactional, concurrent applications for Amadeus GDS (Global Distribution System)"
-          , "Payment systems integration and security"
-          , "REST web API design and web applications development (Node.js and AngularJS)"
-          , "Database design of PNR (Passenger Name Record) processing server-side applications"
-          , "Information quality control process implementation"
-          , "Information presentation for client-side applications (HTML5/CSS3, PDF via LaTeX/TikZ)"
-          , "Third party system integration with Amadeus (SOAP/REST)"
-          , "Implementation languages: Java, C#, C++, SQL, JavaScript, Ruby" ] }
-        , { "role": "Team leader", "competencies": [
-          "Promotions (Sofware Developer, Software Engineer, Senior Software Engineer)"
-          , "Quantified accomplishments (demonstrating, confirming, manifesting, proving, verifying) competencies"
-          , "back office operations, front office operations, project planning, change management, lead development, client/server architecture"
-          , "Analytical Thinker, Problem Solver, Strategic Leader, Proven Planner"
-          , "Proved ability for design and develop high technology solutions"
-          , "Hight client satisfaction, high reliability of our solutions working 24/7" ] } ] }
+         { "role": "Promotions", "competencies": [
+           "Promoted throught 3 ascending positions within 6 years from Sofware Developer (2009) to Software Engineer (2010) then to Senior Software Engineer (2013) manifesting high personal commitment to company excellence and success" ] }
+         , { "role": "Default", "competencies": [
+           "Increased efficiency and productivity of products development by 70% through delivered 2 complete changes of technology stack (regular expressions and event-driven execution model) demonstrating expert leadership to build new technology stack"
+           , "Delivered over 30+ new products and solutions ahead of schedule proving innovation and continuous improvement leadership that speeded up time-to-market by 50%"
+           , "Achieved 90+% customer satisfaction confirming high QA (Quality Assurance) infrastructure design and organization competencies"
+           , "Led multiple payment system integration projects (American Express) and SQL database design for Amadeus GDS (Global Distribution System) products and solutions using B2B and B2C models and client/server architecture confirming hight analitical and problem-solving skills" ] } ] }
     , { "position": "Software Developer"
       , "company": {
         "name": "KibiTech S. L."
@@ -90,10 +80,10 @@
         , "competencies": [ "Operating systems: [Linux](https://www.kernel.org/), [Ubuntu](http://www.ubuntu.com/), [Windows](http://windows.microsoft.com/)"
           , "Programming languages: [Haskell](https://www.haskell.org/), [SQL, PL/SQL](http://www.postgresql.org/), [JavaScript, Node.js](https://nodejs.org/), RegExp, C/C++, STL, Boost, Java, Spring, C#, .NET" ] }
     , { "domain": "Database"
-      , "competencies": [ "Relational SQL databases: [PostgreSQL](http://www.postgresql.org/), [SQL Server](www.microsoft.com/es-es/server-cloud/products/sql-server/)"
+      , "competencies": [ "Relational SQL databases: Database design [PostgreSQL](http://www.postgresql.org/), [SQL Server](www.microsoft.com/es-es/server-cloud/products/sql-server/)"
         , "Document noSQL databases: [Redis](http://redis.io/)" ] }
     , { "domain": "Web development"
-      , "competencies": [ "Web frameworks: [Node.js](https://nodejs.org/), [Express.js](http://expressjs.com/), [React.js](http://facebook.github.io/react/), [Angular.js](https://angularjs.org/), [JQuery.js](http://jquery.com/), [D3.js](http://d3js.org/)"
+      , "competencies": [ "Web frameworks: REST WEB API design, WEB APP development [Node.js](https://nodejs.org/), [Express.js](http://expressjs.com/), [React.js](http://facebook.github.io/react/), [Angular.js](https://angularjs.org/), [JQuery.js](http://jquery.com/), [D3.js](http://d3js.org/)"
         , "Web design: [Bootstrap](http://getbootstrap.com/), [Foundation](http://foundation.zurb.com/), [Inkscape](https://inkscape.org/), [GIMP](http://www.gimp.org/)" ] }
     , { "domain": "Makrup/Template"
       , "competencies": [ "Markup languages: HTML5/CSS3, JSON/XML, [ConTeXt](http://contextgarden.net/), [MetaPost](http://www.tug.org/metapost.html)"
@@ -110,17 +100,11 @@
         , "French, intermediate" ] } ]
 
 
-  , "accomplishments": [ "led innovation and continuous improvement of solution development process that speeded up time-to-market by 50%"
-    , "provided expert leadership to build new technology stack"
-    , "delivered multiple new solutions ahead of schedule"
-    , "achieved 90+% customer satisfaction"
-    , "increased revenues/saved money"
-    , "increased efficiency/productivity"
-    , "new solutions/products/platforms" ]
   , "skillsx": [ "project management", "requirements analysis"
     , "desktop publishing", "team coordination", "software design"
     , "leadership", "interpersonal skills", "problem-solving skills" ]
   , "competencies": [ "leading business meetings"
     , "action planning organization and control"
-    , "technical innovation", "maintain customer satisfaction" ]
+    , "technical innovation", "maintain customer satisfaction"
+    , "Analytical Thinker, Problem Solver, Strategic Leader, Proven/Project Planner" ]
 }
