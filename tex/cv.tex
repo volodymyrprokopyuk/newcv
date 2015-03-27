@@ -4,8 +4,8 @@
 %% colors
 \setupcolor[hex]
 \definecolor[Base][h=184be5]
-\definecolor[Lighter][h=91a8eb]
 \definecolor[Light][h=4e74e5]
+\definecolor[Lighter][h=91a8eb]
 \definecolor[Dark][h=0732b4]
 \definecolor[Darker][h=052278]
 
@@ -19,29 +19,23 @@
 \define\AwEmail{\symbol[AwEmail]}
 \definesymbol[AwPhone][\getnamedglyphdirect{Awesome}{phone}]
 \define\AwPhone{\symbol[AwPhone]}
-\definesymbol[AwWeb][\getnamedglyphdirect{Awesome}{github}]
+\definesymbol[AwWeb][\getnamedglyphdirect{Awesome}{globe}]
 \define\AwWeb{\symbol[AwWeb]}
 \definesymbol[AwAddress][\getnamedglyphdirect{Awesome}{map_marker}]
 \define\AwAddress{\symbol[AwAddress]}
-\definesymbol[AwObjective][\getnamedglyphdirect{Awesome}{star}]
-\define\AwObjective{\symbol[AwObjective]}
 \definesymbol[AwEducation][\getnamedglyphdirect{Awesome}{_388}]
 \define\AwEducation{\symbol[AwEducation]}
-\definesymbol[AwEmployment][\getnamedglyphdirect{Awesome}{cogs}]
+\definesymbol[AwEmployment][\getnamedglyphdirect{Awesome}{cog}]
 \define\AwEmployment{\symbol[AwEmployment]}
-\definesymbol[AwExperience][\getnamedglyphdirect{Awesome}{cog}]
-\define\AwExperience{\symbol[AwExperience]}
-\definesymbol[AwProficiency][\getnamedglyphdirect{Awesome}{wrench}]
-\define\AwProficiency{\symbol[AwProficiency]}
-\definesymbol[AwLanguages][\getnamedglyphdirect{Awesome}{globe}]
-\define\AwLanguages{\symbol[AwLanguages]}
+\definesymbol[AwSkills][\getnamedglyphdirect{Awesome}{star}]
+\define\AwSkills{\symbol[AwSkills]}
 
 %% SourcePro font
 \starttypescript[sans][SourcePro]
 \definefontsynonym[Sans][name:sourcesansprolight]
 \definefontsynonym[SansBold][name:sourcesansprobold]
 \definefontsynonym[SansItalic][name:sourcesansprolightit]
-\definefontsynonym[SansBoldItalic][name:sourcesansprosemiboldit]
+\definefontsynonym[SansBoldItalic][name:sourcesansproit]
 \stoptypescript
 \definetypeface[SourcePro][ss][sans][SourcePro]
 \setupbodyfont[SourcePro,sans,10pt]
@@ -60,7 +54,7 @@
 \setupfootertexts[{\tfx\Dark
   \hfill{\Lighter\AwEmail}\hspace[medium]{{ email }}
   \hfill{\Lighter\AwPhone}\hspace[medium]{{ mobile }}
-  \hfill{\Lighter\AwAddress}\hspace[medium]{{ address }}\hfill}]
+  \hfill{\Lighter\AwWeb}\hspace[medium]{{ web }}\hfill}]
 
 %% lists
 \definesymbol[1][{\Lighter\AwItem}]
@@ -73,8 +67,8 @@
 {{ urls.join('\n') }}
 
 %% Background
-\definelayer[Background][state=repeat,x=0pt,y=0pt,width=\paperwidth,
-  height=\paperheight]
+\definelayer[Background][state=repeat,x=0pt,y=0pt,
+  width=\paperwidth,height=\paperheight]
 \setupbackgrounds[page][background={color,Background},
   backgroundcolor=white]
 
@@ -90,18 +84,6 @@
 \defineparagraphs[Profile][n=3,distance=10pt]
 \setupparagraphs[Profile][1][width=0.05\textwidth]
 \setupparagraphs[Profile][2][width=0.45\textwidth]
-
-%% Domains
-\defineparagraphs[Domains][n=2,distance=10pt]
-\setupparagraphs[Domains][1][width=0.34\textwidth]
-
-%% Frameworks
-\defineparagraphs[Frameworks][n=2,distance=10pt]
-\setupparagraphs[Frameworks][1][width=0.15\textwidth]
-
-%% Languages
-\defineparagraphs[Languages][n=2,distance=10pt]
-\setupparagraphs[Languages][1][width=0.34\textwidth]
 
 %\usemodule[fnt-10]
 %\ShowCompleteFont{name:fontawesome}{20pt}{1}
@@ -121,11 +103,13 @@
   {\framed[width=\paperwidth,height=8px,frame=off,
     background=color,backgroundcolor=Base]{}}
 \setlayer[Background][preset=rightbottom,y=12pt]
-  {\rotate[90]{\framed[frame=off]{\tfxx\Dark {{ locale.typesetWith }} \CONTEXT}}}
+  {\rotate[90]{\framed[frame=off]{\tfxx\Dark {{ locale.typesetWith }}
+    \CONTEXT}}}
 
 %% PROFILE %%
 \startSection
-{\tfd\Light\AwProfile}\crlf\Section
+{\tfd\Light\AwProfile}\crlf
+\rotate[90]{\bfd\Light {{ locale.profile }} }\Section
 
 \startProfile
 \Profile
@@ -134,26 +118,17 @@
 \starttable[|rs2|l|]
 \NC\Lighter\AwEmail\NC\Base {{ email }}\NC\FR
 \NC\Lighter\AwPhone\NC\Base {{ mobile }}\NC\MR
-{% if web %}\NC\Lighter\AwWeb\NC\Base {{ web }}\NC\MR{% endif %}
+\NC\Lighter\AwWeb\NC\Base {{ web }}\NC\MR
 \NC\Lighter\AwAddress\NC\Base {{ address }}\NC\LR
 \stoptable
 \stopProfile
-\stopSection
-
-%% OBJECTIVE %%
-\startSection
-{\tfd\Light\AwObjective}\crlf\Section
-
-\startSubSection
-{\bfc\Lighter\unhyphenated{ {{ locale.objective }} }}\SubSection
-{{ summary }}
-\stopSubSection
+{\bf {{ summary }} }
 \stopSection
 
 %% EDUCATION %%
 \startSection
 {\tfc\Light\AwEducation}\crlf
-\rotate[90]{\bfd\Light {{ locale.education }}\hspace[1pt]}\Section
+\rotate[90]{\bfd\Light {{ locale.education }} }\Section
 
 \startSubSection
 {\bfc\Lighter\unhyphenated{ {{ locale.education }} }}\SubSection
@@ -161,9 +136,7 @@
 {% for edu in education %}
 \startSubSection
 {\bi\Light {{ edu.from }} \endash\ {{ edu.to }} }\SubSection
-{\bfa\Dark {{ edu.degree.name }}
-{%- if edu.subject %}{{ ' in ' + edu.subject }}{% endif -%}
-{%- if edu.degree.short %}{{ ', ' + edu.degree.short }}{% endif -%} }\crlf
+{\bfa\Dark {{ edu.degree }}}\crlf
 {\bi {{ edu.school.name }}}{\it {{ ', ' + edu.school.location }} }\crlf
 {{ edu.description }}
 \stopSubSection
@@ -173,7 +146,7 @@
 %% EMPLOYMENT %%
 \startSection
 {\tfc\Light\AwEmployment}\crlf
-\rotate[90]{\bfd\Light {{ locale.employment }}\hspace[small]}\Section
+\rotate[90]{\bfd\Light {{ locale.employment }} }\Section
 
 \startSubSection
 {\bfc\Lighter\unhyphenated{ {{ locale.employment }} }}\SubSection
@@ -183,83 +156,36 @@
 {\bi\Light {{ emp.from }} \endash\ {{ emp.to }} }\SubSection
 {\bfa\Dark {{ emp.position }} }\crlf
 {\bi {{ emp.company.name }}}{\it {{ ', ' + emp.company.location }} }\crlf
-{\it {{ emp.company.description }} }
+{{ emp.company.description }}
+  {% for acc in emp.accomplishments %}
+  {\bf {{ acc.role }} }
+    \startitemize[joinedup,nowhite]
+    {% for comp in acc.competencies -%}
+    \item {{ comp }}
+    {% endfor -%}
+    \stopitemize
+  {% endfor -%}
+\stopSubSection
+{% endfor -%}
+\stopSection
+
+%% SKILLS AND COMPETENCIES %%
+\startSection
+{\tfd\Light\AwSkills}\crlf
+\rotate[90]{\bfd\Light {{ locale.skills }} }\Section
+
+\startSubSection
+{\bfc\Lighter\unhyphenated{ {{ locale.skills }} }}\SubSection
+\stopSubSection
+{% for skill in skills %}
+\startSubSection
+{\bi\Light {{ skill.domain }} }\SubSection
   \startitemize[joinedup,nowhite]
-  {% for resp in emp.responsibilities -%}
-  \item {{ resp }}
+  {% for comp in skill.competencies -%}
+  \item {{ comp }}
   {% endfor -%}
   \stopitemize
 \stopSubSection
 {% endfor -%}
-\stopSection
-
-%% EXPERIENCE %%
-\startSection
-{\tfd\Light\AwExperience}\crlf
-\rotate[90]{\bfd\Light {{ locale.experience }}\hspace[small]}\Section
-
-\startSubSection
-{\bfc\Lighter\unhyphenated{ {{ locale.experience }} }}\SubSection
-\stopSubSection
-{% for exp in experience %}
-\startSubSection
-{\bi\Light {{ exp.domain }} }\SubSection
-{{ exp.description.before }}
-{%- if exp.description.experiences.length %}
-  \startitemize[joinedup,nowhite]
-  {% for ex in exp.description.experiences -%}
-  \item {{ ex }}
-  {% endfor -%}
-  \stopitemize
-{%- endif %}
-{{ exp.description.after }}
-\stopSubSection
-{% endfor -%}
-\stopSection
-
-%% PROFICIENCY %%
-{% if proficiency -%}
-\startSection
-{\tfd\Light\AwProficiency}\crlf
-\rotate[90]{\bfd\Light {{ locale.proficiency }}\hspace[small]}\Section
-
-\startSubSection
-{\bfc\Lighter\unhyphenated{ {{ locale.proficiency }} }}\SubSection
-\stopSubSection
-{% for prof in proficiency %}
-\startSubSection
-{\bi\Light {{ prof.domain }} }\SubSection
-\startDomains
-{%- for subdom in prof.subdomains %}
-{\bf\Dark {{ subdom.subdomain }} }
-\startFrameworks
-{%- for framework in subdom.frameworks %}
-{\bi {{ framework }} }\crlf
-{%- if loop.index0 == loop.length // 2 - 1 %}\Frameworks{% endif -%}
-{% endfor %}
-\stopFrameworks
-{%- if loop.index0 == loop.length // 2 - 1 %}\Domains{% endif -%}
-{% endfor %}
-\stopDomains
-\stopSubSection
-{% endfor -%}
-\stopSection
-{%- endif %}
-
-%% LANGUAGES %%
-\startSection
-{\tfd\Light\AwLanguages}\crlf
-\rotate[90]{\bfd\Light {{ locale.languages }}\hspace[small]}\Section
-
-\startSubSection
-{\bfc\Lighter\unhyphenated{ {{ locale.languages }} }}\SubSection
-
-\startLanguages
-{%- for lang in languages %}
-{\bf\Dark {{ lang.language }} } {{ lang.level }}\crlf
-{%- if loop.index0 == loop.length // 2 - 1 %}\Languages{% endif -%}
-{% endfor %}
-\stopLanguages
-\stopSubSection
 \stopSection
 \stoptext

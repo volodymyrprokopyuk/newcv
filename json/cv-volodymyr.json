@@ -9,22 +9,19 @@
   , "objective": "Project manager/Software architect"
   , "summary": "TODO"
   , "education": [
-     { "degree": { "name": "Master of Business Administration", "short": "MBA" }
-       , "subject": ""
+     { "degree": "Master of Business Administration, MBA"
        , "description": "Strategy, business leadership, project management, marketing, accounting and finance, human resources. Business plans"
        , "school": {
          "name": "[Escuela de Administración de Empresas, EAE](http://www.eae.es/)"
          , "location": "Madrid" }
        , "from": "2012-09-01", "to": "in course" }
-     , { "degree": { "name": "Master of Science with honors", "short": "MSc" }
-       , "subject": "Computer Systems and Networking"
+     , { "degree": "Master of Science with honors in Computer Systems and Networking, MSc"
        , "description": "Computer systems architecture and design. Computer networks routing algorithms optimization"
        , "school": {
          "name": "[National Technical University of Oil and Gas](http://eng.nung.edu.ua/)"
          , "location": "Ukraine" }
        , "from": "2007-09-01", "to": "2008-06-01" }
-     , { "degree": { "name": "Bachelor of Science with honors", "short": "BSc" }
-       , "subject": "Computer Science"
+     , { "degree": "Bachelor of Science with honors in Computer Science, BSc"
        , "description": "Architecture, design and implementation of general purpose computer systems"
        , "school": {
          "name": "[National Technical University of Oil and Gas](http://eng.nung.edu.ua/)"
@@ -36,119 +33,81 @@
         "name": "[Amadeus IT Group](http://www.amadeus.com/)"
         , "location": "Madrid"
         , "description": "World's leading IT provider for the global travel and tourism industry" }
-      , "department": "Department of Technology and IT Solutions"
       , "from": "2009-04-01", "to": "current"
-      , "responsibilities": [
-        "Functions/products/customers"
-        , "Requirements analysis, specification, complete solution design, development and testing of distributed, transactional, concurrent applications for Amadeus GDS (Global Distribution System)"
-        , "Payment systems integration and security"
-        , "REST web API design and web applications development (Node.js and AngularJS)"
-        , "Database design of PNR (Passenger Name Record) processing server-side applications"
-        , "Information quality control process implementation"
-        , "Information presentation for client-side applications (HTML5/CSS3, PDF via LaTeX/TikZ)"
-        , "Third party system integration with Amadeus (SOAP/REST)"
-        , "Implementation languages: Java, C#, C++, SQL, JavaScript, Ruby"
-        , "Promotions (Sofware Developer, Software Engineer, Senior Software Engineer)"
-        , "Quantified accomplishments (demonstrating, confirming, manifesting, proving, verifying) competencies"
-        , "back office operations, front office operations, project planning, change management, lead development, client/server architecture"
-        , "Analytical Thinker, Problem Solver, Strategic Leader, Proven Planner"
-        , "Proved ability for design and develop high technology solutions" ]
-      , "achievements": [
-        "Hight client satisfaction, high reliability of our solutions working 24/7" ] }
+      , "accomplishments": [
+         { "role": "Problem Solver", "competencies": [
+          "Functions/products/customers"
+          , "Requirements analysis, specification, complete solution design, development and testing of distributed, transactional, concurrent applications for Amadeus GDS (Global Distribution System)"
+          , "Payment systems integration and security"
+          , "REST web API design and web applications development (Node.js and AngularJS)"
+          , "Database design of PNR (Passenger Name Record) processing server-side applications"
+          , "Information quality control process implementation"
+          , "Information presentation for client-side applications (HTML5/CSS3, PDF via LaTeX/TikZ)"
+          , "Third party system integration with Amadeus (SOAP/REST)"
+          , "Implementation languages: Java, C#, C++, SQL, JavaScript, Ruby" ] }
+        , { "role": "Team leader", "competencies": [
+          "Promotions (Sofware Developer, Software Engineer, Senior Software Engineer)"
+          , "Quantified accomplishments (demonstrating, confirming, manifesting, proving, verifying) competencies"
+          , "back office operations, front office operations, project planning, change management, lead development, client/server architecture"
+          , "Analytical Thinker, Problem Solver, Strategic Leader, Proven Planner"
+          , "Proved ability for design and develop high technology solutions"
+          , "Hight client satisfaction, high reliability of our solutions working 24/7" ] } ] }
     , { "position": "Software Developer"
       , "company": {
         "name": "KibiTech S. L."
         , "location": "Madrid"
         , "description": "Computer entertainment technological startup" }
-      , "department": "Department of Software Development"
       , "from": "2009-01-01", "to": "2009-03-01"
-      , "responsibilities": [
-        "Development of rendering engine for SVG (Scalable Vector Graphics) based browser"
-        , "Development platform: Ubuntu Linux"
-        , "Technologies: Cairo, OpenGL, GLSL (OpenGL Shading Language) and GStreamer"
-        , "Implementation language: C++" ]
-      , "achievements": [ ] }
+      , "accomplishments": [
+        { "role": "Innovator", "competencies": [
+          "Development of rendering engine for SVG (Scalable Vector Graphics) based browser"
+          , "Development platform: Ubuntu Linux"
+          , "Technologies: Cairo, OpenGL, GLSL (OpenGL Shading Language) and GStreamer"
+          , "Implementation language: C++" ] } ] }
     , { "position": "Software Developer (internship)"
       , "company": {
         "name": "[GlobalLogic](https://www.globallogic.com/)"
         , "location": "Kiev, Ukraine"
         , "description": "Full-lifecycle product development services worldwide provider" }
-      , "department": "Department of Telecommunications"
       , "from": "2008-01-01", "to": "2008-06-01"
-      , "responsibilities": [
-        "Telecommunication systems development based on IBM Mainframe System/390 and z/Architecture"
-        , "Implementation language: IBM Mainframe Assembler" ]
-      , "achievements": [ ] } ]
-  , "experience": [
+      , "accomplishments": [
+        { "role": "Project Manager", "competencies": [
+          "Telecommunication systems development based on IBM Mainframe System/390 and z/Architecture"
+          , "Implementation language: IBM Mainframe Assembler" ] } ] } ]
+  , "skills": [
     { "domain": "Project management"
-      , "description": {
-        "before": "Experience in planning, managing, executing and controlling collaborative projects in teams of 2 -- 5 members with effective objectives achievement based on clean methodology and humanity. Practical application of methodologies promoted by [COBIT](http://www.isaca.org/cobit) and [PMBOK](http://www.pmi.org/PMBOK-Guide-and-Standards.aspx)"
-        , "experiences": [ ], "after": "" } }
+      , "competencies": [
+        "Experience in planning, managing, executing and controlling collaborative projects in teams of 2 -- 5 members with effective objectives achievement based on clean methodology and humanity. Practical application of methodologies promoted by [COBIT](http://www.isaca.org/cobit) and [PMBOK](http://www.pmi.org/PMBOK-Guide-and-Standards.aspx)" ] }
     , { "domain": "Software architecture"
-      , "description": {
-        "before": "Experience in software architecture design of server-side solutions for Amadeus GDS:"
-        , "experiences": [
-          "Concurrent multithreaded and event-based servers design and implementation"
-          , "Relational and document-oriented datase design and implementation"
-          , "REST web API design and implementation with Node.js"
-          , "SPA (Single Page Application) design and implementation with AngularJS" ]
-        , "after": "Functional and object-oriented programming paradigms. Software design patterns and functional programming techniques" } } ]
-  , "proficiency": [
-    { "domain": "Planform/Language", "subdomains": [
-      { "subdomain": "Operating systems"
-        , "frameworks": [ "[Linux](https://www.kernel.org/)"
-          , "[Ubuntu](http://www.ubuntu.com/)"
-          , "[Windows](http://windows.microsoft.com/)" ] }
-      , { "subdomain": "Programming languages"
-        , "frameworks": [ "[Haskell](https://www.haskell.org/)"
-          , "[SQL, PL/SQL](http://www.postgresql.org/)"
-          , "[JavaScript, Node.js](https://nodejs.org/)"
-          , "RegExp", "C/C++, STL, Boost", "Java, Spring", "C#, .NET" ] } ] }
-    , { "domain": "Database", "subdomains": [
-      { "subdomain": "Relational SQL databases"
-        , "frameworks": [ "[PostgreSQL](http://www.postgresql.org/)"
-          , "[SQL Server](www.microsoft.com/es-es/server-cloud/products/sql-server/)" ] }
-      , { "subdomain": "Document noSQL databases"
-        , "frameworks": [ "[Redis](http://redis.io/)" ] } ] }
-    , { "domain": "Web development", "subdomains": [
-      { "subdomain": "Web frameworks"
-        , "frameworks": [ "[Node.js](https://nodejs.org/)"
-          , "[Express.js](http://expressjs.com/)"
-          , "[React.js](http://facebook.github.io/react/)"
-          , "[Angular.js](https://angularjs.org/)"
-          , "[JQuery.js](http://jquery.com/)"
-          , "[D3.js](http://d3js.org/)" ] }
-      , { "subdomain": "Web design"
-        , "frameworks": [ "[Bootstrap](http://getbootstrap.com/)"
-          , "[Foundation](http://foundation.zurb.com/)"
-          , "[Inkscape](https://inkscape.org/)"
-          , "[GIMP](http://www.gimp.org/)" ] } ] }
-    , { "domain": "Makrup/Template", "subdomains": [
-      { "subdomain": "Markup languages"
-        , "frameworks": [ "HTML5/CSS3", "JSON/XML"
-          , "[ConTeXt](http://contextgarden.net/)"
-          , "[MetaPost](http://www.tug.org/metapost.html)" ] }
-      , { "subdomain": "Templating engines"
-        , "frameworks": [ "[Jade](http://jade-lang.com/)"
-          , "[Nunjucks](http://mozilla.github.io/nunjucks/)"
-          , "[Stylus](http://learnboost.github.io/stylus/)" ] } ] }
-    , { "domain": "Development tools", "subdomains": [
-      { "subdomain": "Version control/Automation"
-        , "frameworks": [ "[Git](http://git-scm.com/)"
-          , "[tig](https://github.com/jonas/tig)"
-          , "[Gitolite](https://github.com/sitaramc/gitolite)"
-          , "[Shake](http://shakebuild.com/)"
-          , "[GNU Bash](http://www.gnu.org/software/bash/)" ] }
-      , { "subdomain": "Text editors/Tools"
-        , "frameworks": [ "[Vim](http://www.vim.org/)"
-          , "[Emacs](http://www.gnu.org/software/emacs/)"
-          , "[Tmux](http://tmux.sourceforge.net/)" ] } ] } ]
-  , "languages": [
-    { "language": "English", "level": "fluent" }
-    , { "language": "Ukrainian", "level": "mothertongue" }
-    , { "language": "Spanish", "level": "bilingual" }
-    , { "language": "Russian", "level": "mothertongue" }
-    , { "language": "French", "level": "intermediate" } ]
+      , "competencies": [
+        "Experience in software architecture design of server-side solutions for Amadeus GDS:"
+        , "Concurrent multithreaded and event-based servers design and implementation"
+        , "Relational and document-oriented datase design and implementation"
+        , "REST web API design and implementation with Node.js"
+        , "SPA (Single Page Application) design and implementation with AngularJS"
+        , "Functional and object-oriented programming paradigms. Software design patterns and functional programming techniques" ] }
+    , { "domain": "Planform/Language"
+        , "competencies": [ "Operating systems: [Linux](https://www.kernel.org/), [Ubuntu](http://www.ubuntu.com/), [Windows](http://windows.microsoft.com/)"
+          , "Programming languages: [Haskell](https://www.haskell.org/), [SQL, PL/SQL](http://www.postgresql.org/), [JavaScript, Node.js](https://nodejs.org/), RegExp, C/C++, STL, Boost, Java, Spring, C#, .NET" ] }
+    , { "domain": "Database"
+      , "competencies": [ "Relational SQL databases: [PostgreSQL](http://www.postgresql.org/), [SQL Server](www.microsoft.com/es-es/server-cloud/products/sql-server/)"
+        , "Document noSQL databases: [Redis](http://redis.io/)" ] }
+    , { "domain": "Web development"
+      , "competencies": [ "Web frameworks: [Node.js](https://nodejs.org/), [Express.js](http://expressjs.com/), [React.js](http://facebook.github.io/react/), [Angular.js](https://angularjs.org/), [JQuery.js](http://jquery.com/), [D3.js](http://d3js.org/)"
+        , "Web design: [Bootstrap](http://getbootstrap.com/), [Foundation](http://foundation.zurb.com/), [Inkscape](https://inkscape.org/), [GIMP](http://www.gimp.org/)" ] }
+    , { "domain": "Makrup/Template"
+      , "competencies": [ "Markup languages: HTML5/CSS3, JSON/XML, [ConTeXt](http://contextgarden.net/), [MetaPost](http://www.tug.org/metapost.html)"
+        , "Templating engines: [Jade](http://jade-lang.com/), [Nunjucks](http://mozilla.github.io/nunjucks/), [Stylus](http://learnboost.github.io/stylus/)" ] }
+    , { "domain": "Development tools"
+      , "competencies": [ "Version control/Automation: [Git](http://git-scm.com/), [tig](https://github.com/jonas/tig), [Gitolite](https://github.com/sitaramc/gitolite), [Shake](http://shakebuild.com/), [GNU Bash](http://www.gnu.org/software/bash/)"
+        , "Text editors/Tools: [Vim](http://www.vim.org/), [Emacs](http://www.gnu.org/software/emacs/), [Tmux](http://tmux.sourceforge.net/)" ] }
+    , { "domain": "Languages"
+      , "competencies": [
+        "English, fluent"
+        , "Ukrainian, mothertongue"
+        , "Spanish, bilingual"
+        , "Russian, mothertongue"
+        , "French, intermediate" ] } ]
 
 
   , "accomplishments": [ "led innovation and continuous improvement of solution development process that speeded up time-to-market by 50%"
@@ -158,7 +117,7 @@
     , "increased revenues/saved money"
     , "increased efficiency/productivity"
     , "new solutions/products/platforms" ]
-  , "skills": [ "project management", "requirements analysis"
+  , "skillsx": [ "project management", "requirements analysis"
     , "desktop publishing", "team coordination", "software design"
     , "leadership", "interpersonal skills", "problem-solving skills" ]
   , "competencies": [ "leading business meetings"

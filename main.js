@@ -46,16 +46,15 @@ var pwhile = function(pred, act, seed) {
 
 var locales = { };
 
-locales.en = { typesetWith: 'Typeset with', objective: 'Objective'
+locales.en = { typesetWith: 'Typeset with', profile: 'Profile'
   , education: 'Education', employment: 'Employment'
-  , experience: 'Experience', proficiency: 'Technical proficiency'
-  , languages: 'Languages'
+  , skills: 'Skills and Competencies'
 };
 
-locales.es = { typesetWith: 'Tipografía', objective: 'Objetivo'
+locales.es = { typesetWith: 'Tipografía', profile: 'Perfil'
   , education: 'Formación', employment: 'Experiencia laboral'
-  , experience: 'Experiencia profecional', proficiency: 'Conocimientos técnicos'
-  , languages: 'Idiomas' };
+  , skills: 'Habilidades y Competencias'
+};
 
 var readSourceFile = function(opts) {
   var getSourceFile = function() {
