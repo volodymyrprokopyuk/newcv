@@ -7,7 +7,7 @@
   , "web": "[https:/github.com/volodymyrprokopyuk](https:/github.com/volodymyrprokopyuk)"
   , "address": "Alcorcón, Madrid"
   , "objective": "IT Project manager/Software architect"
-  , "summary": "Proved ability for design and develop high technology solutions applying strong analytical skills and innovative problem resolution expertise. Over 6 years of success experience in managing and developing IT projects. Strong IT proficiencies with excellent communication skills. IT project management focused with polished interpersonal skills. Highly organized, energetic and hardworking, detail-oriented. Skilled in managing multiple projects and coordinating activities. Results-oriented leader with outstanding motivational skills. Developed staff and built productive teams. Demonstrated competence in Software Project Management. Bilingual: English and Spanish"
+  , "summary": "Proved ability for design and develop high technology solutions applying strong analytical skills and innovative problem resolution expertise. Over 6 years of success experience in managing and developing IT projects. Strong IT proficiencies with excellent communication skills. IT project management focused with polished interpersonal skills. Highly organized, energetic and hardworking, detail-oriented. Skilled in managing multiple projects and coordinating activities. Results-oriented leader with outstanding motivational skills. Developed staff and built productive teams. Demonstrated competence in Software Project Management. Bilingual: English and Spanish. Excellent verbal and written communication skills"
   , "education": [
      { "degree": "Master of Business Administration, MBA"
        , "description": "Strategy, business leadership, project management, marketing, accounting and finance, human resources. Business plans"
@@ -75,28 +75,28 @@
         , "Delivered over 30+ projects ahead of schedule proving excellent multitasking and time management skills" ] }
     , { "domain": "Software architecture"
       , "competencies": [
-        "Analyzed client requirements and designed software architecture using FP (Functional Programming) and OOP (Object-Oriented Programming) paradigms confirming outstanding analytical and abstract thinking skills"
-        , "Designed and developed concurrent, multithreaded and event-based back office servers for Amadeus GDS demonstrating high competency in building reliable highly available systems working 24/7 and QA (Quality Assurance) process management"
-        , "Designed and developed interactive and user-friendly front office applications for Amadeus GDS proving solid competency in designing REST WEB API, SPA (Single Page Applicaiton) and applying UI/UX (User Interface/User Experience) principles"
-        , "Expert competency in Operating Systems ([Linux](https://www.kernel.org/), [Ubuntu](http://www.ubuntu.com/)), Programming Platforms ([Node.js/JavaScript](https://nodejs.org/), C/C++/STL/Boost, Java/Spring, C#/.NET, [Haskell](https://www.haskell.org/)), Version Control ([Git](http://git-scm.com/), [tig](https://github.com/jonas/tig), [Gitolite](https://github.com/sitaramc/gitolite)), Process Automation ([Shake](http://shakebuild.com/), [GNU Bash](http://www.gnu.org/software/bash/)), Text editors ([Vim](http://www.vim.org/), [Emacs](http://www.gnu.org/software/emacs/), [Tmux](http://tmux.sourceforge.net/))" ] }
-    , { "domain": "Database design"
+        "Analyzed client requirements and designed software system architecture using FP (Functional Programming) and OOP (Object-Oriented Programming) paradigms confirming excellent technical leadership, outstanding analytical, abstract thinking and problem decomposition skills"
+        , "Designed and developed concurrent, multithreaded and event-based back office servers for Amadeus GDS (Global Distribution System) demonstrating superb competency in building reliable, highly available systems working 24/7 and QA (Quality Assurance) process management"
+        , "Designed and developed interactive and user-friendly front office applications for Amadeus GDS (Global Distribution System) proving solid competency in designing RESTful WEB API, developing SPA (Single Page Applicaiton) and applying UI/UX (User Interface/User Experience) principles"
+        , "Expert competency in Agile Methodologies, Operating Systems ([Linux](https://www.kernel.org/)/[Ubuntu](http://www.ubuntu.com/)), Programming Platforms ([Node.js/JavaScript](https://nodejs.org/), [C/C++/STL](http://www.cplusplus.com/)/[Boost](http://www.boost.org/), [Java](http://www.java.com/)/[Spring](https://spring.io/), [C#/.NET](http://www.microsoft.com/net), [Haskell](https://www.haskell.org/)), Version Control ([Git](http://git-scm.com/), [tig](https://github.com/jonas/tig), [Gitolite](https://github.com/sitaramc/gitolite)), Process Automation ([Shake](http://shakebuild.com/), [GNU Bash](http://www.gnu.org/software/bash/)), Text Editors ([Vim](http://www.vim.org/), [Emacs](http://www.gnu.org/software/emacs/), [Tmux](http://tmux.sourceforge.net/))" ] }
+    , { "domain": "Database design (RDBMS)"
       , "competencies": [
-        "Designed relational and document oriented data models for query intensive flight booking systems for Amadeus GDS proving solid competency in database design and normalization for efficient data querying and storage using [SQL, PL/SQL](http://www.postgresql.org/), [PostgreSQL](http://www.postgresql.org/), [SQL Server](www.microsoft.com/es-es/server-cloud/products/sql-server/)" ] }
+        "Designed and developed relational (SQL) and document-oriented (noSQL) data models of query intensive booking systems for Amadeus GDS (Global Distribution System) using [PostgreSQL](http://www.postgresql.org/), [SQL Server](www.microsoft.com/es-es/server-cloud/products/sql-server/) proving solid competency in database design, data modeling, data decomposition and normalization for efficient data querying and storage" ] }
     , { "domain": "Web development"
       , "competencies": [
-        "Designed diverse RESTful WEB API using B2B and B2C models for Amadeus GDS using [Node.js](https://nodejs.org/), [Express.js](http://expressjs.com/) confirming competency in system integration"
-        , "Designed and developed numerous SPA (Single Page Application) using [React.js](http://facebook.github.io/react/), [Angular.js](https://angularjs.org/) demonstrating competency in building modern and fast WEB applications with RESTful back end"
-        , "Designed User Interfaces using HTML5/CSS3, [Jade](http://jade-lang.com/), [Stylus](http://learnboost.github.io/stylus/), [Bootstrap](http://getbootstrap.com/), [Foundation](http://foundation.zurb.com/), [Inkscape](https://inkscape.org/), [GIMP](http://www.gimp.org/) manifesting good UI/UX and WEB desing skills" ] }
+        "Designed and developed diverse RESTful WEB API using B2B and B2C models for E-commerce and payment systems integration using [Node.js](https://nodejs.org/), [Express.js](http://expressjs.com/) confirming competency in designing interfaces and establishing processes for system integration"
+        , "Designed and developed numerous SPA (Single Page Application) using [React.js](http://facebook.github.io/react/), [Angular.js](https://angularjs.org/) demonstrating outstanding competency in building modern, SEO-enabled (Search Engine Optimization), E-commerce WEB applications with RESTful back end"
+        , "Designed and developed User Interfaces using [HTML5](http://www.w3.org/html/)/[CSS3](http://www.w3.org/Style/CSS/), [Jade](http://jade-lang.com/), [Stylus](http://learnboost.github.io/stylus/), [Bootstrap](http://getbootstrap.com/), [Foundation](http://foundation.zurb.com/), [Inkscape](https://inkscape.org/), [GIMP](http://www.gimp.org/) manifesting good UI/UX (User Interface/User Experience) and WEB desing skills" ] }
     , { "domain": "Desktop publishing"
       , "competencies": [
-        "Designed and developed several automated professional quality PDF generation systems for booked trip itinerary and ticket billing using [ConTeXt](http://contextgarden.net/), [MetaPost](http://www.tug.org/metapost.html), [Nunjucks](http://mozilla.github.io/nunjucks/) verifying good competency in desktop publishing and typographic design and document composition" ] }
+        "Designed and developed 4 automated professional quality PDF generation systems for Amadeus itinerary and ticket billing workflows using [ConTeXt](http://contextgarden.net/), [MetaPost](http://www.tug.org/metapost.html), [Nunjucks](http://mozilla.github.io/nunjucks/) verifying proven competency in desktop publishing, document composition and typographic design" ] }
     , { "domain": "Languages"
       , "competencies": [
-        "English, fluent. Excellent verbal and written communication skills"
-        , "Ukrainian, mothertongue"
-        , "Spanish, bilingual"
-        , "Russian, mothertongue"
-        , "French, intermediate" ] } ]
+        "English --- fluent"
+        , "Spanish --- bilingual"
+        , "Ukrainian --- mothertongue"
+        , "Russian --- mothertongue"
+        , "French --- intermediate" ] } ]
 
   , "competencies": [ "technical innovation"
     , "Analytical Thinker, Problem Solver, Strategic Leader, Proven/Project Planner" ]
