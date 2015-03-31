@@ -3,4 +3,5 @@
 .build/
 node_modules/
 tex/cv-*.tex
+txt/cv-*.txt
 pdf/

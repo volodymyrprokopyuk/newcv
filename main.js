@@ -113,11 +113,15 @@ var processTeX = function(cv) {
   return process(cv);
 };
 
+var processTXT = function(cv) {
+  return cv;
+};
+
 var processErr = function(cv) {
   return Promise.reject('no target file supplied');
 };
 
-var formats = { 'tex': processTeX, 'err': processErr };
+var formats = { 'tex': processTeX, 'txt': processTXT, 'err': processErr };
 
 var processSourceFile = function(processFormat, cv) {
   var hideContent = function(cv) {
