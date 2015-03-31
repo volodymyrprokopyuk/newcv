@@ -131,9 +131,22 @@ var processSourceFile = function(cv) {
   return process(cv);
 };
 
-var renderTargetFile = function(cv) {
-  return render('tex/cv.tex', cv);
+var renderTargetFile = function(opts, cv) {
+  var getTargetFileExt = function() {
+    return new Promise(function(resolve, reject) {
+      var rFileExt = /\.(\w{3,4})$/;
+      opts.target && rFileExt.test(opts.target)
+        ? resolve(opts.target.match(rFileExt)[1])
+        : reject('no target file supplied');
+    });
+  };
+  var getTemplate = function(fileExt) {
+    return fileExt + '/cv.' + fileExt;
+  };
+  var renderCV = _.partial(render, _, cv);
+  return pipe([ getTargetFileExt, getTemplate, renderCV ]);
 };
+renderTargetFile = _.partial(renderTargetFile, commander);
 
 var writeTargetFile = function(opts, content) {
   var getTargetFile = function() {
