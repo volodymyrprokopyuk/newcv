@@ -1,2 +1,2 @@
 #!/usr/bin/env node
-require('../main').renderTeX();
+require('../main').renderCV();

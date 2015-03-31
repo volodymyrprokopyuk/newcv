@@ -68,7 +68,58 @@ var readSourceFile = function(opts) {
 };
 readSourceFile = _.partial(readSourceFile, commander);
 
-var processSourceFile = function(cv) {
+var getTargetFormat = function(opts) {
+  var rFileExt = /\.(\w{3,4})$/;
+  return opts.target && rFileExt.test(opts.target)
+    ? opts.target.match(rFileExt)[1] : '';
+};
+
+var processTeX = function(cv) {
+  var processTeXURLs = function(cv) {
+    var counter = 0;
+    var processTeXURL = function(str) {
+      return str.replace(/\[([^\]]+)\]\(([^\)]+)\)/g
+        , function(markup, name, url) {
+        ++counter;
+        var useURL = format('\\useURL[url:auto%s][%s][][%s]'
+          , counter, url, name);
+        cv.urls.push(useURL);
+        return format('\\from[url:auto%s]', counter);
+      });
+    };
+    cv.urls = [ ];
+    recursive(cv, processTeXURL, _.isString);
+    return cv;
+  };
+  var processTeXMarkup = function(cv) {
+    var processMarkup = function(str) {
+      return str.replace(/ -- /, '~\\endash~')
+        .replace(/ --- /, '~\\emdash~')
+        .replace(/ConTeXt/, '\\CONTEXT');
+    };
+    recursive(cv, processMarkup, _.isString);
+    return cv;
+  };
+  var escapeTeXChars = function(cv) {
+    var escapeChars = function(str) {
+      return str.replace(/[&%#_\$\{\}]/g, function(m) {
+        return '\\' + m;
+      });
+    };
+    recursive(cv, escapeChars, _.isString);
+    return cv;
+  };
+  var process = _.flow(processTeXURLs, processTeXMarkup, escapeTeXChars);
+  return process(cv);
+};
+
+var processErr = function(cv) {
+  return Promise.reject('no target file supplied');
+};
+
+var formats = { 'tex': processTeX, 'err': processErr };
+
+var processSourceFile = function(processFormat, cv) {
   var hideContent = function(cv) {
     cv.education = _.reject(cv.education, 'hide');
     cv.employment = _.reject(cv.employment, 'hide');
@@ -92,59 +143,20 @@ var processSourceFile = function(cv) {
     recursive(cv, processDate, isDate);
     return cv;
   };
-  var processURLs = function(cv) {
-    var counter = 0;
-    var processURL = function(str) {
-      return str.replace(/\[([^\]]+)\]\(([^\)]+)\)/g
-        , function(markup, name, url) {
-        ++counter;
-        var useURL = format('\\useURL[url:auto%s][%s][][%s]'
-          , counter, url, name);
-        cv.urls.push(useURL);
-        return format('\\from[url:auto%s]', counter);
-      });
-    };
-    cv.urls = [ ];
-    recursive(cv, processURL, _.isString);
-    return cv;
-  };
-  var processChars = function(cv) {
-    var processChar = function(str) {
-      return str.replace(/ -- /, '~\\endash~')
-        .replace(/ --- /, '~\\emdash~')
-        .replace(/ConTeXt/, '\\CONTEXT');
-    };
-    recursive(cv, processChar, _.isString);
-    return cv;
-  };
-  var escapeTeX = function(cv) {
-    var escape = function(str) {
-      return str.replace(/[&%#_\$\{\}]/g, function(m) {
-        return '\\' + m;
-      });
-    };
-    recursive(cv, escape, _.isString);
-    return cv;
-  };
-  var process = _.flow(hideContent, processLocale, processDates, processURLs
-    , processChars, escapeTeX);
+  var process = _.flow(hideContent, processLocale, processDates
+    , processFormat);
   return process(cv);
 };
+processSourceFile = _.partial(processSourceFile
+  , formats[getTargetFormat(commander) || 'err' ]);
 
 var renderTargetFile = function(opts, cv) {
-  var getTargetFileExt = function() {
-    return new Promise(function(resolve, reject) {
-      var rFileExt = /\.(\w{3,4})$/;
-      opts.target && rFileExt.test(opts.target)
-        ? resolve(opts.target.match(rFileExt)[1])
-        : reject('no target file supplied');
-    });
-  };
-  var getTemplate = function(fileExt) {
-    return fileExt + '/cv.' + fileExt;
+  var getTemplate = function() {
+    var format = getTargetFormat(opts);
+    return format + '/cv.' + format;
   };
   var renderCV = _.partial(render, _, cv);
-  return pipe([ getTargetFileExt, getTemplate, renderCV ]);
+  return pipe([ getTemplate, renderCV ]);
 };
 renderTargetFile = _.partial(renderTargetFile, commander);
 
@@ -160,9 +172,9 @@ var writeTargetFile = function(opts, content) {
 };
 writeTargetFile = _.partial(writeTargetFile, commander);
 
-var renderTeX = function() {
+var renderCV = function() {
   return pipe([ readSourceFile, processSourceFile, renderTargetFile
     , writeTargetFile, process.exit ]).catch(logError);
 };
 
-module.exports = { renderTeX: renderTeX };
+module.exports = { renderCV: renderCV };
