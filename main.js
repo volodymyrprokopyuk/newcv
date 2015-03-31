@@ -69,6 +69,12 @@ var readSourceFile = function(opts) {
 readSourceFile = _.partial(readSourceFile, commander);
 
 var processSourceFile = function(cv) {
+  var hideContent = function(cv) {
+    cv.education = _.reject(cv.education, 'hide');
+    cv.employment = _.reject(cv.employment, 'hide');
+    cv.skills = _.reject(cv.skills, 'hide');
+    return cv;
+  };
   var processLocale = function(cv) {
     cv.locale = locales[cv.meta.locale] || locales['en'];
     return cv;
@@ -120,8 +126,8 @@ var processSourceFile = function(cv) {
     recursive(cv, escape, _.isString);
     return cv;
   };
-  var process = _.flow(processLocale, processDates, processURLs, processChars
-    , escapeTeX);
+  var process = _.flow(hideContent, processLocale, processDates, processURLs
+    , processChars, escapeTeX);
   return process(cv);
 };
 

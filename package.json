@@ -10,7 +10,7 @@
   }, "licence": "MIT"
   , "dependencies": {
     "moment": "^2.9.x"
-    , "lodash": "^3.5.x"
+    , "lodash": "^3.6.x"
     , "bluebird": "^2.9.x"
     , "commander": "^2.7.x"
     , "nunjucks": "^1.2.x"

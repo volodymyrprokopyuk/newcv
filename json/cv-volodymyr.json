@@ -7,10 +7,10 @@
   , "web": "[https:/github.com/volodymyrprokopyuk](https:/github.com/volodymyrprokopyuk)"
   , "address": "Alcorcón, Madrid"
   , "objective": "IT Project manager/Software architect"
-  , "summary": "Proved ability for design and develop high technology solutions applying strong analytical skills and innovative problem resolution expertise. Over 6 years of success experience in managing and developing IT projects. Strong IT proficiencies with excellent communication skills. IT project management focused with polished interpersonal skills. Highly organized, energetic and hardworking, detail-oriented. Skilled in managing multiple projects and coordinating activities. Results-oriented leader with outstanding motivational skills. Developed staff and built productive teams. Demonstrated competence in Software Project Management. Bilingual: English and Spanish. Excellent verbal and written communication skills"
+  , "summary": "Over 6 years of success experience in managing and developing IT projects. Results-oriented leader with outstanding motivational skills. Developed staff and built productive teams. IT project management focused with polished interpersonal skills. Proved competency in designing and developing high technology solutions applying strong analytical skills and technological innovation expertise. Strong IT proficiencies with excellent communication skills. Highly organized with strong attention to detail and focus on result. Bilingual: English and Spanish"
   , "education": [
      { "degree": "Master of Business Administration, MBA"
-       , "description": "Strategy, business leadership, project management, marketing, accounting and finance, human resources. Business plans"
+       , "description": "Strategy, project management, marketing, accounting and finance, human resources. Business plans"
        , "school": {
          "name": "[Escuela de Administración de Empresas, EAE](http://www.eae.es/)"
          , "location": "Madrid" }
@@ -36,14 +36,15 @@
       , "from": "2009-04-01", "to": "current"
       , "accomplishments": [
          { "role": "Promotions", "competencies": [
-           "Promoted 3 times in 6 years from Sofware Developer (2009) to Software Engineer (2010) then to Senior Software Engineer (2013) manifesting high personal commitment to company excellence and success" ] }
-         , { "role": "Default", "competencies": [
-           "Increased efficiency and productivity of products development by 70% through delivered 2 complete changes of technology stack (regular expressions and event-driven execution model) demonstrating expert leadership to build new technology stack"
-           , "Delivered over 30+ new products and solutions ahead of schedule proving innovation and continuous improvement leadership that speeded up time-to-market by 50%"
-           , "Achieved 90+% customer satisfaction confirming high QA (Quality Assurance) infrastructure design and organization competencies"
-           , "Led multiple payment system integration projects (American Express) and SQL database design for Amadeus GDS (Global Distribution System) products and solutions using B2B and B2C models and client/server architecture confirming hight analitical and problem-solving skills"
-           , "Consistently received highest rating on annual reviews"
-] } ] }
+           "Promoted 3 times in 6 years from Software Developer (2009) to Software Engineer (2010) then to Senior Software Engineer (2013) manifesting high personal commitment to company excellence and success"
+           , "Consistently received highest rating on annual reviews" ] }
+         , { "role": "Technology Innovator", "competencies": [
+           "Increased efficiency and productivity of products development by 70% through managing 2 complete technology stack changes (regular expressions and event-driven execution model) demonstrating expert leadership in building new innovative technology stacks" ] }
+         , { "role": "Project Manager", "competencies": [
+           "Delivered over 30+ new products and solutions ahead of schedule proving technological innovation and continuous improvement leadership that speeded up time-to-market by 50%"
+           , "Achieved 90+% customer satisfaction confirming high QA (Quality Assurance) infrastructure design and management competencies" ] }
+         , { "role": "Analytical Thinker", "competencies": [
+           "Led multiple payment system integration (American Express) and relational database design projects for Amadeus GDS (Global Distribution System) products and solutions using B2B and B2C models and client/server architecture confirming high analitical and problem-solving skills" ] } ] }
     , { "position": "Software Developer"
       , "company": {
         "name": "KibiTech S. L."
@@ -51,21 +52,17 @@
         , "description": "Computer entertainment technological startup" }
       , "from": "2009-01-01", "to": "2009-03-01"
       , "accomplishments": [
-        { "role": "Innovator", "competencies": [
-          "Development of rendering engine for SVG (Scalable Vector Graphics) based browser"
-          , "Development platform: Ubuntu Linux"
-          , "Technologies: Cairo, OpenGL, GLSL (OpenGL Shading Language) and GStreamer"
-          , "Implementation language: C++" ] } ] }
+        { "role": "Analitical Thinker", "competencies": [
+          "Developed rendering engine of SVG (Scalable Vector Graphics) for embedded Ubuntu Linux using OpenGL and C++ demonstrating abstract and analytical thinking skills" ] } ] }
     , { "position": "Software Developer (internship)"
       , "company": {
         "name": "[GlobalLogic](https://www.globallogic.com/)"
         , "location": "Kiev, Ukraine"
         , "description": "Full-lifecycle product development services worldwide provider" }
-      , "from": "2008-01-01", "to": "2008-06-01"
+      , "from": "2008-01-01", "to": "2008-06-01", "hide": true
       , "accomplishments": [
-        { "role": "Project Manager", "competencies": [
-          "Telecommunication systems development based on IBM Mainframe System/390 and z/Architecture"
-          , "Implementation language: IBM Mainframe Assembler" ] } ] } ]
+        { "role": "Analytical Thinker", "competencies": [
+          "Developed telecommunication system modules for IBM Mainframe System/390 and z/Architecture using IBM Mainframe Assembler manifesting analytical and problem-solving skills" ] } ] } ]
   , "skills": [
     { "domain": "Project management"
       , "competencies": [
@@ -97,7 +94,4 @@
         , "Ukrainian --- mothertongue"
         , "Russian --- mothertongue"
         , "French --- intermediate" ] } ]
-
-  , "competencies": [ "technical innovation"
-    , "Analytical Thinker, Problem Solver, Strategic Leader, Proven/Project Planner" ]
 }
