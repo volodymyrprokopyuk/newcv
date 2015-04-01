@@ -6,7 +6,7 @@ import Development.Shake.Util
 
 main :: IO ()
 main = shakeArgs shakeOptions { shakeFiles = ".build/" } $ do
-  want [ "pdf/cv-volodymyr.pdf", "txt/cv-volodymyr.txt"  ]
+  want [ "pdf/cv-volodymyr.pdf", "txt/cv-volodymyr.txt", "html/cv-volodymyr.html" ]
 
   "tex/cv-*.tex" %> \ target -> do
     putNormal "** rendering TeX"
@@ -29,14 +29,23 @@ main = shakeArgs shakeOptions { shakeFiles = ".build/" } $ do
     cmd "bash -c"
       [ "./bin/render --source=" ++ source ++ " --target=" ++ target ]
 
+  "html/cv-*.html" %> \ target -> do
+    putNormal "** rendering HTML"
+    let source = ("json" </>) . (-<.> "json") . takeFileName $ target
+    need [ source, "html/cv.html", "main.js", "bin/render" ]
+    cmd "bash -c"
+      [ "./bin/render --source=" ++ source ++ " --target=" ++ target ]
+
   "upload" ~> do
     cmd "bash -c" [ "cp json/cv-*.json ~/Dropbox/git-newcv"
       ++ "; cp tex/cv-*.tex ~/Dropbox/git-newcv"
       ++ "; cp pdf/cv-*.pdf ~/Dropbox/git-newcv"
-      ++ "; cp txt/cv-*.txt ~/Dropbox/git-newcv" ]
+      ++ "; cp txt/cv-*.txt ~/Dropbox/git-newcv"
+      ++ "; cp html/cv-*.html ~/Dropbox/git-newcv" ]
 
   "clean" ~> do
     putNormal "** removing PDF"
     removeFilesAfter "pdf" [ "cv-*.pdf", "cv-*.log", "cv-*.tuc" ]
     removeFilesAfter "tex" [ "cv-*.tex" ]
     removeFilesAfter "txt" [ "cv-*.txt" ]
+    removeFilesAfter "html" [ "cv-*.html" ]

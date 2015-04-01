@@ -2,6 +2,7 @@
 .tern-port
 .build/
 node_modules/
+pdf/
 tex/cv-*.tex
 txt/cv-*.txt
-pdf/
+html/cv-*.html

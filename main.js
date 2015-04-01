@@ -5,6 +5,7 @@ var _ = require('lodash');
 var Promise = require('bluebird');
 var commander = require('commander');
 var nunjucks = require('nunjucks');
+var jade = require('jade');
 
 commander
   .option('--source <fileName>', 'source file name (JSON)')
@@ -93,9 +94,9 @@ var processTeX = function(cv) {
   };
   var processTeXMarkup = function(cv) {
     var processMarkup = function(str) {
-      return str.replace(/ -- /, '~\\endash~')
-        .replace(/ --- /, '~\\emdash~')
-        .replace(/ConTeXt/, '\\CONTEXT');
+      return str.replace(/ -- /g, '~\\endash~')
+        .replace(/ --- /g, '~\\emdash~')
+        .replace(/ConTeXt/g, '\\CONTEXT');
     };
     recursive(cv, processMarkup, _.isString);
     return cv;
@@ -150,15 +151,27 @@ var processTXT = function(cv) {
     recursive(cv, processTXTURL, _.isString);
     return cv;
   };
-  var process = _.flow(mixinCV, processTXTURLs);
+  var processTXTMarkup = function(cv) {
+    var processMarkup = function(str) {
+      return str.replace(/~/g, ' ');
+    };
+    recursive(cv, processMarkup, _.isString);
+    return cv;
+  };
+  var process = _.flow(mixinCV, processTXTURLs, processTXTMarkup);
   return process(cv);
+};
+
+var processHTML = function(cv) {
+  return cv;
 };
 
 var processErr = function(cv) {
   return Promise.reject('no target file supplied');
 };
 
-var formats = { 'tex': processTeX, 'txt': processTXT, 'err': processErr };
+var formats = { 'tex': processTeX, 'txt': processTXT, 'html': processHTML
+  , 'err': processErr };
 
 var processSourceFile = function(processFormat, cv) {
   var hideContent = function(cv) {
@@ -196,19 +209,23 @@ var renderTargetFile = function(opts, cv) {
     var format = getTargetFormat(opts);
     return format + '/cv.' + format;
   };
-  var renderCV = _.partial(render, _, cv);
+  var renderCV = (getTargetFormat(opts) === 'html')
+    ? _.partial(jade.renderFile, _, _.merge(cv, { pretty: true }))
+    : _.partial(render, _, cv);
   return pipe([ getTemplate, renderCV ]);
 };
 renderTargetFile = _.partial(renderTargetFile, commander);
 
 var writeTargetFile = function(opts, content) {
+  content = content.replace(/ +$/mg, '');
+  (getTargetFormat(opts) === 'txt')
+    && (content = content.replace(/\n/g, '\r\n'));
   var getTargetFile = function() {
     return new Promise(function(resolve, reject) {
       opts.target ? resolve(opts.target)
         : reject('no target file supplied');
     });
   };
-  content = content.replace(/ +$/mg, '');
   var writeFileContent = _.partial(writeFile, _, content);
   return pipe([ getTargetFile, writeFileContent ]);
 };
