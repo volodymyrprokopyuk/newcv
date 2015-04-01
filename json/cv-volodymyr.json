@@ -59,7 +59,7 @@
         "name": "[GlobalLogic](https://www.globallogic.com/)"
         , "location": "Kiev, Ukraine"
         , "description": "Full-lifecycle product development services worldwide provider" }
-      , "from": "2008-01-01", "to": "2008-06-01", "hide": true
+      , "from": "2008-01-01", "to": "2008-06-01", "hide": "tex"
       , "accomplishments": [
         { "role": "Analytical Thinker", "competencies": [
           "Developed telecommunication system modules for IBM Mainframe System/390 and z/Architecture using IBM Mainframe Assembler manifesting analytical and problem-solving skills" ] } ] } ]

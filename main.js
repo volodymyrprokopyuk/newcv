@@ -173,11 +173,15 @@ var processErr = function(cv) {
 var formats = { 'tex': processTeX, 'txt': processTXT, 'html': processHTML
   , 'err': processErr };
 
-var processSourceFile = function(processFormat, cv) {
+var processSourceFile = function(format, processFormat, cv) {
   var hideContent = function(cv) {
-    cv.education = _.reject(cv.education, 'hide');
-    cv.employment = _.reject(cv.employment, 'hide');
-    cv.skills = _.reject(cv.skills, 'hide');
+    var hide = function(item) {
+      return _.size(item.hide)
+        && new RegExp('all|' + format).test(item.hide);
+    };
+    cv.education = _.reject(cv.education, hide);
+    cv.employment = _.reject(cv.employment, hide);
+    cv.skills = _.reject(cv.skills, hide);
     return cv;
   };
   var processLocale = function(cv) {
@@ -201,7 +205,7 @@ var processSourceFile = function(processFormat, cv) {
     , processFormat);
   return process(cv);
 };
-processSourceFile = _.partial(processSourceFile
+processSourceFile = _.partial(processSourceFile, getTargetFormat(commander)
   , formats[getTargetFormat(commander) || 'err' ]);
 
 var renderTargetFile = function(opts, cv) {
