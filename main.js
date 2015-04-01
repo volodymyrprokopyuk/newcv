@@ -114,7 +114,44 @@ var processTeX = function(cv) {
 };
 
 var processTXT = function(cv) {
-  return cv;
+  var splitBy = function(length, str) {
+    var aggLines = function(lines, word) {
+      var lastLine = _.last(lines);
+      (_.size(lastLine) + _.size(word) + 1 > length)
+        && (lines.push(''), lastLine = _.last(lines));
+      lines[_.size(lines) - 1] += (_.size(lastLine) ? ' ' : '') + word;
+      return lines;
+    };
+    return _.reduce(str.split(' '), aggLines, [ '' ]);
+  };
+  var indentTo = function(indent, lines) {
+    return lines.join('\n' + _.repeat(' ', indent));
+  };
+  var indent = function(indent, length, str) {
+    return indentTo(indent, splitBy(length, str));
+  };
+  var flush = function(length, str) {
+    var padLeft = _.partial(_.padLeft, _, length, ' ');
+    return _.chain(splitBy(length, str)).map(padLeft).value().join('\n');
+  };
+  var mixinCV = function(cv) {
+    cv.indent = indent;
+    cv.flush = flush;
+    cv.repeat = _.repeat;
+    return cv;
+  };
+  var processTXTURLs = function(cv) {
+    var processTXTURL = function(str) {
+      return str.replace(/\[([^\]]+)\]\(([^\)]+)\)/g
+        , function(markup, name, url) {
+        return name;
+      });
+    };
+    recursive(cv, processTXTURL, _.isString);
+    return cv;
+  };
+  var process = _.flow(mixinCV, processTXTURLs);
+  return process(cv);
 };
 
 var processErr = function(cv) {
@@ -171,6 +208,7 @@ var writeTargetFile = function(opts, content) {
         : reject('no target file supplied');
     });
   };
+  content = content.replace(/ +$/mg, '');
   var writeFileContent = _.partial(writeFile, _, content);
   return pipe([ getTargetFile, writeFileContent ]);
 };

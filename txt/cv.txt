@@ -1,1 +1,46 @@
-TXT1 {{ firstName }}
+{{ firstName.toUpperCase() }} {{ lastName.toUpperCase() }}
+      Email: {{ email }}
+     Mobile: {{ mobile }}
+        Web: {{ web }}
+    Address: {{ address }}
+
+  Objective: {{ objective }}
+
+    Summary: {{ indent(13, 47, summary) }}
+
+{{ repeat('-', 60) }}
+  {{ locale.education.toUpperCase() }}
+{{ repeat('-', 60) }}
+{% for edu in education %}
+{{ edu.degree }}
+{{ repeat('~', edu.degree.length) }}
+  [ {{ edu.from }} -- {{ edu.to }} ]
+  {{ edu.school.name }}, {{ edu.school.location }}
+  > {{ indent(4, 56, edu.description) }}
+{% endfor %}
+{{ repeat('-', 60) }}
+  {{ locale.employment.toUpperCase() }}
+{{ repeat('-', 60) }}
+{% for emp in employment %}
+{{ emp.position }}
+{{ repeat('~', emp.position.length) }}
+  [ {{ emp.from }} -- {{ emp.to }} ]
+  {{ emp.company.name }}, {{ emp.company.location }}
+  > {{ indent(4, 56, emp.company.description) }}
+  {%- for acc in emp.accomplishments %}
+  {{ acc.role }}
+    {% for comp in acc.competencies -%}
+    * {{ indent(6, 54, comp) }}
+    {% endfor -%}
+  {% endfor -%}
+{% endfor %}
+{{ repeat('-', 60) }}
+  {{ locale.skills.toUpperCase() }}
+{{ repeat('-', 60) }}
+{% for skill in skills %}
+{{ skill.domain }}
+{{ repeat('~', skill.domain.length) }}
+  {%- for comp in skill.competencies %}
+  * {{ indent(4, 56, comp) }}
+  {%- endfor %}
+{% endfor -%}
