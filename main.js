@@ -94,7 +94,8 @@ var processTeX = function(cv) {
   };
   var processTeXMarkup = function(cv) {
     var processMarkup = function(str) {
-      return str.replace(/ -- /g, '~\\endash~')
+      return str.replace(/ \| /g, '~$\\vert$~')
+        .replace(/ -- /g, '~\\endash~')
         .replace(/ --- /g, '~\\emdash~')
         .replace(/ConTeXt/g, '\\CONTEXT');
     };
@@ -110,7 +111,7 @@ var processTeX = function(cv) {
     recursive(cv, escapeChars, _.isString);
     return cv;
   };
-  var process = _.flow(processTeXURLs, processTeXMarkup, escapeTeXChars);
+  var process = _.flow(processTeXURLs, escapeTeXChars, processTeXMarkup);
   return process(cv);
 };
 
