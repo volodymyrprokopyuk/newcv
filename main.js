@@ -163,7 +163,28 @@ var processTXT = function(cv) {
 };
 
 var processHTML = function(cv) {
-  return cv;
+  var processHTMLURLs = function(cv) {
+    var processHTMLURL = function(str) {
+      return str.replace(/\[([^\]]+)\]\(([^\)]+)\)/g
+        , function(markup, name, url) {
+        return format('<a href="%s">%s</a>', url, name);
+      });
+    };
+    cv.urls = [ ];
+    recursive(cv, processHTMLURL, _.isString);
+    return cv;
+  };
+  var processHTMLMarkup = function(cv) {
+    var processMarkup = function(str) {
+      return str.replace(/~/g, '&nbsp;')
+        .replace(/ -- /g, ' &ndash; ')
+        .replace(/ --- /g, ' &mdash; ');
+    };
+    recursive(cv, processMarkup, _.isString);
+    return cv;
+  };
+  var process = _.flow(processHTMLURLs, processHTMLMarkup);
+  return process(cv);
 };
 
 var processErr = function(cv) {

@@ -182,7 +182,7 @@
 \stopSubSection
 {% for skill in skills %}
 \startSubSection
-{\bi\Light {{ skill.domain }} }\SubSection
+{\bf\Gray {{ skill.domain }} }\SubSection
   \startitemize[joinedup,nowhite]
   {% for comp in skill.competencies -%}
   \item {{ comp }}

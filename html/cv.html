@@ -14,15 +14,55 @@ html(lang=meta.locale)
       include css/header.min.css
       include css/list.min.css
   body
-    .ui.page.grid
+    .ui.page.padded.grid
+      .eight.wide.column
+        .ui.large.blue.header #{ firstName } #{ lastName }
+          .sub.header=objective
+      .eight.wide.column
+        .ui.list
+          .item=email
+          .item=mobile
+          .item !{ web }
+          .item=address
       .sixteen.wide.column
-        h1 First
-        h2 Second
-        h3 Third
-
-        p Content for Volodymyr Prokopyuk
-
-        ul
-          li one
-          li two
-          li three
+        .ui.large.list
+          .item=summary
+      .right.aligned.four.wide.column
+        .ui.large.blue.header=locale.education
+      .twelve.wide.column
+      for edu in education
+        .right.aligned.four.wide.column
+          .ui.small.header
+            .sub.header #{ edu.from } &ndash; #{ edu.to }
+        .twelve.wide.column
+          .ui.small.blue.header=edu.degree
+          p !{ edu.school.name }, #{ edu.school.location }
+          p=edu.description
+      .right.aligned.four.wide.column
+        .ui.large.blue.header=locale.employment
+      .twelve.wide.column
+      for emp in employment
+        .right.aligned.four.wide.column
+          .ui.small.header
+            .sub.header #{ emp.from } &ndash; #{ emp.to }
+        .twelve.wide.column
+          .ui.small.blue.header=emp.position
+          p !{ emp.company.name }, #{ emp.company.location }
+          p #{ emp.company.description }
+          .ui.list
+            for acc in emp.accomplishments
+              .item
+                .header=acc.role
+                .ui.bulleted.list
+                  for comp in acc.competencies
+                    .item=comp
+      .right.aligned.four.wide.column
+        .ui.large.blue.header=locale.skills
+      .twelve.wide.column
+      for skill in skills
+        .right.aligned.four.wide.column
+          .ui.tiny.header=skill.domain
+        .twelve.wide.column
+          .ui.bulleted.list
+            for comp in skill.competencies
+              .item !{comp}
