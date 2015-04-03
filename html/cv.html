@@ -1,6 +1,28 @@
 doctype html
-html
+html(lang=meta.locale)
   head
     meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0")
     title #{ firstName } #{ lastName } CV
+    meta(name="description" content="#{ firstName } #{ lastName } CV")
+    meta(name="keywords" content="#{ firstName } #{ lastName }, CV, #{ objective }")
+    meta(name="author" content="#{ firstName } #{ lastName } <#{ email }>")
+    style
+      include css/reset.min.css
+      include css/site.min.css
+      include css/grid.min.css
+      include css/header.min.css
+      include css/list.min.css
   body
+    .ui.page.grid
+      .sixteen.wide.column
+        h1 First
+        h2 Second
+        h3 Third
+
+        p Content for Volodymyr Prokopyuk
+
+        ul
+          li one
+          li two
+          li three

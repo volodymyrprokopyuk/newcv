@@ -64,7 +64,11 @@
 \setuptables[distance=small]
 
 %% interaction
-\setupinteraction[state=start,color=Base,style={\bi}]
+\setupinteraction[state=start,color=Base,style={\bi},
+  title={ {{ firstName }} {{ lastName }} CV },
+  subtitle={ {{ firstName }} {{ lastName }} CV },
+  keyword={ {{ firstName }} {{ lastName }}, CV, {{ objective }} },
+  author={ {{ firstName }} {{ lastName }} <{{ email }}> }]
 {{ urls.join('\n') }}
 
 %% Background
