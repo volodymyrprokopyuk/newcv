@@ -1,0 +1,53 @@
+%% language
+\mainlanguage[es]
+
+%% SourcePro font
+\starttypescript[sans][SourcePro]
+\definefontsynonym[Sans][name:sourcesansprolight]
+\definefontsynonym[SansBold][name:sourcesansprobold]
+\definefontsynonym[SansItalic][name:sourcesansprolightit]
+\definefontsynonym[SansBoldItalic][name:sourcesansproit]
+\stoptypescript
+\definetypeface[SourcePro][ss][sans][SourcePro]
+\setupbodyfont[SourcePro,sans,12pt]
+
+%% layout
+\setuppapersize[A4,landscape]
+\setuplayout[backspace=11pt,edge=0pt,edgedistance=0pt,margin=1pt,
+  margindistance=10pt,width=fit,
+  topspace=0pt,top=0pt,topdistance=0pt,header=1pt,headerdistance=10pt,
+  footer=1pt,footerdistance=10pt,bottom=0pt,bottomdistance=0pt,height=fit]
+%\showframe
+
+%% header/footer
+\setuppagenumbering[location=]
+
+%% combination
+\setupcombination[distance=30pt]
+
+%% Contact
+\define\Contact{\rotate[90]{\framed[width=100pt,align=middle,
+  frame=off,bottomframe=on]
+{{\tfx Cuidadora. Svitlana}\crlf 663 564 178}}}
+\define\Contacts{\Contact\hfill\Contact\hfill\Contact\hfill\Contact
+  \hfill\Contact\hfill\Contact\hfill\Contact\hfill\Contact\hfill\Contact}
+
+%% Ad
+\define\Ad{\framed[width=0.48\textwidth,align=middle,
+  height=0.30\textheight,frame=off]
+{\vfill
+One can prevent hyphenation inside a frame by passing nothypenated
+option to align. It is also a good idea to add verytolerant and strectch
+options.\blank[big]
+{\bfa Svitlana es muy buena chica}\blank[big]
+One can prevent hyphenation inside a frame by passing nothypenated
+option to align. It is also a good idea to add verytolerant and strectch
+options.
+\vfill}}
+
+\starttext
+\startcombination[2*2]
+{\Ad}{\Contacts}{\Ad}{\Contacts}
+{\Ad}{\Contacts}{\Ad}{\Contacts}
+\stopcombination
+\stoptext

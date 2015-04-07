@@ -7,6 +7,7 @@ import Development.Shake.Util
 main :: IO ()
 main = shakeArgs shakeOptions { shakeFiles = ".build/" } $ do
   want [ "pdf/cv-volodymyr.pdf", "txt/cv-volodymyr.txt", "html/cv-volodymyr.html" ]
+  want [ "pdf/ad-svitlana.pdf" ]
 
   "tex/cv-*.tex" %> \ target -> do
     putNormal "** rendering TeX"
@@ -15,7 +16,7 @@ main = shakeArgs shakeOptions { shakeFiles = ".build/" } $ do
     cmd "bash -c"
       [ "./bin/render --source=" ++ source ++ " --target=" ++ target ]
 
-  "pdf/*.pdf" %> \ target -> do
+  "pdf/cv-*.pdf" %> \ target -> do
     putNormal "** compiling PDF"
     let source = ("tex" </>) . (-<.> "tex") . takeFileName $ target
     need [ source ]
@@ -36,12 +37,20 @@ main = shakeArgs shakeOptions { shakeFiles = ".build/" } $ do
     cmd "bash -c"
       [ "./bin/render --source=" ++ source ++ " --target=" ++ target ]
 
+  "pdf/ad-*.pdf" %> \ target -> do
+    putNormal "** compiling PDF"
+    let source = ("tex" </>) . (-<.> "tex") . takeFileName $ target
+    need [ source ]
+    cmd "bash -c"
+      [ "cd pdf && context --path=../tex " ++ ".." </> source ]
+
   "upload" ~> do
     cmd "bash -c" [ "cp json/cv-*.json ~/Dropbox/git-newcv"
       ++ "; cp tex/cv-*.tex ~/Dropbox/git-newcv"
       ++ "; cp pdf/cv-*.pdf ~/Dropbox/git-newcv"
       ++ "; cp txt/cv-*.txt ~/Dropbox/git-newcv"
-      ++ "; cp html/cv-*.html ~/Dropbox/git-newcv" ]
+      ++ "; cp html/cv-*.html ~/Dropbox/git-newcv"
+      ++ "; cp pdf/ad-*.pdf ~/Dropbox/git-newcv" ]
 
   "clean" ~> do
     putNormal "** removing PDF"
@@ -49,3 +58,4 @@ main = shakeArgs shakeOptions { shakeFiles = ".build/" } $ do
     removeFilesAfter "tex" [ "cv-*.tex" ]
     removeFilesAfter "txt" [ "cv-*.txt" ]
     removeFilesAfter "html" [ "cv-*.html" ]
+    removeFilesAfter "pdf" [ "ad-*.pdf", "ad-*.log", "ad-*.tuc" ]
