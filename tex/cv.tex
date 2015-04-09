@@ -16,6 +16,8 @@
 \define\AwItem{\symbol[AwItem]}
 \definesymbol[AwProfile][\getnamedglyphdirect{Awesome}{user}]
 \define\AwProfile{\symbol[AwProfile]}
+\definesymbol[AwTarget][\getnamedglyphdirect{Awesome}{flag}]
+\define\AwTarget{\symbol[AwTarget]}
 \definesymbol[AwEmail][\getnamedglyphdirect{Awesome}{envelope}]
 \define\AwEmail{\symbol[AwEmail]}
 \definesymbol[AwPhone][\getnamedglyphdirect{Awesome}{phone}]
@@ -127,6 +129,22 @@
 \stopProfile
 {\bia\Gray {{ summary }} }
 \stopSection
+
+%% TARGET %%
+{% if target -%}
+\startSection
+{\tfc\Light\AwTarget}\crlf
+\rotate[90]{\bfd\Light {{ locale.target }} }\Section
+
+\midaligned{\starttable[|lp(0.35\textwidth)|lp(0.35\textwidth)|]
+\NC\bfa\Light {{ locale.requires }}\NC\bfa\Light {{ locale.offer }}\NC\FR
+{% for req in target.requirements %}
+\NC\startitemize\item {{ req.requirement }}\stopitemize
+\NC\startitemize\item {{ req.competency }}\stopitemize\NC\MR
+{% endfor -%}
+\stoptable}
+\stopSection
+{%- endif %}
 
 %% EDUCATION %%
 \startSection

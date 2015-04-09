@@ -48,12 +48,15 @@ var pwhile = function(pred, act, seed) {
 var locales = { };
 
 locales.en = { typesetWith: 'Typeset with', profile: 'Profile'
+  , target: 'Target', requires: 'Company Requires', offer: 'I Offer'
   , education: 'Education', employment: 'Employment'
   , skills: 'Skills and Competencies'
 };
 
 locales.es = { typesetWith: 'Tipografía', profile: 'Perfil'
-  , education: 'Formación', employment: 'Experiencia laboral'
+  , target: 'Propósito específico', requires: 'Empresa requiere'
+  , offer: 'Yo ofrezco', education: 'Formación'
+  , employment: 'Experiencia laboral'
   , skills: 'Habilidades y Competencias'
 };
 
@@ -196,6 +199,15 @@ var formats = { 'tex': processTeX, 'txt': processTXT, 'html': processHTML
   , 'err': processErr };
 
 var processSourceFile = function(format, processFormat, cv) {
+  var showContent = function(cv) {
+    var show = function(item) {
+      return _.size(item.show)
+        && new RegExp('all|' + format).test(item.show);
+    };
+    cv.targets = _.filter(cv.targets, show);
+    cv.target = _.size(cv.targets) ? _.first(cv.targets) : null;
+    return cv;
+  };
   var hideContent = function(cv) {
     var hide = function(item) {
       return _.size(item.hide)
@@ -223,7 +235,7 @@ var processSourceFile = function(format, processFormat, cv) {
     recursive(cv, processDate, isDate);
     return cv;
   };
-  var process = _.flow(hideContent, processLocale, processDates
+  var process = _.flow(showContent, hideContent, processLocale, processDates
     , processFormat);
   return process(cv);
 };

@@ -94,4 +94,19 @@
         , "Ukrainian --- mothertongue"
         , "Russian --- mothertongue"
         , "French --- intermediate" ] } ]
+  , "targets": [
+    { "position": "X", "show": "all"
+      , "requirements": [
+        { "requirement": "Minimum 7 years’ experience in State and Federal Court"
+          , "competency": "Solid 9-year record litigating cases. Licensed to practice in State and Federal Courts" }
+        , { "requirement": "Ability to take and defend depositions"
+          , "competency": "Taken and defended more than 100 depositions of parties, witnesses, experts" }
+        , { "requirement": "Ability to draft pleadings and motions, make court appearances"
+          , "competency": "Proven ability to draft winning arguments and prevail in oral law and motion practice" }
+        , { "requirement": "Ability to handle mediations, settlement conferences, and arbitration hearings"
+          , "competency": "Handled 85 mediations, settlement conferences, arbitration hearings from small business partnership disputes, to complex litigation with 100 plaintiffs, 75 defendants" }
+        , { "requirement": "Ability to take direction and work independently on cases and projects assigned"
+          , "competency": "Actively seek advice, critical suggestions from supervisors. Managed extensive case loads on diverse issues" }
+        , { "requirement": "Good communication skills and heavy client contact"
+          , "competency": "Created more than 25 systems to timely inform clients, attorneys, paralegals, support staff of deadlines, procedures, developments" } ] } ]
 }
