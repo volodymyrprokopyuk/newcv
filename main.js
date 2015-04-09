@@ -146,7 +146,6 @@ var processTXT = function(cv) {
     cv.indent = indent;
     cv.flush = flush;
     cv.repeat = _.repeat;
-    cv.pad = _.padLeft;
     return cv;
   };
   var processTXTURLs = function(cv) {

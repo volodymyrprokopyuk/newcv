@@ -1,13 +1,13 @@
-{{ firstName.toUpperCase() }} {{ lastName.toUpperCase() }}
-{{ pad(locale.email, 11) }}: {{ email }}
-{{ pad(locale.mobile, 11) }}: {{ mobile }}
-{{ pad(locale.web, 11) }}: {{ web }}
-{{ pad(locale.address, 11) }}: {{ address }}
+{# ** PROFILE ** #}{{ firstName.toUpperCase() }} {{ lastName.toUpperCase() }}
+{{ flush(11, locale.email) }}: {{ email }}
+{{ flush(11, locale.mobile) }}: {{ mobile }}
+{{ flush(11, locale.web) }}: {{ web }}
+{{ flush(11, locale.address) }}: {{ address }}
 
-{{ pad(locale.objective, 11) }}: {{ objective }}
+{{ flush(11, locale.objective) }}: {{ objective }}
 
-{{ pad(locale.summary, 11) }}: {{ indent(13, 47, summary) }}
-{% if target %}
+{{ flush(11, locale.summary) }}: {{ indent(13, 47, summary) }}
+{# ** TARGET ** #}{% if target %}
     {{ locale.requires.toUpperCase() }} > {{ locale.offer.toUpperCase() }}
     {{ repeat('~', locale.requires.length + locale.offer.length + 3) }}
     {% for req in target.requirements %}
@@ -15,7 +15,7 @@
       > {{ indent(8, 52, req.competency) }}
     {% endfor %}
 {%- endif %}
-{{ repeat('-', 60) }}
+{# ** EDUCATION ** #}{{ repeat('-', 60) }}
   {{ locale.education.toUpperCase() }}
 {{ repeat('-', 60) }}
 {% for edu in education %}
@@ -25,7 +25,7 @@
   {{ edu.school.name }}, {{ edu.school.location }}
   > {{ indent(4, 56, edu.description) }}
 {% endfor %}
-{{ repeat('-', 60) }}
+{# ** EMPLOYMENT ** #}{{ repeat('-', 60) }}
   {{ locale.employment.toUpperCase() }}
 {{ repeat('-', 60) }}
 {% for emp in employment %}
@@ -41,7 +41,7 @@
     {% endfor -%}
   {% endfor -%}
 {% endfor %}
-{{ repeat('-', 60) }}
+{# ** SKILLS ** #}{{ repeat('-', 60) }}
   {{ locale.skills.toUpperCase() }}
 {{ repeat('-', 60) }}
 {% for skill in skills %}
