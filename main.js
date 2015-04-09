@@ -48,16 +48,19 @@ var pwhile = function(pred, act, seed) {
 var locales = { };
 
 locales.en = { typesetWith: 'Typeset with', profile: 'Profile'
+  , email: 'Email', mobile: 'Mobile', web: 'Web', address: 'Address'
+  , objective: 'Objective', summary: 'Summary'
   , target: 'Target', requires: 'Company Requires', offer: 'I Offer'
   , education: 'Education', employment: 'Employment'
   , skills: 'Skills and Competencies'
 };
 
 locales.es = { typesetWith: 'Tipografía', profile: 'Perfil'
-  , target: 'Propósito específico', requires: 'Empresa requiere'
-  , offer: 'Yo ofrezco', education: 'Formación'
-  , employment: 'Experiencia laboral'
-  , skills: 'Habilidades y Competencias'
+  , email: 'Email', mobile: 'Móvil', web: 'Web', address: 'Dirección'
+  , objective: 'Objetivo', summary: 'Resumen'
+  , target: 'Propósito específico', requires: 'Requerimientos'
+  , offer: 'Competencias', education: 'Formación'
+  , employment: 'Experiencia laboral', skills: 'Habilidades y Competencias'
 };
 
 var readSourceFile = function(opts) {
@@ -143,6 +146,7 @@ var processTXT = function(cv) {
     cv.indent = indent;
     cv.flush = flush;
     cv.repeat = _.repeat;
+    cv.pad = _.padLeft;
     return cv;
   };
   var processTXTURLs = function(cv) {
