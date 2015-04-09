@@ -13,8 +13,10 @@ html(lang=meta.locale)
       include css/grid.min.css
       include css/header.min.css
       include css/list.min.css
+      include css/table.min.css
   body
     .ui.page.padded.grid
+      // profile
       .eight.wide.column
         .ui.large.blue.header #{ firstName } #{ lastName }
           .sub.header=objective
@@ -27,6 +29,24 @@ html(lang=meta.locale)
       .sixteen.wide.column
         .ui.large.list
           .item=summary
+      // target
+      if target
+        .twelve.wide.centered.column
+          table.ui.very.basic.table
+            thead
+              tr
+                th.five.wide=locale.requires
+                th.seven.wide=locale.offer
+            tbody
+              for req in target.requirements
+                tr
+                  td
+                    .ui.bulleted.list
+                      .item=req.requirement
+                  td
+                    .ui.bulleted.list
+                      .item=req.competency
+      // education
       .right.aligned.four.wide.column
         .ui.large.blue.header=locale.education
       .twelve.wide.column
@@ -38,6 +58,7 @@ html(lang=meta.locale)
           .ui.small.blue.header=edu.degree
           p !{ edu.school.name }, #{ edu.school.location }
           p=edu.description
+      // employment
       .right.aligned.four.wide.column
         .ui.large.blue.header=locale.employment
       .twelve.wide.column
@@ -48,7 +69,7 @@ html(lang=meta.locale)
         .twelve.wide.column
           .ui.small.blue.header=emp.position
           p !{ emp.company.name }, #{ emp.company.location }
-          p #{ emp.company.description }
+          p=emp.company.description
           .ui.list
             for acc in emp.accomplishments
               .item
@@ -56,6 +77,7 @@ html(lang=meta.locale)
                 .ui.bulleted.list
                   for comp in acc.competencies
                     .item=comp
+      // skills
       .right.aligned.four.wide.column
         .ui.large.blue.header=locale.skills
       .twelve.wide.column
