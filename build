@@ -52,6 +52,9 @@ main = shakeArgs shakeOptions { shakeFiles = ".build/" } $ do
       ++ "; cp html/cv-*.html ~/Dropbox/git-newcv"
       ++ "; cp pdf/ad-*.pdf ~/Dropbox/git-newcv" ]
 
+  "deploy" ~> do
+    cmd "bash -c" [ "git subtree push --prefix html origin gh-pages" ]
+
   "clean" ~> do
     putNormal "** removing PDF"
     removeFilesAfter "pdf" [ "cv-*.pdf", "cv-*.log", "cv-*.tuc" ]
