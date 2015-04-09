@@ -21,11 +21,20 @@ html(lang=meta.locale)
         .ui.large.blue.header #{ firstName } #{ lastName }
           .sub.header=objective
       .eight.wide.column
-        .ui.list
-          .item=email
-          .item=mobile
-          .item !{ web }
-          .item=address
+        table.ui.very.basic.small.table
+          tbody
+            tr
+              td.right.aligned=locale.email
+              td=email
+            tr
+              td.right.aligned=locale.mobile
+              td=mobile
+            tr
+              td.right.aligned=locale.web
+              td !{web}
+            tr
+              td.right.aligned=locale.address
+              td=address
       .sixteen.wide.column
         .ui.large.list
           .item=summary
