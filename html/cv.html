@@ -17,6 +17,8 @@ html(lang=meta.locale)
   body
     .ui.page.padded.grid
       // profile
+      .sixteen.wide.right.aligned.column
+        p Formats: !{ formats.pdf } !{ formats.txt }
       .eight.wide.column
         .ui.large.blue.header #{ firstName } #{ lastName }
           .sub.header=objective

@@ -8,6 +8,10 @@
   , "address": "Alcorcón, Madrid"
   , "objective": "IT Project manager | Software architect"
   , "summary": "Over 6 years of success experience in managing and developing IT projects. Results-oriented leader with outstanding motivational skills. Developed staff and built productive teams. IT project management focused with polished interpersonal skills. Proved competency in designing and developing high technology solutions applying strong analytical skills and technological innovation expertise. Strong IT proficiencies with excellent communication skills. Highly organized with strong attention to detail and focus on results. Bilingual: English and Spanish"
+  , "formats": {
+    "pdf": "[PDF](https://www.dropbox.com/s/q22j84k5m6amyll/cv-volodymyr.pdf?dl=0)"
+    , "html": "[HTML](http://volodymyrprokopyuk.github.io/newcv/cv-volodymyr.html)"
+    , "txt": "[TXT](https://www.dropbox.com/s/cnzx7fa3g139ik4/cv-volodymyr.txt?dl=0)" }
   , "education": [
      { "degree": "Master of Business Administration, MBA"
        , "description": "Strategy, project management, marketing, accounting and finance, human resources. Business plans"
@@ -37,14 +41,15 @@
       , "accomplishments": [
          { "role": "Promotions", "competencies": [
            "Promoted 3 times in 6 years from Software Developer (2009) to Software Engineer (2010) then to Senior Software Engineer (2013) manifesting high personal commitment to company excellence and success"
-           , "Consistently received highest rating on annual reviews" ] }
+           , "Consistently received highest rating on annual reviews with corresponding salary increments" ] }
          , { "role": "Technology Innovator", "competencies": [
-           "Increased efficiency and productivity of products development by 70% through managing 2 complete technology stack changes (regular expressions and event-driven execution model) demonstrating expert leadership in building new innovative technology stacks" ] }
+           "Increased efficiency and productivity of products development by 70% through managing 2 complete technology stack changes (Regular Expressions and Event-driven Execution Model) demonstrating expert leadership in building new innovative technology stacks" ] }
          , { "role": "Project Manager", "competencies": [
            "Delivered over 30+ new products and solutions ahead of schedule proving technological innovation and continuous improvement leadership that speeded up time-to-market by 50%"
            , "Achieved 90+% customer satisfaction confirming high QA (Quality Assurance) infrastructure design and management competencies" ] }
          , { "role": "Analytical Thinker", "competencies": [
-           "Led multiple payment system integration (American Express) and relational database design projects for Amadeus GDS (Global Distribution System) products and solutions using B2B and B2C models and client/server architecture confirming high analytical and problem-solving skills" ] } ] }
+           "Led multiple payment system integration (American Express) and relational database design projects for Amadeus GDS (Global Distribution System) products and solutions using B2B and B2C models and client/server architecture confirming high analytical and problem-solving skills"
+           , "Automated and optimized over 10+ online price monitoring and comparison systems by designing and developing Web Scraping and Free Text Parsing Web Robots proving excellent competencies in Web Scraping, Dana Cleansing and ETL (Extract, Transform, Load) proceses design and development" ] } ] }
     , { "position": "Software Developer"
       , "company": {
         "name": "KibiTech S. L."
@@ -75,6 +80,7 @@
         "Analyzed client requirements and designed software system architecture using FP (Functional Programming) and OOP (Object-Oriented Programming) paradigms confirming excellent technical leadership, outstanding analytical, abstract thinking and problem decomposition skills"
         , "Designed and developed concurrent, multithreaded and event-based back office servers for Amadeus GDS (Global Distribution System) demonstrating superb competency in building reliable, highly available systems working 24/7 and QA (Quality Assurance) process management"
         , "Designed and developed interactive and user-friendly front office applications for Amadeus GDS (Global Distribution System) proving solid competency in designing RESTful Web API, developing SPA (Single Page Application) and applying UI/UX (User Interface/User Experience) principles"
+         , "Automated and optimized over 10+ online price monitoring and comparison systems by designing and developing Web Scraping and Free Text Parsing Web Robots using CSS Selectors for DOM querying and Regular Expressions for information extraction proving excellent competencies in Web Scraping, Dana Cleansing and ETL (Extract, Transform, Load) proceses design and development"
         , "Expert competency in Agile Methodologies, Operating Systems ([Linux](https://www.kernel.org/), [Ubuntu](http://www.ubuntu.com/)), Programming Platforms ([Node.js/JavaScript](https://nodejs.org/), [C/C++/STL](http://www.cplusplus.com/)/[Boost](http://www.boost.org/), [Java](http://www.java.com/)/[Spring](https://spring.io/), [C#/.NET](http://www.microsoft.com/net), [Haskell](https://www.haskell.org/)), Version Control ([Git](http://git-scm.com/), [tig](https://github.com/jonas/tig), [Gitolite](https://github.com/sitaramc/gitolite)), Process Automation ([Shake](http://shakebuild.com/), [GNU~Bash](http://www.gnu.org/software/bash/)), Text Editors ([Vim](http://www.vim.org/), [Emacs](http://www.gnu.org/software/emacs/), [Tmux](http://tmux.sourceforge.net/))" ] }
     , { "domain": "Database design (RDBMS)"
       , "competencies": [

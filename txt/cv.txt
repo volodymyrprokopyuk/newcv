@@ -7,6 +7,9 @@
 {{ flush(11, locale.objective) }}: {{ objective }}
 
 {{ flush(11, locale.summary) }}: {{ indent(13, 47, summary) }}
+
+{{ flush(11, 'PDF') }}: {{ formats.pdf }}
+{{ flush(11, 'HTML') }}: {{ formats.html }}
 {# ** TARGET ** #}{% if target %}
     {{ locale.requires.toUpperCase() }} > {{ locale.offer.toUpperCase() }}
     {{ repeat('~', locale.requires.length + locale.offer.length + 3) }}

@@ -152,10 +152,17 @@ var processTXT = function(cv) {
     var processTXTURL = function(str) {
       return str.replace(/\[([^\]]+)\]\(([^\)]+)\)/g
         , function(markup, name, url) {
+        return url;
+      });
+    };
+    recursive(cv.formats, processTXTURL, _.isString);
+    var processTXTURLName = function(str) {
+      return str.replace(/\[([^\]]+)\]\(([^\)]+)\)/g
+        , function(markup, name, url) {
         return name;
       });
     };
-    recursive(cv, processTXTURL, _.isString);
+    recursive(cv, processTXTURLName, _.isString);
     return cv;
   };
   var processTXTMarkup = function(cv) {
