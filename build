@@ -7,6 +7,7 @@ import Development.Shake.Util
 main :: IO ()
 main = shakeArgs shakeOptions { shakeFiles = ".build/" } $ do
   want [ "pdf/cv-volodymyr.pdf", "txt/cv-volodymyr.txt", "html/cv-volodymyr.html" ]
+  want [ "pdf/cv-deysi.pdf", "txt/cv-deysi.txt", "html/cv-deysi.html" ]
   want [ "pdf/ad-piano.pdf", "pdf/ad-cleaning.pdf"  ]
 
   "tex/cv-*.tex" %> \ target -> do

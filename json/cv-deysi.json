@@ -1,0 +1,118 @@
+{
+  "meta": { "locale": "en" }
+  , "firstName": "Deysi"
+  , "lastName": "Ortega"
+  , "email": "deysio@gmail.com"
+  , "mobile": "+(34) 651 630 278"
+  , "web": "[http://volodymyrprokopyuk.github.io/newcv/cv-deysi.html](http://volodymyrprokopyuk.github.io/newcv/cv-deysi.html)"
+  , "address": "Parla, Madrid"
+  , "objective": "Customer Support Coordinator"
+  , "summary": "TODO. Over 6 years of success experience in managing and developing IT projects. Results-oriented leader with outstanding motivational skills. Developed staff and built productive teams. IT project management focused with polished interpersonal skills. Proved competency in designing and developing high technology solutions applying strong analytical skills and technological innovation expertise. Strong IT proficiencies with excellent communication skills. Highly organized with strong attention to detail and focus on results. Bilingual: English and Spanish"
+  , "formats": {
+    "pdf": "[PDF](https://www.dropbox.com/s/2qwab9btjghllrq/cv-deysi.pdf?dl=0)"
+    , "html": "[HTML](http://volodymyrprokopyuk.github.io/newcv/cv-deysi.html)"
+    , "txt": "[TXT](https://www.dropbox.com/s/t475m3pkvb0q1qy/cv-deysi.txt?dl=0)" }
+  , "education": [
+     { "degree": "Master of Business Administration, MBA"
+       , "description": "Strategy, project management, marketing, accounting and finance, human resources. Business plans"
+       , "school": {
+         "name": "[Escuela de Administración de Empresas, EAE](http://www.eae.es/)"
+         , "location": "Madrid" }
+       , "from": "2012-09-01", "to": "in course" }
+     , { "degree": "ITIL V3 (Information Technology Infrastructure Library)"
+       , "description": "Set of practices for IT Service Management that focuses on aligning IT Services with the needs of business"
+       , "school": {
+         "name": "[GARBEN](http://www.garben.com/)"
+         , "location": "Madrid" }
+       , "from": "2011-09-01", "to": "2011-12-01" }
+     , { "degree": "Electronics and Telecommunications Engineer, BSc"
+       , "description": "Electonics and Telecommunications"
+       , "school": {
+         "name": "[National Polytechnic School](http://www.epn.edu.ec/)"
+         , "location": "Quito, Ecuador" }
+       , "from": "1999-10-01", "to": "2003-03-01" } ]
+  , "employment": [
+    { "position": "Technical Support Second Level"
+      , "company": {
+        "name": "[Amadeus IT Group](http://www.amadeus.com/)"
+        , "location": "Madrid"
+        , "description": "World's leading IT provider for the global travel and tourism industry" }
+      , "from": "2015-01-01", "to": "current"
+      , "accomplishments": [
+         { "role": "Promotions", "competencies": [
+           "Promoted 3 times in 6 years from Software Developer (2009) to Software Engineer (2010) then to Senior Software Engineer (2013) manifesting high personal commitment to company excellence and success"
+           , "Consistently received highest rating on annual reviews with corresponding salary increments" ] }
+         , { "role": "Technology Innovator", "competencies": [
+           "Increased efficiency and productivity of products development by 70% through managing 2 complete technology stack changes (Regular Expressions and Event-driven Execution Model) demonstrating expert leadership in building new innovative technology stacks" ] }
+         , { "role": "Project Manager", "competencies": [
+           "Delivered over 30+ new products and solutions ahead of schedule proving technological innovation and continuous improvement leadership that speeded up time-to-market by 50%"
+           , "Achieved 90+% customer satisfaction confirming high QA (Quality Assurance) infrastructure design and management competencies" ] }
+         , { "role": "Analytical Thinker", "competencies": [
+           "Led multiple payment system integration (American Express) and relational database design projects for Amadeus GDS (Global Distribution System) products and solutions using B2B and B2C models and client/server architecture confirming high analytical and problem-solving skills"
+           , "Automated and optimized over 10+ online price monitoring and comparison systems by designing and developing Web Scraping and Free Text Parsing Web Robots proving excellent competencies in Web Scraping, Dana Cleansing and ETL (Extract, Transform, Load) proceses design and development" ] } ] }
+    , { "position": "Software Developer"
+      , "company": {
+        "name": "KibiTech S. L."
+        , "location": "Madrid"
+        , "description": "Computer entertainment technological startup" }
+      , "from": "2009-01-01", "to": "2009-03-01"
+      , "accomplishments": [
+        { "role": "Analytical Thinker", "competencies": [
+          "Developed rendering engine of SVG (Scalable Vector Graphics) format for embedded Ubuntu Linux systems using OpenGL and C++ demonstrating abstract and analytical thinking skills" ] } ] }
+    , { "position": "Software Developer (internship)"
+      , "company": {
+        "name": "[GlobalLogic](https://www.globallogic.com/)"
+        , "location": "Kiev, Ukraine"
+        , "description": "Full-lifecycle product development services worldwide provider" }
+      , "from": "2008-01-01", "to": "2008-06-01", "hide": "tex"
+      , "accomplishments": [
+        { "role": "Analytical Thinker", "competencies": [
+          "Developed telecommunication system modules for IBM Mainframe System/390 and z/Architecture using IBM Mainframe Assembler manifesting analytical and problem-solving skills" ] } ] } ]
+  , "skills": [
+    { "domain": "Project management"
+      , "competencies": [
+        "Planned, organized and led numerous meetings with clients and software engineers demonstrating effective communication skills"
+        , "Led over 20+ projects in teams of 2 -- 5 members manifesting highly cohesive team building skills. Successfully applied methodologies promoted by [COBIT](http://www.isaca.org/cobit) and [PMBOK](http://www.pmi.org/PMBOK-Guide-and-Standards.aspx)"
+        , "Found many consensus-based optimal solutions to arising problems confirming excellent analytical, problem-solving and conflict resolution skills"
+        , "Delivered over 30+ projects ahead of schedule proving excellent multitasking and time management skills" ] }
+    , { "domain": "Software architecture"
+      , "competencies": [
+        "Analyzed client requirements and designed software system architecture using FP (Functional Programming) and OOP (Object-Oriented Programming) paradigms confirming excellent technical leadership, outstanding analytical, abstract thinking and problem decomposition skills"
+        , "Designed and developed concurrent, multithreaded and event-based back office servers for Amadeus GDS (Global Distribution System) demonstrating superb competency in building reliable, highly available systems working 24/7 and QA (Quality Assurance) process management"
+        , "Designed and developed interactive and user-friendly front office applications for Amadeus GDS (Global Distribution System) proving solid competency in designing RESTful Web API, developing SPA (Single Page Application) and applying UI/UX (User Interface/User Experience) principles"
+         , "Automated and optimized over 10+ online price monitoring and comparison systems by designing and developing Web Scraping and Free Text Parsing Web Robots using CSS Selectors for DOM querying and Regular Expressions for information extraction proving excellent competencies in Web Scraping, Dana Cleansing and ETL (Extract, Transform, Load) proceses design and development"
+        , "Expert competency in Agile Methodologies, Operating Systems ([Linux](https://www.kernel.org/), [Ubuntu](http://www.ubuntu.com/)), Programming Platforms ([Node.js/JavaScript](https://nodejs.org/), [C/C++/STL](http://www.cplusplus.com/)/[Boost](http://www.boost.org/), [Java](http://www.java.com/)/[Spring](https://spring.io/), [C#/.NET](http://www.microsoft.com/net), [Haskell](https://www.haskell.org/)), Version Control ([Git](http://git-scm.com/), [tig](https://github.com/jonas/tig), [Gitolite](https://github.com/sitaramc/gitolite)), Process Automation ([Shake](http://shakebuild.com/), [GNU~Bash](http://www.gnu.org/software/bash/)), Text Editors ([Vim](http://www.vim.org/), [Emacs](http://www.gnu.org/software/emacs/), [Tmux](http://tmux.sourceforge.net/))" ] }
+    , { "domain": "Database design (RDBMS)"
+      , "competencies": [
+        "Designed and developed relational (SQL) and document-oriented (noSQL) data models of query intensive booking systems for Amadeus GDS (Global Distribution System) using [PostgreSQL](http://www.postgresql.org/) and [SQL~Server](www.microsoft.com/es-es/server-cloud/products/sql-server/) proving solid competency in database design, data modeling, data decomposition and normalization for efficient data querying and storage" ] }
+    , { "domain": "Web development"
+      , "competencies": [
+        "Designed and developed diverse RESTful Web API using B2B and B2C models for E-commerce and payment systems integration using [Node.js](https://nodejs.org/) and [Express.js](http://expressjs.com/) confirming competency in designing interfaces and establishing processes for system integration"
+        , "Designed and developed numerous SPA (Single Page Application) using [React.js](http://facebook.github.io/react/), [Angular.js](https://angularjs.org/) demonstrating outstanding competency in building modern, SEO-enabled (Search Engine Optimization), E-commerce Web applications with RESTful back end"
+        , "Designed and developed user interfaces using [HTML5](http://www.w3.org/html/), [CSS3](http://www.w3.org/Style/CSS/), [Jade](http://jade-lang.com/), [Stylus](http://learnboost.github.io/stylus/), [Bootstrap](http://getbootstrap.com/), [Foundation](http://foundation.zurb.com/), [Semantic-UI](http://semantic-ui.com/), [Inkscape](https://inkscape.org/), [GIMP](http://www.gimp.org/) manifesting good UI/UX (User Interface/User Experience) and Web design skills" ] }
+    , { "domain": "Desktop publishing"
+      , "competencies": [
+        "Designed and developed 4 automated professional quality PDF generation systems for Amadeus itinerary and ticket billing workflows using [ConTeXt](http://contextgarden.net/), [MetaPost](http://www.tug.org/metapost.html), [Nunjucks](http://mozilla.github.io/nunjucks/) verifying proven competency in desktop publishing, document composition and typographic design" ] }
+    , { "domain": "Languages"
+      , "competencies": [
+        "English --- fluent"
+        , "Spanish --- bilingual"
+        , "Ukrainian --- mothertongue"
+        , "Russian --- mothertongue"
+        , "French --- intermediate" ] } ]
+  , "targets": [
+    { "position": "X", "show": "all"
+      , "requirements": [
+        { "requirement": "Minimum 7 years’ experience in State and Federal Court"
+          , "competency": "Solid 9-year record litigating cases. Licensed to practice in State and Federal Courts" }
+        , { "requirement": "Ability to take and defend depositions"
+          , "competency": "Taken and defended more than 100 depositions of parties, witnesses, experts" }
+        , { "requirement": "Ability to draft pleadings and motions, make court appearances"
+          , "competency": "Proven ability to draft winning arguments and prevail in oral law and motion practice" }
+        , { "requirement": "Ability to handle mediations, settlement conferences, and arbitration hearings"
+          , "competency": "Handled 85 mediations, settlement conferences, arbitration hearings from small business partnership disputes, to complex litigation with 100 plaintiffs, 75 defendants" }
+        , { "requirement": "Ability to take direction and work independently on cases and projects assigned"
+          , "competency": "Actively seek advice, critical suggestions from supervisors. Managed extensive case loads on diverse issues" }
+        , { "requirement": "Good communication skills and heavy client contact"
+          , "competency": "Created more than 25 systems to timely inform clients, attorneys, paralegals, support staff of deadlines, procedures, developments" } ] } ]
+}
