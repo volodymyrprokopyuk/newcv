@@ -202,7 +202,7 @@
 \stopSubSection
 {% for skill in skills %}
 \startSubSection
-{\bf\Gray {{ skill.domain }} }\SubSection
+{\bf\Gray\unhyphenated{ {{ skill.domain }} }}\SubSection
   \startitemize[joinedup,nowhite]
   {% for comp in skill.competencies -%}
   \item {{ comp }}

@@ -37,27 +37,24 @@
         "name": "[Amadeus IT Group](http://www.amadeus.com/)"
         , "location": "Madrid"
         , "description": "World's leading IT provider for the global travel and tourism industry" }
-      , "from": "2015-01-01", "to": "current"
+      , "from": "2007-03-01", "to": "current"
       , "accomplishments": [
          { "role": "Promotions", "competencies": [
-           "Promoted 3 times in 7 years from First Level Technical Support (2007) to Second Level Technical Support (2008) then to directly contracted by Amadeus Second Level Technical Support (2014) manifesting high personal commitment to company excellence and success"
+           "Promoted 3 times in 7 years from First Level Technical Support (2007) to Second Level Technical Support (2008) then to directly contracted by Amadeus Second Level Technical Support (2015) manifesting high personal commitment to company excellence and success"
            , "Consistently received highest rating on annual reviews" ] }
-         , { "role": "Technology Innovator", "competencies": [
-           "Delivered over X+ first level customer support staff technology traning courses for Amadeus products and services and Operating System/Network administration/configuration demonstating excellent staff taining, organizational and interpersonal skills"
-           , "Incresed customer satisfaction by X+% with proven success building and managing customer relationships with major Amadeus clients in collaboration with Commercial Department confirming outstanding communication and negotiation skills"
-           , "Received over X+ thank you letters from Amadeus clients by carefully managing and resolving customer complaints and technical issues manifesting polished complaint management skills"
-           , "Increased efficiency and productivity of technical issue remote diagnostic & troubleshooting by aplying innovative and proactive methodologies and software manifesting strong problem solving and analytical skills with excellent simultaneous multi issue resolution competencies"
-           , "over X+ per year technical issue tracking and reporting"
-           , ""
-           , ""
-           , ""
-           , "" ] }
-         , { "role": "Project Manager", "competencies": [
-           ""
-           , "" ] }
+         , { "role": "Customer Relationships Manager", "competencies": [
+           "Incresed customer satisfaction by X+% with proven success building and managing customer relationships with major Amadeus clients in collaboration with Commercial Department confirming outstanding communication and negotiation skills"
+           , "Received over X+ thank you letters from Amadeus clients by carefully managing and resolving customer complaints and complex technical issues manifesting polished complaint management skills" ] }
+         , { "role": "Customer Service Quality Manager", "competencies": [
+           "Contributed to Customer Support Quality Certification ISO 9001 by editing and publishing X+ manuals and proposals for continuous improvement of customer support service quality demonstrating commitment to continuous improvement and good documentation skills" ] }
+         , { "role": "Customer Support Staff Trainer", "competencies": [
+           "Delivered over X+ first level customer support staff technology traning courses for Amadeus products and services and Operating System/Network administration/configuration demonstating excellent staff taining, organizational and interpersonal skills" ] }
+         , { "role": "Knowledge Manager", "competencies": [
+           "Extended and improved knowledge management processes by composing and delivering over X+ technical support manuals and step-by-step incident resolution procedures description confirming high commitment to innovation and optimization of knowledge management and information sharing with excellent competency to explain technical solutions clearly" ] }
+         , { "role": "Problem Solver", "competencies": [
+           "Increased efficiency and productivity of technical issue remote diagnostic & troubleshooting by aplying innovative and proactive methodologies and software manifesting strong problem solving and analytical skills with excellent simultaneous multichannel multiissue resolution competencies for corporate customers" ] }
          , { "role": "Analytical Thinker", "competencies": [
-           ""
-           , "" ] } ] }
+           "Improved customer support service quality by tracking technical issue resolution progress and running weekly/monthly reports on common trends to identify underlying problems proving excellent issue progress tracking, information analysis, trend identification and reporting competencies" ] } ] }
     , { "position": "Second Level Technical Support"
       , "company": {
         "name": "[Engelgy](http://www.entelgy.com/)"
@@ -68,32 +65,29 @@
         { "role": "Analytical Thinker", "competencies": [
           "" ] } ] } ]
   , "skills": [
-    { "domain": "Communication"
-      , "competencies": [ "" ] }
-
+    { "domain": "Customer Support & Care"
+      , "competencies": [ "Over 8+ years of experience in Customer Support & Care. Increased customer satisfaction and improved customer support service quality by applying innovative methodologies and proactive approach in serving each customer issue" ] }
+    , { "domain": "Communication"
+      , "competencies": [ "Coordinated issue resolution process between Technical Department, Functional Specialists, Operational Staff and Commercial Managers demonstrating excellent communication and interpersonal skills"
+        , "Presented common trends in underlying problems to managers and clearly explained technical issues to customer support staff by analyzing issue tracking and reporting information manifesting strong analytical and communication skills" ] }
     , { "domain": "Customer Relationship Management"
-      , "competencies": [ "Commercial department" ] }
+      , "competencies": [ "Increased customer satisfaction by managing customer relationship in collaboration with Commercial Department demonstrating excellent customer relationship management skills" ] }
     , { "domain": "Complaint Management"
-      , "competencies": [ "" ] }
-    , { "domain": "Knowledge Management"
-      , "competencies": [ "Documentation, e-Support" ] }
-
+      , "competencies": [ "Received over X+ thank you letters from Amadeus clients by carefully managing and resolving customer complaints and complex technical issues manifesting polished complaint management skills" ] }
     , { "domain": "Staff Technology Training"
-      , "competencies": [ "" ] }
+      , "competencies": [ "Delivered over X+ customer support staff training cources confirming outstanding organizational and communication skills" ] }
+    , { "domain": "Knowledge Management"
+      , "competencies": [ "Extended and improved knowledge management processes by composing and delivering over X+ technical support manuals and step-by-step incident resolution procedures description confirming high commitment to innovation and optimization of knowledge management and information sharing with excellent competency to explain technical solutions clearly" ] }
     , { "domain": "IT Expertise & Advisory"
-      , "competencies": [ "Telecommunications" ] }
+      , "competencies": [ "Resolved over X+ complex technical issues related with Operating System/Networking and Amadeus products and solutions confirming strong technical expertise, deep knowledge of Amadeus products and IT advisory competencies" ] }
     , { "domain": "Issue Diagnostic & Troubleshooting"
-      , "competencies": [ "" ] }
+      , "competencies": [ "Successfully performed remote diagnostic & troubleshooting of over X+ complex technical issues using innovative applications (...) and methodologies proving high competency in using multichannel e-Support facilities for incident resolution" ] }
     , { "domain": "Issue Tracking & Reporting"
-      , "competencies": [ "" ] }
-
-
-    , { "domain": "Customer Support & Care"
-      , "competencies": [ "" ] }
+      , "competencies": [ "Successfully performed issue tracking & reporting of over X+ incidents using issue tracking applicaitons (...) and proactive aproaches in information analysis manifesting proved analytical and reporting skills" ] }
     , { "domain": "Languages"
       , "competencies": [
         "English --- fluent"
-        , "Spanish --- mothetongue" ] } ]
+        , "Spanish --- mothertongue" ] } ]
   , "targets": [
     { "position": "X", "show": "all"
       , "requirements": [
