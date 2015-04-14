@@ -4,10 +4,10 @@
   , "lastName": "Ortega"
   , "email": "deysio@gmail.com"
   , "mobile": "+(34) 651 630 278"
-  , "web": "[http://volodymyrprokopyuk.github.io/newcv/cv-deysi.html](http://volodymyrprokopyuk.github.io/newcv/cv-deysi.html)"
+  , "webx": "[http://volodymyrprokopyuk.github.io/newcv/cv-deysi.html](http://volodymyrprokopyuk.github.io/newcv/cv-deysi.html)"
   , "address": "Parla, Madrid"
   , "objective": "Customer Support Coordinator"
-  , "summary": "Over 10 years of success experience in Customer Support and Customer Care. Results-oriented profesional with outstanding analytical skills. Trained customer support staff and built productive teams. Customer Service focused with polished interpersonal skills. Proved competency in Customer Service Quality Management applying Customer Relationships Management skills and Knowledge Management expertise. Strong IT proficiencies with excellent communication skills. Highly organized with strong attention to detail and focus on results. MBA, BSc Telecommunications degree and fluent English"
+  , "summary": "Over 10 years of success experience in Customer Support and Customer Care. Results-oriented profesional with outstanding analytical skills. Trained customer support staff and built productive teams. Customer Service focused with polished interpersonal skills. Proved competency in Customer Service Quality Management applying Customer Relationship Management skills and Knowledge Management expertise. Strong IT proficiencies with excellent communication skills. Highly organized with strong attention to detail and focus on results. MBA, BSc Telecommunications degree and fluent English"
   , "formats": {
     "pdf": "[PDF](https://www.dropbox.com/s/2qwab9btjghllrq/cv-deysi.pdf?dl=0)"
     , "html": "[HTML](http://volodymyrprokopyuk.github.io/newcv/cv-deysi.html)"
@@ -25,6 +25,12 @@
          "name": "[GARBEN](http://www.garben.com/)"
          , "location": "Madrid" }
        , "from": "2011-09-01", "to": "2011-12-01" }
+     , { "degree": "Amadeus Flight Reservation System"
+       , "description": "Amadeus Flight Reservation functional and transactional workflows"
+       , "school": {
+         "name": "[Amadeus](http://www.amadeus.com/)"
+         , "location": "Madrid" }
+       , "from": "2009-05-01", "to": "2009-06-01" }
      , { "degree": "Electronics and Telecommunications Engineer, BSc"
        , "description": "Electronics and Telecommunications"
        , "school": {
@@ -43,14 +49,14 @@
            "Promoted 3 times in 7 years from First Level Technical Support (2007) to Second Level Technical Support (2008) then to directly contracted by Amadeus Second Level Technical Support (2015) manifesting high personal commitment to company excellence and success"
            , "Consistently received highest rating on annual reviews" ] }
          , { "role": "Customer Relationships Manager", "competencies": [
-           "Increased customer satisfaction by X+% with proven success building and managing customer relationships with major Amadeus clients in collaboration with Commercial Department confirming outstanding communication and negotiation skills"
-           , "Received over X+ thank you letters from Amadeus clients by carefully managing and resolving customer complaints and complex technical issues manifesting polished complaint management skills" ] }
+           "Increased customer satisfaction with proven success building and managing customer relationships with major Amadeus clients in collaboration with Commercial Department confirming outstanding communication and negotiation skills"
+           , "Received many thank you letters from Amadeus clients by carefully managing and resolving customer complaints and complex technical issues manifesting polished complaint management skills" ] }
          , { "role": "Customer Service Quality Manager", "competencies": [
-           "Contributed to Customer Support Quality Certification ISO 9001 by editing and publishing X+ manuals and proposals for continuous improvement of customer support service quality demonstrating commitment to continuous improvement and good documentation skills" ] }
+           "Contributed to Customer Support Quality Certification ITC (ISO 9001) by editing and publishing several proposals for continuous improvement of customer support service quality demonstrating commitment to continuous improvement and good documentation skills" ] }
          , { "role": "Customer Support Staff Trainer", "competencies": [
-           "Delivered over X+ first level customer support staff technology training courses for Amadeus products and services and Operating System/Network administration/configuration demonstrating excellent staff training, organizational and interpersonal skills" ] }
+           "Delivered many first level customer support staff technology training courses for Amadeus products and services and operating system/network administration/configuration demonstrating excellent staff training, organizational and interpersonal skills" ] }
          , { "role": "Knowledge Manager", "competencies": [
-           "Extended and improved knowledge management processes by composing and delivering over X+ technical support manuals and step-by-step incident resolution procedures description confirming high commitment to innovation and optimization of knowledge management and information sharing with excellent competency to explain technical solutions clearly" ] }
+           "Extended and improved knowledge management processes by composing and delivering over 40+ technical support manuals and step-by-step incident resolution procedures description confirming high commitment to innovation and optimization of knowledge management and information sharing with excellent competency to explain technical solutions clearly" ] }
          , { "role": "Problem Solver", "competencies": [
            "Increased efficiency and productivity of technical issue remote diagnostic & troubleshooting by applying innovative and proactive methodologies and software manifesting strong problem solving and analytical skills with excellent simultaneous multichannel multi issue resolution competencies for corporate customers" ] }
          , { "role": "Analytical Thinker", "competencies": [
@@ -63,9 +69,9 @@
       , "from": "2004-06-01", "to": "2007-03-01"
       , "accomplishments": [
         { "role": "Promotions Manager", "competencies": [
-          "Managed over X+ promotions campaigns and discount application to Orange clients manifesting communication skills, and customer care competencies" ] }
+          "Managed different promotions campaigns and discount application to Orange clients manifesting communication skills, and customer care competencies" ] }
         , { "role": "Payment Operator", "competencies": [
-          "Performed over X+ telephonic payment operations manipulating payment information, account details, credit cards and banking operations proving organizational skills, attention to details and customer care competencies" ] } ] } ]
+          "Performed numerous telephonic payment operations manipulating payment information, account details, credit cards and banking operations proving organizational skills, attention to details and customer care competencies" ] } ] } ]
   , "skills": [
     { "domain": "Customer Support & Care"
       , "competencies": [ "Over 10+ years of experience in Customer Support & Care. Increased customer satisfaction and improved customer support service quality by applying innovative methodologies and proactive approach in serving each customer issue" ] }
@@ -75,17 +81,17 @@
     , { "domain": "Customer Relationship Management"
       , "competencies": [ "Increased customer satisfaction by managing customer relationship in collaboration with Commercial Department demonstrating excellent customer relationship management skills" ] }
     , { "domain": "Complaint Management"
-      , "competencies": [ "Received over X+ thank you letters from Amadeus clients by carefully managing and resolving customer complaints and complex technical issues manifesting polished complaint management skills" ] }
+      , "competencies": [ "Received many thank you letters from Amadeus clients by carefully managing and resolving customer complaints and complex technical issues manifesting polished complaint management skills" ] }
     , { "domain": "Staff Technology Training"
-      , "competencies": [ "Delivered over X+ customer support staff training courses confirming outstanding organizational and communication skills" ] }
+      , "competencies": [ "Delivered many customer support staff training courses confirming outstanding organizational and communication skills" ] }
     , { "domain": "Knowledge Management"
-      , "competencies": [ "Extended and improved knowledge management processes by composing and delivering over X+ technical support manuals and step-by-step incident resolution procedures description confirming high commitment to innovation and optimization of knowledge management and information sharing with excellent competency to explain technical solutions clearly" ] }
+      , "competencies": [ "Extended and improved knowledge management processes by composing and delivering over 40+ technical support manuals and step-by-step incident resolution procedures description confirming high commitment to innovation and optimization of knowledge management and information sharing with excellent competency to explain technical solutions clearly" ] }
     , { "domain": "IT Expertise & Advisory"
-      , "competencies": [ "Resolved over X+ complex technical issues related with Operating System/Networking and Amadeus products and solutions confirming strong technical expertise, deep knowledge of Amadeus products and IT advisory competencies" ] }
+      , "competencies": [ "Resolved numerours complex technical issues related with operating system/networking and Amadeus products and solutions confirming strong technical expertise, deep knowledge of Amadeus products and IT advisory competencies" ] }
     , { "domain": "Issue Diagnostic & Troubleshooting"
-      , "competencies": [ "Successfully performed remote diagnostic & troubleshooting of over X+ complex technical issues using innovative applications (...) and methodologies proving high competency in using multichannel e-Support facilities for incident resolution" ] }
+      , "competencies": [ "Successfully performed remote diagnostic & troubleshooting of over 4700+ complex technical issues per year using innovative applications (Team Viewer, NetOp Remote Control, CRM) and methodologies proving high competency in using multichannel e-Support facilities for incident resolution" ] }
     , { "domain": "Issue Tracking & Reporting"
-      , "competencies": [ "Successfully performed issue tracking & reporting of over X+ incidents using issue tracking applications (...) and proactive approaches in information analysis manifesting proved analytical and reporting skills" ] }
+      , "competencies": [ "Successfully performed issue tracking & reporting of over 4700+ incidents per year using issue tracking applications (SIEBEL, One ViewX) and proactive approaches in information analysis manifesting proved analytical and reporting skills" ] }
     , { "domain": "Languages"
       , "competencies": [
         "English --- fluent"
@@ -96,11 +102,11 @@
         { "requirement": "Operational Management"
           , "competency": "Increased efficiency and productivity of technical issue remote diagnostic and troubleshooting by applying innovative and proactive methodologies and software manifesting strong problem solving and analytical skills with excellent simultaneous multichannel multi issue resolution competencies for corporate customers" }
         , { "requirement": "Excellence in Customer Service"
-          , "competency": "Contributed to Customer Support Quality Certification ISO 9001 by editing and publishing X+ manuals and proposals for continuous improvement of customer support service quality demonstrating commitment to continuous improvement and good documentation skills" }
+          , "competency": "Contributed to Customer Support Quality Certification ITC (ISO 9001) by editing and publishing several proposals for continuous improvement of customer support service quality demonstrating commitment to continuous improvement and good documentation skills" }
         , { "requirement": "Processes and Tools, Quality and Improvements"
           , "competency": "Improved customer support service quality by tracking technical issue resolution progress and running weekly/monthly reports on common trends to identify underlying problems proving excellent issue progress tracking, information analysis, trend identification and reporting competencies" }
         , { "requirement": "Communication, Collaboration and Knowledge Management"
-          , "competency": "Extended and improved knowledge management processes by composing and delivering over X+ technical support manuals and step-by-step incident resolution procedures description confirming high commitment to innovation and optimization of knowledge management and information sharing with excellent competency to explain technical solutions clearly" }
-        , { "requirement": "Coordination of Traveler's Assistance Service"
-          , "competency": "" } ] } ]
+          , "competency": "Extended and improved knowledge management processes by composing and delivering over 40+ technical support manuals and step-by-step incident resolution procedures description confirming high commitment to innovation and optimization of knowledge management and information sharing with excellent competency to explain technical solutions clearly" }
+        , { "requirement": "Coordination of Travel Assistance Service"
+          , "competency": "Successfully delivered technical support to all PCs of Travel Assistance Service Center proving deep knowledge of technical and operational processes in the Service Center" } ] } ]
 }

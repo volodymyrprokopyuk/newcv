@@ -57,7 +57,7 @@
 \setupfootertexts[{\tfx\Dark
   \hfill{\Lighter\AwEmail}\hspace[medium]{{ email }}
   \hfill{\Lighter\AwPhone}\hspace[medium]{{ mobile }}
-  \hfill{\Lighter\AwWeb}\hspace[medium]{{ web }}\hfill}]
+  {% if web %}\hfill{\Lighter\AwWeb}\hspace[medium]{{ web }}{% endif %}\hfill}]
 
 %% lists
 \definesymbol[1][{\Lighter\AwItem}]
@@ -125,7 +125,7 @@
 \starttable[|rs2|l|]
 \NC\Lighter\AwEmail\NC\Base {{ email }}\NC\FR
 \NC\Lighter\AwPhone\NC\Base {{ mobile }}\NC\MR
-\NC\Lighter\AwWeb\NC\Base {{ web }}\NC\MR
+{% if web %}\NC\Lighter\AwWeb\NC\Base {{ web }}\NC\MR{% endif %}
 \NC\Lighter\AwAddress\NC\Base {{ address }}\NC\LR
 \stoptable
 \stopProfile
