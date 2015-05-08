@@ -64,7 +64,7 @@
         "name": "[GlobalLogic](https://www.globallogic.com/)"
         , "location": "Kiev, Ukraine"
         , "description": "Full-lifecycle product development services worldwide provider" }
-      , "from": "2008-01-01", "to": "2008-06-01", "hide": "tex"
+      , "from": "2008-01-01", "to": "2008-06-01", "hidex": "tex"
       , "accomplishments": [
         { "role": "Analytical Thinker", "competencies": [
           "Developed telecommunication system modules for IBM Mainframe System/390 and z/Architecture using IBM Mainframe Assembler manifesting analytical and problem-solving skills" ] } ] } ]
@@ -101,7 +101,7 @@
         , "Russian --- mothertongue"
         , "French --- intermediate" ] } ]
   , "targets": [
-    { "position": "X", "show": "all"
+    { "position": "X", "showx": "all"
       , "requirements": [
         { "requirement": "Minimum 7 years’ experience in State and Federal Court"
           , "competency": "Solid 9-year record litigating cases. Licensed to practice in State and Federal Courts" }
