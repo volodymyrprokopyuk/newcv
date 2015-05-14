@@ -18,7 +18,7 @@
        , "school": {
          "name": "[Escuela de Administración de Empresas, EAE](http://www.eae.es/)"
          , "location": "Madrid" }
-       , "from": "2012-09-01", "to": "in course" }
+       , "from": "2012-09-01", "to": "2015-06-01" }
      , { "degree": "Master of Science with honors in Computer Systems and Networking, MSc"
        , "description": "Computer systems architecture and design. Computer networks routing algorithms optimization"
        , "school": {
@@ -77,7 +77,7 @@
         , "Delivered over 30+ projects ahead of schedule proving excellent multitasking and time management skills" ] }
     , { "domain": "Software architecture"
       , "competencies": [
-        "Analyzed client requirements and designed software system architecture using FP (Functional Programming) and OOP (Object-Oriented Programming) paradigms confirming excellent technical leadership, outstanding analytical, abstract thinking and problem decomposition skills"
+        "Analyzed client requirements and designed software system architecture applying FP (Functional Programming), FRP (Functional Reactive Programming) and OOP (Object-Oriented Programming) paradigms and design patterns confirming excellent technical leadership, outstanding analytical, abstract thinking and problem decomposition skills"
         , "Designed and developed concurrent, multithreaded and event-based back office servers for Amadeus GDS (Global Distribution System) demonstrating superb competency in building reliable, highly available systems working 24/7 and QA (Quality Assurance) process management"
         , "Designed and developed interactive and user-friendly front office applications for Amadeus GDS (Global Distribution System) proving solid competency in designing RESTful Web API, developing SPA (Single Page Application) and applying UI/UX (User Interface/User Experience) principles"
          , "Automated and optimized over 10+ online price monitoring and comparison systems by designing and developing Web Scraping and Free Text Parsing Web Robots using CSS Selectors for DOM querying and Regular Expressions for information extraction proving excellent competencies in Web Scraping, Dana Cleansing and ETL (Extract, Transform, Load) proceses design and development"
@@ -97,8 +97,8 @@
       , "competencies": [
         "English --- fluent"
         , "Spanish --- bilingual"
-        , "Ukrainian --- mothertongue"
-        , "Russian --- mothertongue"
+        , "Ukrainian --- mother tongue"
+        , "Russian --- mother tongue"
         , "French --- intermediate" ] } ]
   , "targets": [
     { "position": "X", "showx": "all"

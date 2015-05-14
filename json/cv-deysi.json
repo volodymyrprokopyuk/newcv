@@ -4,7 +4,7 @@
   , "lastName": "Ortega"
   , "email": "deysio@gmail.com"
   , "mobile": "+(34) 651 630 278"
-  , "webx": "[http://volodymyrprokopyuk.github.io/newcv/cv-deysi.html](http://volodymyrprokopyuk.github.io/newcv/cv-deysi.html)"
+  , "web": "[http://volodymyrprokopyuk.github.io/newcv/cv-deysi.html](http://volodymyrprokopyuk.github.io/newcv/cv-deysi.html)"
   , "address": "Parla, Madrid"
   , "objective": "Customer Support Coordinator"
   , "summary": "Over 10 years of success experience in Customer Support and Customer Care. Results-oriented professional with excellent analytical skills. Masterful employee trainer and team builder. Focused on Customer Satisfaction with distinguished interpersonal skills. Competency in Customer Service Quality Management and Customer Relationship Management. Knowledge Management expertise. Strong IT proficiencies with profound communication skills. Highly organized with attention to detail and focus on results. MBA, BSc Telecommunications degree and fluent English"
@@ -97,7 +97,7 @@
         "English --- fluent"
         , "Spanish --- mother tongue" ] } ]
   , "targets": [
-    { "position": "Customer Support Coordinator, Amadeus", "show": "all"
+    { "position": "Customer Support Coordinator, Amadeus", "showx": "all"
       , "requirements": [
         { "requirement": "Operational Management"
           , "competency": "Efficiency and productivity in remote diagnosis and troubleshooting of technical issues at corporate customer level; applying innovative and proactive methodologies; demonstrating strong skills in problem analysis and solution, multi-tasking and multi-issue resolution" }
