@@ -115,4 +115,5 @@
           , "competency": "Actively seek advice, critical suggestions from supervisors. Managed extensive case loads on diverse issues" }
         , { "requirement": "Good communication skills and heavy client contact"
           , "competency": "Created more than 25 systems to timely inform clients, attorneys, paralegals, support staff of deadlines, procedures, developments" } ] } ]
+  , "comments": [ "Data graphical analysis with [gnuplot](http://www.gnuplot.info/)" ]
 }
