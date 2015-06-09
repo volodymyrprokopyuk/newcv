@@ -14,19 +14,19 @@
     , "txt": "[TXT](https://www.dropbox.com/s/cnzx7fa3g139ik4/cv-volodymyr.txt?dl=0)" }
   , "education": [
      { "degree": "Master of Business Administration, MBA"
-       , "description": "Strategy, project management, marketing, accounting and finance, human resources. Business plans"
+       , "description": "Strategy, project management, marketing, accounting and finance, human resources. Business plans. GPA:~8.7/10"
        , "school": {
          "name": "[Escuela de Administración de Empresas, EAE](http://www.eae.es/)"
          , "location": "Madrid" }
        , "from": "2012-09-01", "to": "2015-06-01" }
      , { "degree": "Master of Science with honors in Computer Systems and Networking, MSc"
-       , "description": "Computer systems architecture and design. Computer networks routing algorithms optimization"
+       , "description": "Computer systems architecture, design and implementation. Computer networks routing algorithms optimization. GPA:~9.9/10"
        , "school": {
          "name": "[National Technical University of Oil and Gas](http://eng.nung.edu.ua/)"
          , "location": "Ukraine" }
        , "from": "2007-09-01", "to": "2008-06-01" }
      , { "degree": "Bachelor of Science with honors in Computer Science, BSc"
-       , "description": "Architecture, design and implementation of general purpose computer systems"
+       , "description": "Architecture, design and implementation of general purpose computer systems. GPA:~9.8/10"
        , "school": {
          "name": "[National Technical University of Oil and Gas](http://eng.nung.edu.ua/)"
          , "location": "Ukraine" }
