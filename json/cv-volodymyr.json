@@ -7,7 +7,7 @@
   , "web": "[http://volodymyrprokopyuk.github.io/newcv/cv-volodymyr.html](http://volodymyrprokopyuk.github.io/newcv/cv-volodymyr.html)"
   , "address": "Alcorcón, Madrid"
   , "objective": "IT Project manager | Software architect"
-  , "summary": "Over 6 years of success experience in managing and developing IT projects. Results-oriented leader with outstanding motivational skills. Developed staff and built productive teams. IT project management focused with polished interpersonal skills. Proved competency in designing and developing high technology solutions applying strong analytical skills and technological innovation expertise. Strong IT proficiencies with excellent communication skills. Highly organized with strong attention to detail and focus on results. Bilingual: English and Spanish"
+  , "summary": "Over 6 years of success experience in managing and developing IT projects. Results-oriented leader with outstanding motivational skills. Developed staff and built productive teams. IT project management focused with polished interpersonal skills. Proved competency in designing and developing high technology solutions applying strong analytical skills and technological innovation expertise. Strong IT proficiency with excellent communication skills. Highly organized with strong attention to detail and focus on results. Fluent: English and Spanish"
   , "formats": {
     "pdf": "[PDF](https://www.dropbox.com/s/q22j84k5m6amyll/cv-volodymyr.pdf?dl=0)"
     , "html": "[HTML](http://volodymyrprokopyuk.github.io/newcv/cv-volodymyr.html)"
@@ -20,7 +20,7 @@
          , "location": "Madrid" }
        , "from": "2012-09-01", "to": "2015-06-01" }
      , { "degree": "Master of Science with honors in Computer Systems and Networking, MSc"
-       , "description": "Computer systems architecture, design and implementation. Computer networks routing algorithms optimization. GPA:~9.9/10"
+       , "description": "Computer systems architecture and design. Computer networks routing algorithms optimization. GPA:~9.9/10"
        , "school": {
          "name": "[National Technical University of Oil and Gas](http://eng.nung.edu.ua/)"
          , "location": "Ukraine" }
@@ -45,11 +45,26 @@
          , { "role": "Technology Innovator", "competencies": [
            "Increased efficiency and productivity of products development by 70% through managing 2 complete technology stack changes (Regular Expressions and Event-driven Execution Model) demonstrating expert leadership in building new innovative technology stacks" ] }
          , { "role": "Project Manager", "competencies": [
-           "Delivered over 30+ new products and solutions ahead of schedule proving technological innovation and continuous improvement leadership that speeded up time-to-market by 50%"
+           "Delivered over 30+ new products and solutions ahead of schedule proving technological innovation and continuous improvement leadership that speed up time-to-market by 50%"
            , "Achieved 90+% customer satisfaction confirming high QA (Quality Assurance) infrastructure design and management competencies" ] }
          , { "role": "Analytical Thinker", "competencies": [
-           "Led multiple payment system integration (American Express) and relational database design projects for Amadeus GDS (Global Distribution System) products and solutions using B2B and B2C models and client/server architecture confirming high analytical and problem-solving skills"
-           , "Automated and optimized over 10+ online price monitoring and comparison systems by designing and developing Web Scraping and Free Text Parsing Web Robots proving excellent competencies in Web Scraping, Data Cleansing and ETL (Extract, Transform, Load) proceses design and development" ] } ] }
+           "Led multiple payment system integration (American Express) and relational database design projects for Amadeus GDS (Global Distribution System) products and solutions using B2B and B2C models and client-server architecture confirming high analytical and problem-solving skills"
+           , "Automated and optimized over 10+ online price monitoring and comparison systems by designing and developing Web Scraping and Free Text Parsing Web Robots proving excellent competencies in Web Scraping, Data Cleansing and ETL (Extract, Transform, Load) process design and development" ] }
+         , { "role": "Role and Responsibilities", "competencies": [
+           "Senior Software Engineer at Amadeus development team doing requirements analysis, software architecture design, implementation of key functional modules and testing"
+           , "Development team technical leader and technological innovator of the solutions for most important Amadeus clients in Spain"
+           , "Team coordinator and responsible for assembling and testing modules developed by team members into functional solution ready to deployment"
+           , "C/C++ developer, last 2+ years intensively working with JavaScript for server (Node.js) and client (React.js and Angular.js) side applying functional and reactive functional programming concepts"
+           , "Relational data model architect and SQL developer" ] }
+         , { "role": "Main projects", "competencies": [
+           "Redesigned completely the Infrastructure of Access Methods to Amadeus GDS (Global Distribution System) from C++ multithreaded applications to JavaScript and Node.js event-based platform for interchanging information with Amadeus mainframes using IBM 3270 protocol. Led technical innovation and implementation of an Internal System Integration Platform used by 10+ projects for Amadeus clients. Increased processing capability of solutions based on the platform by 50% in comparison with previous access methods"
+           , "Technical leader in a group of 3 developers who built an Automated Payment Solution which integrates Amadeus Selling Platform with a payment services of an external provider. Automatic receipt generation (high quality PDF) for hotel providers. Improved system availability and PDF generation response times (2 sec. per PDF document) by using load balancing and a farm of PDF generation servers. Improved client interface for using the payment solution by implementing SPA (Single Page Application) with parallel generation of PDF receipts for different services simultaneously. The solution is used daily by 1000 travel agency offices with an average of 4-5 terminals per office"
+           , "High quality PDF Itinerary Generation System for major Amadeus client. System generates over 3000 itineraries per day. Reduced itinerary generation failures to 1-2 per month. Greatly improved flight booking information retrieval accuracy by developing extensible parser framework based on Regular Expressions"
+           , "Flight change, departure Monitoring and Notification System via SMS and Email in C++. Designed and developed parallel multithreaded application in C++ which receives flight bookings from Amadeus queue and periodically monitors flight changes. The solution notifies passengers via email or SMS about near departures, changes. Designed and developed relational database model for the solution using SQL" ] }
+         , { "role": "Innovation in projects", "competencies": [
+           "Architected and implemented Even-based Platform to access Amadeus GDS. Reduced by 50% response time of the solutions that use the platform. The platform is implemented using JavaScript and Node.js and Promises via Bluebird.js library"
+           , "Built client UI applications using SPA with RESTful backend. Client and server side programming in JavaScript and Node.js, Rest.js and Angular.js. Improved response time and general application workflow in comparison with traditional round-trip HTTP applications"
+           , "Changed completely PDF Document Generation Method from proprietary third party library with very limited capabilities to feature rich markup language (TeX, LaTeX, ConTeXt) with professional quality output. Drastically improved generated PDF document appearance and client satisfaction with professionally looking documents (itineraries, receipts). Increased PDF generation system availability by using NGINX as load balancing solution and a farm of PDF generation servers" ] } ] }
     , { "position": "Software Developer"
       , "company": {
         "name": "KibiTech S. L."
@@ -79,9 +94,9 @@
       , "competencies": [
         "Analyzed client requirements and designed software system architecture applying FP (Functional Programming), FRP (Functional Reactive Programming) and OOP (Object-Oriented Programming) paradigms and design patterns confirming excellent technical leadership, outstanding analytical, abstract thinking and problem decomposition skills"
         , "Designed and developed concurrent, multithreaded and event-based back office servers for Amadeus GDS (Global Distribution System) demonstrating superb competency in building reliable, highly available systems working 24/7 and QA (Quality Assurance) process management"
-        , "Designed and developed interactive and user-friendly front office applications for Amadeus GDS (Global Distribution System) proving solid competency in designing RESTful Web API, developing SPA (Single Page Application) and applying UI/UX (User Interface/User Experience) principles"
-         , "Automated and optimized over 10+ online price monitoring and comparison systems by designing and developing Web Scraping and Free Text Parsing Web Robots using CSS Selectors for DOM querying and Regular Expressions for information extraction proving excellent competencies in Web Scraping, Data Cleansing and ETL (Extract, Transform, Load) proceses design and development"
-        , "Expert competency in Agile Methodologies, Operating Systems ([Linux](https://www.kernel.org/), [Ubuntu](http://www.ubuntu.com/)), Programming Platforms ([Node.js/JavaScript](https://nodejs.org/), [C/C++/STL](http://www.cplusplus.com/)/[Boost](http://www.boost.org/), [Java](http://www.java.com/)/[Spring](https://spring.io/), [C#/.NET](http://www.microsoft.com/net), [Haskell](https://www.haskell.org/)), Version Control ([Git](http://git-scm.com/), [tig](https://github.com/jonas/tig), [Gitolite](https://github.com/sitaramc/gitolite)), Process Automation ([Shake](http://shakebuild.com/), [GNU~Bash](http://www.gnu.org/software/bash/)), Text Editors ([Vim](http://www.vim.org/), [Emacs](http://www.gnu.org/software/emacs/), [Tmux](http://tmux.sourceforge.net/))" ] }
+        , "Designed and developed interactive and user-friendly front office applications for Amadeus GDS (Global Distribution System) proving solid competency in designing RESTful Web API, developing SPA (Single Page Application) and applying UI/UX (User Interface, User Experience) principles"
+         , "Automated and optimized over 10+ online price monitoring and comparison systems by designing and developing Web Scraping and Free Text Parsing Web Robots using CSS Selectors for DOM querying and Regular Expressions for information extraction proving excellent competencies in Web Scraping, Data Cleansing and ETL (Extract, Transform, Load) process design and development"
+        , "Expert competency in Agile Methodologies, Operating Systems ([Linux](https://www.kernel.org/), [Ubuntu](http://www.ubuntu.com/)), Programming Platforms ([Node.js and JavaScript](https://nodejs.org/), [C/C++, STL](http://www.cplusplus.com/)/[Boost](http://www.boost.org/), [Java](http://www.java.com/), [Spring](https://spring.io/), [C#, .NET](http://www.microsoft.com/net), [Haskell](https://www.haskell.org/)), Version Control ([Git](http://git-scm.com/), [tig](https://github.com/jonas/tig), [Gitolite](https://github.com/sitaramc/gitolite)), Process Automation ([Shake](http://shakebuild.com/), [GNU~Bash](http://www.gnu.org/software/bash/)), Text Editors ([Vim](http://www.vim.org/), [Emacs](http://www.gnu.org/software/emacs/), [Tmux](http://tmux.sourceforge.net/))" ] }
     , { "domain": "Database design (RDBMS)"
       , "competencies": [
         "Designed and developed relational (SQL) and document-oriented (noSQL) data models of query intensive booking systems for Amadeus GDS (Global Distribution System) using [PostgreSQL](http://www.postgresql.org/) and [SQL~Server](www.microsoft.com/es-es/server-cloud/products/sql-server/) proving solid competency in database design, data modeling, data decomposition and normalization for efficient data querying and storage" ] }
@@ -89,16 +104,16 @@
       , "competencies": [
         "Designed and developed diverse RESTful Web API using B2B and B2C models for E-commerce and payment systems integration using [Node.js](https://nodejs.org/) and [Express.js](http://expressjs.com/) confirming competency in designing interfaces and establishing processes for system integration"
         , "Designed and developed numerous SPA (Single Page Application) using [React.js](http://facebook.github.io/react/), [Angular.js](https://angularjs.org/) demonstrating outstanding competency in building modern, SEO-enabled (Search Engine Optimization), E-commerce Web applications with RESTful back end"
-        , "Designed and developed user interfaces using [HTML5](http://www.w3.org/html/), [CSS3](http://www.w3.org/Style/CSS/), [Jade](http://jade-lang.com/), [Stylus](http://learnboost.github.io/stylus/), [Bootstrap](http://getbootstrap.com/), [Foundation](http://foundation.zurb.com/), [Semantic-UI](http://semantic-ui.com/), [Inkscape](https://inkscape.org/), [GIMP](http://www.gimp.org/) manifesting good UI/UX (User Interface/User Experience) and Web design skills" ] }
+        , "Designed and developed user interfaces using [HTML5](http://www.w3.org/html/), [CSS3](http://www.w3.org/Style/CSS/), [Jade](http://jade-lang.com/), [Stylus](http://learnboost.github.io/stylus/), [Bootstrap](http://getbootstrap.com/), [Foundation](http://foundation.zurb.com/), [Semantic-UI](http://semantic-ui.com/), [Inkscape](https://inkscape.org/), [GIMP](http://www.gimp.org/) manifesting good UI/UX (User Interface, User Experience) and Web design skills" ] }
     , { "domain": "Desktop publishing"
       , "competencies": [
         "Designed and developed 4 automated professional quality PDF generation systems for Amadeus itinerary and ticket billing workflows using [ConTeXt](http://contextgarden.net/), [MetaPost](http://www.tug.org/metapost.html), [Nunjucks](http://mozilla.github.io/nunjucks/) verifying proven competency in desktop publishing, document composition and typographic design" ] }
     , { "domain": "Languages"
       , "competencies": [
         "English --- fluent"
-        , "Spanish --- bilingual"
-        , "Ukrainian --- mother tongue"
-        , "Russian --- mother tongue"
+        , "Spanish --- fluent"
+        , "Ukrainian --- native"
+        , "Russian --- native"
         , "French --- intermediate" ] } ]
   , "targets": [
     { "position": "X", "showx": "all"
@@ -115,5 +130,5 @@
           , "competency": "Actively seek advice, critical suggestions from supervisors. Managed extensive case loads on diverse issues" }
         , { "requirement": "Good communication skills and heavy client contact"
           , "competency": "Created more than 25 systems to timely inform clients, attorneys, paralegals, support staff of deadlines, procedures, developments" } ] } ]
-  , "comments": [ "Data graphical analysis with [gnuplot](http://www.gnuplot.info/)" ]
+  , "comments": [ "Data graphical analysis, exploratory data analysis with [gnuplot](http://www.gnuplot.info/)" ]
 }

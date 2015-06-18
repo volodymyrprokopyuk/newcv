@@ -14,10 +14,6 @@
 \definefontsynonym[Awesome][name:fontawesome]
 \definesymbol[AwItem][\getnamedglyphdirect{Awesome}{ok}]
 \define\AwItem{\symbol[AwItem]}
-\definesymbol[AwProfile][\getnamedglyphdirect{Awesome}{user}]
-\define\AwProfile{\symbol[AwProfile]}
-\definesymbol[AwTarget][\getnamedglyphdirect{Awesome}{flag}]
-\define\AwTarget{\symbol[AwTarget]}
 \definesymbol[AwEmail][\getnamedglyphdirect{Awesome}{envelope}]
 \define\AwEmail{\symbol[AwEmail]}
 \definesymbol[AwPhone][\getnamedglyphdirect{Awesome}{phone}]
@@ -26,12 +22,6 @@
 \define\AwWeb{\symbol[AwWeb]}
 \definesymbol[AwAddress][\getnamedglyphdirect{Awesome}{map_marker}]
 \define\AwAddress{\symbol[AwAddress]}
-\definesymbol[AwEducation][\getnamedglyphdirect{Awesome}{_388}]
-\define\AwEducation{\symbol[AwEducation]}
-\definesymbol[AwEmployment][\getnamedglyphdirect{Awesome}{cog}]
-\define\AwEmployment{\symbol[AwEmployment]}
-\definesymbol[AwSkills][\getnamedglyphdirect{Awesome}{star}]
-\define\AwSkills{\symbol[AwSkills]}
 
 %% SourcePro font
 \starttypescript[sans][SourcePro]
@@ -44,8 +34,8 @@
 \setupbodyfont[SourcePro,sans,10pt]
 
 %% layout
-\setuplayout[backspace=5pt,edge=0pt,edgedistance=0pt,margin=1pt,
-  leftmargindistance=5pt,rightmargindistance=15pt,width=fit,
+\setuplayout[backspace=45pt,edge=0pt,edgedistance=0pt,margin=1pt,
+  leftmargindistance=45pt,rightmargindistance=35pt,width=fit,
   topspace=0pt,top=0pt,topdistance=0pt,header=1pt,headerdistance=22pt,
   footer=16pt,footerdistance=5pt,bottom=1pt,bottomdistance=8pt,height=fit]
 %\showframe
@@ -79,17 +69,17 @@
 \setupbackgrounds[page][background={color,Background},
   backgroundcolor=white]
 
+%% Profile
+\defineparagraphs[Profile][n=2,distance=10pt]
+\setupparagraphs[Profile][1][width=0.45\textwidth]
+
 %% Section
 \defineparagraphs[Section][n=2,distance=10pt]
 \setupparagraphs[Section][1][width=0.05\textwidth]
 
 %% SubSection
 \defineparagraphs[SubSection][n=2,distance=14pt]
-\setupparagraphs[SubSection][1][width=0.2\textwidth,align=flushright]
-
-%% Profile
-\defineparagraphs[Profile][n=2,distance=10pt]
-\setupparagraphs[Profile][1][width=0.4\textwidth]
+\setupparagraphs[SubSection][1][width=0.1\textwidth,align=flushright]
 
 %\usemodule[fnt-10]
 %\ShowCompleteFont{name:fontawesome}{20pt}{1}
@@ -113,12 +103,7 @@
     \CONTEXT}}}
 
 %% PROFILE %%
-\startSection
-{\tfd\Light\AwProfile}\crlf
-\rotate[90]{\bfd\Light {{ locale.profile }} }\Section
-
 \rightaligned{Formats: {{ formats.html }} {{ formats.txt }} }
-
 \startProfile
 {\bfc\Dark {{ firstName }} {{ lastName }} }\blank
 {\tfb\Base {{ objective }} }\Profile
@@ -129,15 +114,13 @@
 \NC\Lighter\AwAddress\NC\Base {{ address }}\NC\LR
 \stoptable
 \stopProfile
+\startSection\crlf\Section
 {\bia\Gray {{ summary }} }
 \stopSection
 
 {% if target -%}%% TARGET %%
-\startSection
-{\tfc\Light\AwTarget}\crlf
-\rotate[90]{\bfd\Light {{ locale.target }} }\Section
-
-\midaligned{\starttable[|lp(0.25\textwidth)|lp(0.45\textwidth)|]
+\startSection\crlf\Section
+\midaligned{\starttable[|lp(0.35\textwidth)|lp(0.55\textwidth)|]
 \NC\bfa\Light {{ locale.requires }}\NC\bfa\Light {{ locale.offer }}\NC\FR
 {% for req in target.requirements %}
 \NC\startitemize\item {{ req.requirement }}\stopitemize
@@ -148,66 +131,47 @@
 {%- endif %}
 
 %% EDUCATION %%
-\startSection
-{\tfc\Light\AwEducation}\crlf
-\rotate[90]{\bfd\Light {{ locale.education }} }\Section
-
-\startSubSection
-{\bfc\Lighter\unhyphenated{ {{ locale.education }} }}\SubSection
-\stopSubSection
+{\bfd\Lighter {{ locale.education }} }
 {% for edu in education %}
-\startSubSection
-{\bi\Light {{ edu.from }} \endash\ {{ edu.to }} }\SubSection
-{\bfa\Dark {{ edu.degree }}}\crlf
+\startSection\crlf\Section
+{\bfa\Dark {{ edu.degree }}}\hfill
+{\bi\Light {{ edu.from }} \endash\ {{ edu.to }} }\crlf
 {\bi {{ edu.school.name }}}{\it {{ ', ' + edu.school.location }} }\crlf
 {{ edu.description }}
-\stopSubSection
-{% endfor -%}
 \stopSection
+{% endfor -%}
 
 %% EMPLOYMENT %%
-\startSection
-{\tfd\Light\AwEmployment}\crlf
-\rotate[90]{\bfd\Light {{ locale.employment }} }\Section
-
-\startSubSection
-{\bfc\Lighter\unhyphenated{ {{ locale.employment }} }}\SubSection
-\stopSubSection
+{\bfd\Lighter {{ locale.employment }} }
 {% for emp in employment %}
-\startSubSection
-{\bi\Light {{ emp.from }} \endash\ {{ emp.to }} }\SubSection
-{\bfa\Dark {{ emp.position }} }\crlf
+\startSection\crlf\Section
+{\bfa\Dark {{ emp.position }} }\hfill
+{\bi\Light {{ emp.from }} \endash\ {{ emp.to }} }\crlf
 {\bi {{ emp.company.name }}}{\it {{ ', ' + emp.company.location }} }\crlf
 {{ emp.company.description }}
+\stopSection
   {% for acc in emp.accomplishments %}
+  \startSubSection\crlf\SubSection
   {\bf\Gray {{ acc.role }} }
     \startitemize[joinedup,nowhite]
     {% for comp in acc.competencies -%}
     \item {{ comp }}
     {% endfor -%}
     \stopitemize
+  \stopSubSection
   {% endfor -%}
-\stopSubSection
 {% endfor -%}
-\stopSection
 
 %% SKILLS AND COMPETENCIES %%
-\startSection
-{\tfd\Light\AwSkills}\crlf
-\rotate[90]{\bfd\Light {{ locale.skills }} }\Section
-
-\startSubSection
-{\bfc\Lighter\unhyphenated{ {{ locale.skills }} }}\SubSection
-\stopSubSection
+{\bfd\Lighter {{ locale.skills }} }
 {% for skill in skills %}
-\startSubSection
-{\bf\Gray\unhyphenated{ {{ skill.domain }} }}\SubSection
+\startSection\crlf\Section
+{\bf\Gray {{ skill.domain }} }
   \startitemize[joinedup,nowhite]
   {% for comp in skill.competencies -%}
   \item {{ comp }}
   {% endfor -%}
   \stopitemize
-\stopSubSection
-{% endfor -%}
 \stopSection
+{% endfor -%}
 \stoptext
