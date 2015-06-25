@@ -16,3 +16,9 @@ Application for generating CVs in PDF/HTML/TXT/TEX from JSON using
   | [TXT](https://www.dropbox.com/s/t475m3pkvb0q1qy/cv-deysi.txt?dl=0)
   | [TEX](https://www.dropbox.com/s/7vlm8dm2uxcbwsj/cv-deysi.tex?dl=0)
   | [JSON](https://www.dropbox.com/s/m8d1ts2kkxfio5d/cv-deysi.json?dl=0)
+- Leonel's CV
+  [PDF](https://www.dropbox.com/s/dq7onja8x04zy5r/cv-leonel.pdf?dl=0)
+  | [HTML](https://www.dropbox.com/s/f5yr1urmaj9wzvj/cv-leonel.html?dl=0)
+  | [TXT](https://www.dropbox.com/s/dtfjny7dk9kihid/cv-leonel.txt?dl=0)
+  | [TEX](https://www.dropbox.com/s/gqddi8o6nkwnrdy/cv-leonel.tex?dl=0)
+  | [JSON](https://www.dropbox.com/s/fm0qei5dukxrq3q/cv-leonel.json?dl=0)

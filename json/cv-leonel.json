@@ -1,0 +1,85 @@
+{
+  "meta": { "locale": "es" }
+  , "firstName": "Leonel"
+  , "lastName": "Ortega Moncayo"
+  , "email": "Ortegagandy@gmail.com"
+  , "mobile": "+(34) 609 006 590"
+  , "web": "[http://volodymyrprokopyuk.github.io/newcv/cv-leonel.html](http://volodymyrprokopyuk.github.io/newcv/cv-leonel.html)"
+  , "address": "Avenida Santa Eugenia, 62 Madrid, 28031"
+  , "objective": "Ingeniero Mecánico (LO QUE QUIERES)"
+  , "summary": "RESUMEN (LO QUE OFRECES). MIRA EL EJEMPLO DE MI CV O EL DE DEYSI"
+  , "formats": {
+    "pdf": "[PDF](https://www.dropbox.com/s/dq7onja8x04zy5r/cv-leonel.pdf?dl=0)"
+    , "html": "[HTML](http://volodymyrprokopyuk.github.io/newcv/cv-leonel.html)"
+    , "txt": "[TXT](https://www.dropbox.com/s/dtfjny7dk9kihid/cv-leonel.txt?dl=0)" }
+  , "education": [
+     { "degree": "Grado en Ingeniería Mecánica"
+       , "description": "Proyecto final de carrera actualmente lo estoy realizando y trata sobre la investigación y simulación de la formación de aglomerados en el interior de combustores basados en la tecnología de lecho fluidizado mediante la herramienta informática de MATLAB. GPA:~9.0/10. MEJOR PRESENTARLO COMO YA HECHO"
+       , "school": {
+         "name": "[Universidad Carlos III de Madrid](http://www.uc3m.es/Inicio)"
+         , "location": "Madrid" }
+       , "from": "2010-09-01", "to": "2015-06-01" } ]
+  , "employment": [
+    { "position": "Ayudante de la investigación (becario)"
+      , "company": {
+        "name": "[Universidad Carlos III de Madrid](http://www.uc3m.es/Inicio)"
+        , "location": "Madrid"
+        , "description": "Universidad Carlos III de Madrid contribuye a la mejora de la sociedad con una docencia de calidad y una investigación avanzada de acuerdo con exigentes criterios internacionales. La universidad aspira a la excelencia en todas sus actividades, con el objetivo de convertirse en una de las mejores universidades europeas" }
+      , "from": "DESDE", "to": "HASTA"
+      , "accomplishments": [
+         { "role": "Colaborador", "competencies": [
+           "Colaboré en el trabajo de laboratorio e investigación en el departamento de Ingeniería Térmica y de Fluidos de la Universidad" ] }
+         , { "role": "Ayudante (PAPEL)", "competencies": [
+           "DESCRIPCIÓN DE LOS LOGROS EN NÚMEROS DEMOSTRANDO LAS COMPETENCIAS CONCRETAS. EJEMPLO: REALIZÉ EL ANÁLISIS EXPLORATIRIO DE DATOS DE INVESTIGACIÓN EN 15 EXPERIMENTOS APLICANDO LAS TECNICAS ESTADÍSTICAS Y LAS TÉCNICAS VISUALES DEMOSTRANDO LAS EXCELLENTES CAPACIDADES ANALÍTICAS Y LAS CAPACIDADES DE RESUMIR LOS DATOS EXPERIMENTALES. AUTOMATIZÉ 3 DIFERENTES PROCESOS DE ANÁLISIS DE DATOS DE INVESTIGACIÓN UTILIZANDO EL ENTORNO MATLAB CONFIRMANDO LAS CAPACIDADES INFORMÁTICOS Y LAS CAPACIDADES DE PROCESAMIENTO AUTOMATIZADO DE DATOS" ] } ] }
+    , { "position": "Ayudante de la investigación (becario)"
+      , "company": {
+        "name": "[Universidad Carlos III de Madrid](http://www.uc3m.es/Inicio)"
+        , "location": "Madrid"
+        , "description": "Universidad Carlos III de Madrid contribuye a la mejora de la sociedad con una docencia de calidad y una investigación avanzada de acuerdo con exigentes criterios internacionales. La universidad aspira a la excelencia en todas sus actividades, con el objetivo de convertirse en una de las mejores universidades europeas" }
+      , "from": "DESDE", "to": "HASTA"
+      , "accomplishments": [
+         { "role": "Colaborador", "competencies": [
+           "Colaboré en el trabajo de laboratorio e investigación en el Departamento de Ingeniería Mecánica de la Universidad" ] }
+         , { "role": "PAPEL", "competencies": [
+           "DESCRIPCIÓN DE LOS LOGROS EN NÚMEROS DEMOSTRANDO LAS COMPETENCIAS CONCRETAS. LO MISMO" ] } ] } ]
+  , "skills": [
+    { "domain": "MATLAB"
+      , "competencies": [
+        "Conocimientos: medios. Años totales: 1. Último año: actualmente. DESCRIBE QUÉ PROYECTOS HAS HECHO Y CON QUÉ TÉCNICAS. CÉNTRATE EN LOS LOGROS Y LOS RESULTADOS QUE HAS CONSEGUIDO. REVELA LAS CAPACIDADES QUE HAS DEMOSTRADO O ADQUIRIDO QUE SON RELEVANTES PARA LOS PUESTOS A QUE APLICAS" ] }
+    , { "domain": "SOLID EDGE"
+      , "competencies": [
+        "Conocimientos: medios-altos. Años totales: 2. Último año: actualmente" ] }
+    , { "domain": "SOLIDWORKS"
+      , "competencies": [
+        "Conocimientos: medios. Años totales: 1. Último año: actualmente" ] }
+    , { "domain": "ANSYS"
+      , "competencies": [
+        "Conocimientos: básicos. Años totales: 1. Último año: 1 año" ] }
+    , { "domain": "ABAQUS"
+      , "competencies": [
+        "Conocimientos: básicos. Años totales: 1. Último año: 2 años" ] }
+    , { "domain": "MATHCAD"
+      , "competencies": [
+        "Conocimientos: básicos. Años totales: 1. Último año: 1 año" ] }
+    , { "domain": "MICROSOFT OFFICE"
+      , "competencies": [
+        "Conocimientos: altos. Años totales: 5. Último año: actualmente" ] }
+    , { "domain": "Carnet de coducir"
+      , "competencies": [
+        "Dispongo de permiso de conducción B1 y coche propio" ] }
+    , { "domain": "Disponibilidad para viajar"
+      , "competencies": [
+        "Disponibilidad para viajar y establecer residencia en el extranjero" ] }
+    , { "domain": "Trabajo en equipo"
+      , "competencies": [
+        "Tengo gran capacidad de trabajo en equipo y adaptabilidad a cualquier ambiente y mucha ambición de superación" ] }
+    , { "domain": "Idiomas"
+      , "competencies": [
+        "Español: idioma nativo"
+        , "Inglés: nivel medio tanto hablado como escrito" ] } ]
+  , "targets": [
+    { "position": "X", "showx": "all"
+      , "requirements": [
+        { "requirement": "x"
+          , "competency": "x" } ] } ]
+}
