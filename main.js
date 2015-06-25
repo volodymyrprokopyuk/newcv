@@ -47,7 +47,7 @@ var pwhile = function(pred, act, seed) {
 
 var locales = { };
 
-locales.en = { typesetWith: 'Typeset with', profile: 'Profile'
+locales.en = { typesetWith: 'Typeset with', formats: 'Formats', profile: 'Profile'
   , email: 'Email', mobile: 'Mobile', web: 'Web', address: 'Address'
   , objective: 'Objective', summary: 'Summary'
   , target: 'Target', requires: 'Company Requires', offer: 'I Offer'
@@ -55,7 +55,7 @@ locales.en = { typesetWith: 'Typeset with', profile: 'Profile'
   , skills: 'Skills and Competencies'
 };
 
-locales.es = { typesetWith: 'Tipografía', profile: 'Perfil'
+locales.es = { typesetWith: 'Tipografía', formats: 'Formatos', profile: 'Perfil'
   , email: 'Email', mobile: 'Móvil', web: 'Web', address: 'Dirección'
   , objective: 'Objetivo', summary: 'Resumen'
   , target: 'Propósito específico', requires: 'Requerimientos'
