@@ -1,5 +1,6 @@
 *~
-.tern-port
+.ninja_log
+.ninja_deps
 .build/
 node_modules/
 pdf/
