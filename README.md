@@ -1,8 +1,7 @@
 # New CV
 
 Application for generating CVs in PDF/HTML/TXT/TEX from JSON using
-[ConTeXt](http://contextgarden.net) and
-[Node.js](https://nodejs.org/)/[io.js](https://iojs.org)
+[ConTeXt](http://contextgarden.net) and [Node.js](https://nodejs.org/)
 
 - Volodymyr's CV
   [PDF](https://www.dropbox.com/s/q22j84k5m6amyll/cv-volodymyr.pdf?dl=0)
