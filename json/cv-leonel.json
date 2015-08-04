@@ -5,16 +5,16 @@
   , "email": "Ortegagandy@gmail.com"
   , "mobile": "+(34) 609 006 590"
   , "web": "[http://volodymyrprokopyuk.github.io/newcv/cv-leonel.html](http://volodymyrprokopyuk.github.io/newcv/cv-leonel.html)"
-  , "address": "Avenida Santa Eugenia, 62 Madrid, 28031"
-  , "objective": "Ingeniero Mecánico (LO QUE QUIERES)"
-  , "summary": "RESUMEN (LO QUE OFRECES). MIRA EL EJEMPLO DE MI CV O EL DE DEYSI"
+  , "address": "Avenida Santa Eugenia, 62, Madrid, 28031"
+  , "objective": "Ingeniero Mecánico"
+  , "summary": ""
   , "formats": {
     "pdf": "[PDF](https://www.dropbox.com/s/dq7onja8x04zy5r/cv-leonel.pdf?dl=0)"
     , "html": "[HTML](http://volodymyrprokopyuk.github.io/newcv/cv-leonel.html)"
     , "txt": "[TXT](https://www.dropbox.com/s/dtfjny7dk9kihid/cv-leonel.txt?dl=0)" }
   , "education": [
      { "degree": "Grado en Ingeniería Mecánica"
-       , "description": "Proyecto final de carrera actualmente lo estoy realizando y trata sobre la investigación y simulación de la formación de aglomerados en el interior de combustores basados en la tecnología de lecho fluidizado mediante la herramienta informática de MATLAB. GPA:~9.0/10. MEJOR PRESENTARLO COMO YA HECHO"
+       , "description": "Proyecto final de Carrera: Investigación y simulación de la formación de aglomerados en el interior de combustores basados en la tecnología de lecho fluidizado mediante la herramienta informática de MATLAB. Nota final: 9/10"
        , "school": {
          "name": "[Universidad Carlos III de Madrid](http://www.uc3m.es/Inicio)"
          , "location": "Madrid" }
@@ -25,27 +25,25 @@
         "name": "[Universidad Carlos III de Madrid](http://www.uc3m.es/Inicio)"
         , "location": "Madrid"
         , "description": "Universidad Carlos III de Madrid contribuye a la mejora de la sociedad con una docencia de calidad y una investigación avanzada de acuerdo con exigentes criterios internacionales. La universidad aspira a la excelencia en todas sus actividades, con el objetivo de convertirse en una de las mejores universidades europeas" }
-      , "from": "DESDE", "to": "HASTA"
+      , "from": "2013-09-01", "to": "2014-07-01"
       , "accomplishments": [
          { "role": "Colaborador", "competencies": [
-           "Colaboré en el trabajo de laboratorio e investigación en el departamento de Ingeniería Térmica y de Fluidos de la Universidad" ] }
-         , { "role": "Ayudante (PAPEL)", "competencies": [
-           "DESCRIPCIÓN DE LOS LOGROS EN NÚMEROS DEMOSTRANDO LAS COMPETENCIAS CONCRETAS. EJEMPLO: REALICÉ EL ANÁLISIS EXPLORATORIO DE DATOS DE INVESTIGACIÓN EN 15 EXPERIMENTOS APLICANDO LAS TÉCNICAS ESTADÍSTICAS Y LAS TÉCNICAS VISUALES DEMOSTRANDO LAS EXCELENTES CAPACIDADES ANALÍTICAS Y LAS CAPACIDADES DE RESUMIR LOS DATOS EXPERIMENTALES. AUTOMATICÉ 3 DIFERENTES PROCESOS DE ANÁLISIS DE DATOS DE INVESTIGACIÓN UTILIZANDO EL ENTORNO MATLAB CONFIRMANDO LAS CAPACIDADES INFORMÁTICOS Y LAS CAPACIDADES DE PROCESAMIENTO AUTOMATIZADO DE DATOS" ] } ] }
+           "Colaboré en el trabajo de laboratorio e investigación en el Departamento de Ingeniería Mecánica de la Universidad"
+           , "Realicé la toma de medidas en diferentes experimentos para analizar y estudiar la resistencia mecánica de ciertos materiales utilizados en la industria con el objetivo de obtener una muestra representativa y así poder diseñar un escenario que pueda servir de ayuda para predecir los cambios que pueden sufrir estos materiales cuando están sometidos a diferentes cargas. Adquirí destreza en la toma de datos en laboratorio así como en realizar un registro minucioso de la información recopilada para que posteriormente sea procesada" ] } ] }
     , { "position": "Ayudante de la investigación (becario)"
       , "company": {
         "name": "[Universidad Carlos III de Madrid](http://www.uc3m.es/Inicio)"
         , "location": "Madrid"
         , "description": "Universidad Carlos III de Madrid contribuye a la mejora de la sociedad con una docencia de calidad y una investigación avanzada de acuerdo con exigentes criterios internacionales. La universidad aspira a la excelencia en todas sus actividades, con el objetivo de convertirse en una de las mejores universidades europeas" }
-      , "from": "DESDE", "to": "HASTA"
+      , "from": "2012-09-01", "to": "2013-07-01"
       , "accomplishments": [
          { "role": "Colaborador", "competencies": [
-           "Colaboré en el trabajo de laboratorio e investigación en el Departamento de Ingeniería Mecánica de la Universidad" ] }
-         , { "role": "PAPEL", "competencies": [
-           "DESCRIPCIÓN DE LOS LOGROS EN NÚMEROS DEMOSTRANDO LAS COMPETENCIAS CONCRETAS. LO MISMO" ] } ] } ]
+           "Colaboré en el trabajo de laboratorio e investigación en el departamento de Ingeniería Térmica y de Fluidos de la Universidad"
+           , "Realicé el análisis exploratorio de datos de investigación en varios experimentos aplicando técnicas estadísticas y técnicas visuales adquiriendo excelentes capacidades analíticas y capacidades de resumir los datos experimentales. Automaticé  algunos procesos de análisis de datos de investigación utilizando el entorno de MATLAB confirmando las capacidades informáticas y las capacidades de procesamiento automatizado de datos" ] } ] } ]
   , "skills": [
     { "domain": "MATLAB"
       , "competencies": [
-        "Conocimientos: medios. Años totales: 1. Último año: actualmente. DESCRIBE QUÉ PROYECTOS HAS HECHO Y CON QUÉ TÉCNICAS. CÉNTRATE EN LOS LOGROS Y LOS RESULTADOS QUE HAS CONSEGUIDO. REVELA LAS CAPACIDADES QUE HAS DEMOSTRADO O ADQUIRIDO QUE SON RELEVANTES PARA LOS PUESTOS A QUE APLICAS" ] }
+        "Conocimientos: medios. Años totales: 1. Último año: actualmente" ] }
     , { "domain": "SOLID EDGE"
       , "competencies": [
         "Conocimientos: medios-altos. Años totales: 2. Último año: actualmente" ] }
