@@ -14,15 +14,19 @@ html(lang=meta.locale)
       include css/header.min.css
       include css/list.min.css
       include css/table.min.css
+      include css/image.min.css
   body
     .ui.page.padded.grid
       // profile
       .sixteen.wide.right.aligned.column
         p #{ locale.formats }: !{ formats.pdf } !{ formats.txt }
+      .two.wide.column
+        .ui.image
+          img(src=photo)
       .eight.wide.column
         .ui.large.blue.header #{ firstName } #{ lastName }
           .sub.header=objective
-      .eight.wide.column
+      .six.wide.column
         table.ui.very.basic.small.table
           tbody
             tr
