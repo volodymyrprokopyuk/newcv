@@ -21,8 +21,9 @@ html(lang=meta.locale)
       .sixteen.wide.right.aligned.column
         p #{ locale.formats }: !{ formats.pdf } !{ formats.txt }
       .two.wide.column
-        .ui.image
-          img(src=photo)
+        if photo
+          .ui.image
+            img(src=photo)
       .eight.wide.column
         .ui.large.blue.header #{ firstName } #{ lastName }
           .sub.header=objective
@@ -41,6 +42,10 @@ html(lang=meta.locale)
             tr
               td.right.aligned=locale.address
               td=address
+      if slides
+        .sixteen.wide
+          h3
+            a(href=slides) #{ locale.intro }
       .sixteen.wide.column
         .ui.large.list
           .item=summary

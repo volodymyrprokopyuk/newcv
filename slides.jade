@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    title Intro
+    link(href="css/code/zenburn.css" rel="stylesheet")
+    link(href="css/reveal.css" rel="stylesheet")
+    link(href="css/theme/league.css" rel="stylesheet")
+    //-link(href="css/print/pdf.css" rel="stylesheet")
+    //-url: //index.html?print-pdf
+    style.
+      span.red { color: red; }
+  body
+    .reveal
+      .slides
+        block main
+    script(src="js/highlight.js")
+    script(src="js/reveal.js")
+    script.
+      hljs.initHighlightingOnLoad();
+      Reveal.initialize({ transition: 'convex' });
