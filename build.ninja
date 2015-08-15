@@ -32,11 +32,18 @@ build txt/cv-volodymyr.txt: txt json/cv-volodymyr.json | txt/cv.txt main.js bin/
 build txt/cv-deysi.txt: txt json/cv-deysi.json | txt/cv.txt main.js bin/render
 build txt/cv-leonel.txt: txt json/cv-leonel.json | txt/cv.txt main.js bin/render
 
+rule jade
+  command = jade --pretty $in
+  description = [ $out ]
+
+build html/slides-volodymyr.html: jade html/slides-volodymyr.jade | html/slides.jade
+
 rule upload
   command = cp json/cv-*.json ~/Dropbox/git-newcv; $
     cp tex/cv-*.tex ~/Dropbox/git-newcv; $
     cp pdf/cv-*.pdf ~/Dropbox/git-newcv; $
     cp html/cv-*.html ~/Dropbox/git-newcv; $
+    cp html/slides-*.html ~/Dropbox/git-newcv; $
     cp txt/cv-*.txt ~/Dropbox/git-newcv; $
     cp pdf/ad-*.pdf ~/Dropbox/git-newcv
   description = [ Dropbox ]
@@ -51,6 +58,7 @@ build deploy: deploy
 
 default $
   pdf/cv-volodymyr.pdf html/cv-volodymyr.html txt/cv-volodymyr.txt $
+  html/slides-volodymyr.html $
   pdf/cv-deysi.pdf html/cv-deysi.html txt/cv-deysi.txt $
   pdf/cv-leonel.pdf html/cv-leonel.html txt/cv-leonel.txt $
   pdf/ad-piano.pdf pdf/ad-cleaning.pdf

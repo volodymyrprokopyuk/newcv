@@ -48,6 +48,7 @@ var pwhile = function(pred, act, seed) {
 var locales = { };
 
 locales.en = { typesetWith: 'Typeset with', formats: 'Formats', profile: 'Profile'
+  , intro: 'Let me introduce myself in 5 slides'
   , email: 'Email', mobile: 'Mobile', web: 'Web', address: 'Address'
   , objective: 'Objective', summary: 'Summary'
   , target: 'Target', requires: 'Company Requires', offer: 'I Offer'
@@ -56,6 +57,7 @@ locales.en = { typesetWith: 'Typeset with', formats: 'Formats', profile: 'Profil
 };
 
 locales.es = { typesetWith: 'Tipografía', formats: 'Formatos', profile: 'Perfil'
+  , intro: 'Permítame presentarme en 5 transparencias'
   , email: 'Email', mobile: 'Móvil', web: 'Web', address: 'Dirección'
   , objective: 'Objetivo', summary: 'Resumen'
   , target: 'Propósito específico', requires: 'Requerimientos'
