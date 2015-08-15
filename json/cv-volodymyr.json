@@ -40,18 +40,7 @@
         , "description": "World's leading IT provider for the global travel and tourism industry" }
       , "from": "2009-04-01", "to": "current"
       , "accomplishments": [
-         { "role": "Promotions", "competencies": [
-           "Promoted 3 times in 6 years from Software Developer (2009) to Software Engineer (2010) then to Senior Software Engineer (2013) manifesting high personal commitment to company excellence and success"
-           , "Consistently received highest rating on annual reviews with corresponding salary increments" ] }
-         , { "role": "Technology Innovator", "competencies": [
-           "Increased efficiency and productivity of products development by 70% through managing 2 complete technology stack changes (Regular Expressions and Event-driven Execution Model) demonstrating expert leadership in building new innovative technology stacks" ] }
-         , { "role": "Project Manager", "competencies": [
-           "Delivered over 30+ new products and solutions ahead of schedule proving technological innovation and continuous improvement leadership that speed up time-to-market by 50%"
-           , "Achieved 90+% customer satisfaction confirming high QA (Quality Assurance) infrastructure design and management competencies" ] }
-         , { "role": "Analytical Thinker", "competencies": [
-           "Led multiple payment system integration (American Express) and relational database design projects for Amadeus GDS (Global Distribution System) products and solutions using B2B and B2C models and client-server architecture confirming high analytical and problem-solving skills"
-           , "Automated and optimized over 10+ online price monitoring and comparison systems by designing and developing Web Scraping and Free Text Parsing Web Robots proving excellent competencies in Web Scraping, Data Cleansing and ETL (Extract, Transform, Load) process design and development" ] }
-         , { "role": "Role and Responsibilities", "competencies": [
+         { "role": "Role and Responsibilities", "competencies": [
            "Senior Software Engineer at Amadeus development team doing requirements analysis, software architecture design, implementation of key functional modules and testing"
            , "Development team technical leader and technological innovator of the solutions for most important Amadeus clients in Spain"
            , "Team coordinator and responsible for assembling and testing modules developed by team members into functional solution ready to deployment"
@@ -65,7 +54,18 @@
          , { "role": "Innovation in projects", "competencies": [
            "Architected and implemented Even-based Platform to access Amadeus GDS. Reduced by 50% response time of the solutions that use the platform. The platform is implemented using JavaScript and Node.js and Promises via Bluebird.js library"
            , "Built client UI applications using SPA with RESTful backend. Client and server side programming in JavaScript and Node.js, Rest.js and Angular.js. Improved response time and general application workflow in comparison with traditional round-trip HTTP applications"
-           , "Changed completely PDF Document Generation Method from proprietary third party library with very limited capabilities to feature rich markup language (TeX, LaTeX, ConTeXt) with professional quality output. Drastically improved generated PDF document appearance and client satisfaction with professionally looking documents (itineraries, receipts). Increased PDF generation system availability by using NGINX as load balancing solution and a farm of PDF generation servers" ] } ] }
+           , "Changed completely PDF Document Generation Method from proprietary third party library with very limited capabilities to feature rich markup language (TeX, LaTeX, ConTeXt) with professional quality output. Drastically improved generated PDF document appearance and client satisfaction with professionally looking documents (itineraries, receipts). Increased PDF generation system availability by using NGINX as load balancing solution and a farm of PDF generation servers" ] }
+         , { "role": "Technology Innovator", "competencies": [
+           "Increased efficiency and productivity of products development by 70% through managing 2 complete technology stack changes (Regular Expressions and Event-driven Execution Model) demonstrating expert leadership in building new innovative technology stacks" ] }
+         , { "role": "Project Manager", "competencies": [
+           "Delivered over 30+ new products and solutions ahead of schedule proving technological innovation and continuous improvement leadership that speed up time-to-market by 50%"
+           , "Achieved 90+% customer satisfaction confirming high QA (Quality Assurance) infrastructure design and management competencies" ] }
+         , { "role": "Analytical Thinker", "competencies": [
+           "Led multiple payment system integration (American Express) and relational database design projects for Amadeus GDS (Global Distribution System) products and solutions using B2B and B2C models and client-server architecture confirming high analytical and problem-solving skills"
+           , "Automated and optimized over 10+ online price monitoring and comparison systems by designing and developing Web Scraping and Free Text Parsing Web Robots proving excellent competencies in Web Scraping, Data Cleansing and ETL (Extract, Transform, Load) process design and development" ] }
+         , { "role": "Promotions", "competencies": [
+           "Promoted 3 times in 6 years from Software Developer (2009) to Software Engineer (2010) then to Senior Software Engineer (2013) manifesting high personal commitment to company excellence and success"
+           , "Consistently received highest rating on annual reviews with corresponding salary increments" ] } ] }
     , { "position": "Software Developer"
       , "company": {
         "name": "KibiTech S. L."
