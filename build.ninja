@@ -3,6 +3,7 @@ rule tex
   description = [ $out ]
 
 build tex/cv-volodymyr.tex: tex json/cv-volodymyr.json | tex/cv.tex main.js bin/render
+build tex/cv-igor.tex: tex json/cv-igor.json | tex/cv.tex main.js bin/render
 build tex/cv-deysi.tex: tex json/cv-deysi.json | tex/cv.tex main.js bin/render
 build tex/cv-leonel.tex: tex json/cv-leonel.json | tex/cv.tex main.js bin/render
 
@@ -11,6 +12,7 @@ rule pdf
   description = [ $out ]
 
 build pdf/cv-volodymyr.pdf: pdf tex/cv-volodymyr.tex
+build pdf/cv-igor.pdf: pdf tex/cv-igor.tex
 build pdf/cv-deysi.pdf: pdf tex/cv-deysi.tex
 build pdf/cv-leonel.pdf: pdf tex/cv-leonel.tex
 build pdf/ad-piano.pdf: pdf tex/ad-piano.tex
@@ -21,6 +23,7 @@ rule html
   description = [ $out ]
 
 build html/cv-volodymyr.html: html json/cv-volodymyr.json | html/cv.html main.js bin/render
+build html/cv-igor.html: html json/cv-igor.json | html/cv.html main.js bin/render
 build html/cv-deysi.html: html json/cv-deysi.json | html/cv.html main.js bin/render
 build html/cv-leonel.html: html json/cv-leonel.json | html/cv.html main.js bin/render
 
@@ -29,6 +32,7 @@ rule txt
   description = [ $out ]
 
 build txt/cv-volodymyr.txt: txt json/cv-volodymyr.json | txt/cv.txt main.js bin/render
+build txt/cv-igor.txt: txt json/cv-igor.json | txt/cv.txt main.js bin/render
 build txt/cv-deysi.txt: txt json/cv-deysi.json | txt/cv.txt main.js bin/render
 build txt/cv-leonel.txt: txt json/cv-leonel.json | txt/cv.txt main.js bin/render
 
@@ -59,6 +63,7 @@ build deploy: deploy
 default $
   pdf/cv-volodymyr.pdf html/cv-volodymyr.html txt/cv-volodymyr.txt $
   html/slides-volodymyr.html $
+  pdf/cv-igor.pdf html/cv-igor.html txt/cv-igor.txt $
   pdf/cv-deysi.pdf html/cv-deysi.html txt/cv-deysi.txt $
   pdf/cv-leonel.pdf html/cv-leonel.html txt/cv-leonel.txt $
   pdf/ad-piano.pdf pdf/ad-cleaning.pdf
