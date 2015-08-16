@@ -15,23 +15,53 @@
     , "html": "[HTML](https://www.dropbox.com/s/lh08zre0ezpsvlh/cv-igor.html?dl=0)"
     , "txt": "[TXT](https://www.dropbox.com/s/0dlemoynvtll4yz/cv-igor.txt?dl=0)" }
   , "education": [
-     { "degree": "Grado en Ingeniería Mecánica"
-       , "description": "Proyecto final de Carrera: Investigación y simulación de la formación de aglomerados en el interior de combustores basados en la tecnología de lecho fluidizado mediante la herramienta informática de MATLAB. Nota final: 9/10"
+     { "degree": "Máster en interpretación musical"
+       , "description": "Calificaciones: interpretador de música clásica, profesor de piano. Nota final: 9.4/10"
        , "school": {
-         "name": "[Universidad Carlos III de Madrid](http://www.uc3m.es/Inicio)"
-         , "location": "Madrid" }
-       , "from": "2010-09-01", "to": "2015-06-01" } ]
+         "name": "[Conservatorio Nacional de Música de Lviv, Mykola Lysenko](http://conservatory.lviv.ua/)"
+         , "location": "Lviv, Ucrania" }
+       , "from": "2008-09-01", "to": "2009-06-01" }
+    , { "degree": "Grado en interpretación musical"
+       , "description": "Calificaciones: profesor de piano, interpretador de música clásica, interpretador de música de cámara, repertorista. Nota final: 9.2/10"
+       , "school": {
+         "name": "[Conservatorio Nacional de Música de Lviv, Mykola Lysenko](http://conservatory.lviv.ua/)"
+         , "location": "Lviv, Ucrania" }
+       , "from": "2004-09-01", "to": "2008-06-01" }
+    , { "degree": "Consultor de Psicoterapia Positiva"
+       , "description": "Consultoria de clientes individuales y Psicoterapia Positiva en grupos"
+       , "school": {
+         "name": "[International Academy for positive and Cross-cultural Psychotherapy](http://www.peseschkian-foundation.org/)"
+         , "location": "Kiev, Ucrania" }
+       , "from": "2008-09-01", "to": "2010-06-01" } ]
   , "employment": [
-    { "position": "Ayudante de la investigación (becario)"
+    { "position": "Director de escuela de artes"
       , "company": {
-        "name": "[Universidad Carlos III de Madrid](http://www.uc3m.es/Inicio)"
-        , "location": "Madrid"
-        , "description": "Universidad Carlos III de Madrid contribuye a la mejora de la sociedad con una docencia de calidad y una investigación avanzada de acuerdo con exigentes criterios internacionales. La universidad aspira a la excelencia en todas sus actividades, con el objetivo de convertirse en una de las mejores universidades europeas" }
-      , "from": "2013-09-01", "to": "2014-07-01"
+        "name": "[Escuela de artes de Yaremche](https://www.facebook.com/artyaremcheschool)"
+        , "location": "Yaremche, Ucrania"
+        , "description": "La escuela realiza la enseñanza en cuatro ramas de arte: la música, la coreografía, el arte teatral y la pintura. La escuela cuenta con 35 profesores y 330 alumnos" }
+      , "from": "2013-05-01", "to": "2015-07-01"
       , "accomplishments": [
-         { "role": "Colaborador", "competencies": [
-           "Colaboré en el trabajo de laboratorio e investigación en el Departamento de Ingeniería Mecánica de la Universidad"
-           , "Realicé la toma de medidas en diferentes experimentos para analizar y estudiar la resistencia mecánica de ciertos materiales utilizados en la industria con el objetivo de obtener una muestra representativa y así poder diseñar un escenario que pueda servir de ayuda para predecir los cambios que pueden sufrir estos materiales cuando están sometidos a diferentes cargas. Adquirí destreza en la toma de datos en laboratorio así como en realizar un registro minucioso de la información recopilada para que posteriormente sea procesada" ] } ] }
+         { "role": "Dirección de los profesores", "competencies": [
+          "He reorganizado el proceso educativo aplicando los nuevos modelos de enseñanza y los principios de androgogía"
+          , "He creado la plataforma de comunicación para el intercambio de conocimientos y experiencia utilizando los principios de Psicoterapia Positiva y los modelos de choaching" ] }
+        , { "role": "Comunicación con dirección y respresentantes del estado", "competencies": [
+          "He realizado 12 reuniones dedicadas a la revisión de la financiación de la escuela. He conseguido el automento del presupuesto de la escuela. En 2 años hemos abierto dos puestos neuvos y hemos aumentado en 15% el sueldo a todos los profesores"
+          , "He realizado el renove del inventario de la escuela (2 pianos nuevos)" ] }
+        , { "role": "Actividad pedagógica", "competencies": [
+          "He impartido las clases a 4 alumons durante 2 años. Los 4 alumnos después del primer año de mis clases han participado en los festivales musicales de la región"
+          , "He impartido 40+ master clases de piano. He conseguido mejorar en 35% las notas medias de los alumons" ] }
+        , { "role": "Planificación estratégica", "competencies": [
+          "He diseñado el modelo de crecimiento estratégico de la escuela para los siguientes 5 años. El modelo consta de 7 etapas de los cuales hemos realizado 5 durante los 2 años" ] }
+        , { "role": "Análisis de las metodológias de enseñanza en la escuela", "competencies": [
+          "He realizado los seminarios entre los departamentos de enseñanza teórica y las clases prácticas con el motivo de aprovechas las sinergias recíprocas en el proceso educativo. Hemos conseguido unificar y dar el sentido común a las clases teóricas y prácticas" ] }
+        , { "role": "Análisis de los activos de la escuela", "competencies": [
+          "He optimizado los costes corrientes mediante los expertos financieros externos"
+          , "He instanciado el funcionamiento de la biblioteca electrónica de la escuela"
+          , "He establecido los acuerdos de financiación con las inctancias culturales y educativas de la cuidad" ] }
+        , { "role": "Promoción de la imagen de la escuela", "competencies": [
+          "He establecido las relaciones con la prensa y otros medios de comunicación. He creado la presencia Web de la escuela"
+          , "He aumentado en 85% las actividades públicas de la escuela (conciertos, exposiciones, actuaciones teatrales)"
+          , "He creado el puesto de la promocion de la escuala en la sociedad" ] } ] }
     , { "position": "Ayudante de la investigación (becario)"
       , "company": {
         "name": "[Universidad Carlos III de Madrid](http://www.uc3m.es/Inicio)"
