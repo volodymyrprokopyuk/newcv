@@ -96,7 +96,7 @@ html(lang=meta.locale)
                 .header=acc.role
                 .ui.bulleted.list
                   for comp in acc.competencies
-                    .item=comp
+                    .item !{comp}
       // skills
       .right.aligned.four.wide.column
         .ui.large.blue.header=locale.skills

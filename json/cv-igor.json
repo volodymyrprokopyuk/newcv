@@ -16,19 +16,19 @@
     , "txt": "[TXT](https://www.dropbox.com/s/0dlemoynvtll4yz/cv-igor.txt?dl=0)" }
   , "education": [
      { "degree": "Máster en interpretación musical"
-       , "description": "Calificaciones: interpretador de música clásica, profesor de piano. Nota final: 9.4/10"
+       , "description": "Calificaciones: intérprete de música clásica y profesor de piano. Nota final: 9.4/10"
        , "school": {
-         "name": "[Conservatorio Nacional de Música de Lviv, Mykola Lysenko](http://conservatory.lviv.ua/)"
+         "name": "[Conservatorio Nacional de Música de Lviv \"Mykola Lysenko\"](http://conservatory.lviv.ua/)"
          , "location": "Lviv, Ucrania" }
-       , "from": "2008-09-01", "to": "2009-06-01" }
+       , "from": "2009-09-01", "to": "2012-06-01" }
     , { "degree": "Grado en interpretación musical"
-       , "description": "Calificaciones: profesor de piano, interpretador de música clásica, interpretador de música de cámara, repertorista. Nota final: 9.2/10"
+       , "description": "Calificaciones: profesor de piano, intérprete de música clásica, intérprete de música de cámara y repertorista. Nota final: 9.2/10"
        , "school": {
-         "name": "[Conservatorio Nacional de Música de Lviv, Mykola Lysenko](http://conservatory.lviv.ua/)"
+         "name": "[Conservatorio Nacional de Música de Lviv \"Mykola Lysenko\"](http://conservatory.lviv.ua/)"
          , "location": "Lviv, Ucrania" }
-       , "from": "2004-09-01", "to": "2008-06-01" }
+       , "from": "2004-09-01", "to": "2009-06-01" }
     , { "degree": "Consultor de Psicoterapia Positiva"
-       , "description": "Consultoria de clientes individuales y Psicoterapia Positiva en grupos"
+       , "description": "Consultor de clientes individuales y Psicoterapia Positiva en grupos"
        , "school": {
          "name": "[International Academy for positive and Cross-cultural Psychotherapy](http://www.peseschkian-foundation.org/)"
          , "location": "Kiev, Ucrania" }
@@ -38,40 +38,108 @@
       , "company": {
         "name": "[Escuela de artes de Yaremche](https://www.facebook.com/artyaremcheschool)"
         , "location": "Yaremche, Ucrania"
-        , "description": "La escuela realiza la enseñanza en cuatro ramas de arte: la música, la coreografía, el arte teatral y la pintura. La escuela cuenta con 35 profesores y 330 alumnos" }
+        , "description": "La escuela desarrolla la enseñanza en cuatro ramas de arte: música, coreografía, arte teatral y pintura. Dicho centro cuenta con 35 profesores y 330 alumnos" }
       , "from": "2013-05-01", "to": "2015-07-01"
       , "accomplishments": [
          { "role": "Dirección de los profesores", "competencies": [
-          "He reorganizado el proceso educativo aplicando los nuevos modelos de enseñanza y los principios de androgogía"
-          , "He creado la plataforma de comunicación para el intercambio de conocimientos y experiencia utilizando los principios de Psicoterapia Positiva y los modelos de choaching" ] }
-        , { "role": "Comunicación con dirección y respresentantes del estado", "competencies": [
-          "He realizado 12 reuniones dedicadas a la revisión de la financiación de la escuela. He conseguido el automento del presupuesto de la escuela. En 2 años hemos abierto dos puestos neuvos y hemos aumentado en 15% el sueldo a todos los profesores"
+          "He reorganizado el proceso educativo aplicando los nuevos modelos de enseñanza y los principios de andragogía"
+          , "He creado una plataforma de comunicación para el intercambio de conocimientos y experiencia utilizando los principios de Psicoterapia Positiva y los modelos de choaching" ] }
+        , { "role": "Comunicación con dirección y respresentantes del Estado", "competencies": [
+          "He convocado 12 reuniones dedicadas a la revisión de la financiación de la escuela, cuyo presupuesto he logrado a aumentar. En 2 años hemos conseguido crear dos puestos neuvos de trabajo nuevos y hemos aumentado en un 15% el sueldo a todos los profesores"
           , "He realizado el renove del inventario de la escuela (2 pianos nuevos)" ] }
         , { "role": "Actividad pedagógica", "competencies": [
-          "He impartido las clases a 4 alumons durante 2 años. Los 4 alumnos después del primer año de mis clases han participado en los festivales musicales de la región"
-          , "He impartido 40+ master clases de piano. He conseguido mejorar en 35% las notas medias de los alumons" ] }
+          "He impartido clases a 4 alumons durante 2 años. Después del primer año de clases los 4 han conseguido resultar seleccionados para participar en señaladas festivales musicales de la región"
+          , "He impartido más de 40 clases magistrales de piano conseguiendo una mejora del 35% en la nota media de los alumons" ] }
         , { "role": "Planificación estratégica", "competencies": [
-          "He diseñado el modelo de crecimiento estratégico de la escuela para los siguientes 5 años. El modelo consta de 7 etapas de los cuales hemos realizado 5 durante los 2 años" ] }
+          "He diseñado un modelo de crecimiento estratégico de la escuela para los siguientes 5 años. Dicho modelo consta de 7 etapas 5 de las cuales han sido ya finalizadas durante mis 2 años de labor" ] }
         , { "role": "Análisis de las metodológias de enseñanza en la escuela", "competencies": [
-          "He realizado los seminarios entre los departamentos de enseñanza teórica y las clases prácticas con el motivo de aprovechas las sinergias recíprocas en el proceso educativo. Hemos conseguido unificar y dar el sentido común a las clases teóricas y prácticas" ] }
+          "He organizado seminarios entre los departamentos de enseñanza teórica y práctica con el fin de motivar la sinergia en el proceso educativo. Mediante esta cooperación hemos conseguido unificar y dar sentido común a los diversos tipos de enseñanza" ] }
         , { "role": "Análisis de los activos de la escuela", "competencies": [
-          "He optimizado los costes corrientes mediante los expertos financieros externos"
-          , "He instanciado el funcionamiento de la biblioteca electrónica de la escuela"
-          , "He establecido los acuerdos de financiación con las inctancias culturales y educativas de la cuidad" ] }
+          "He optimizado los costos corrientes mediante la consulta a expertos financieros externos"
+          , "He puesto en funcionamiento la biblioteca electrónica de la escuela"
+          , "He establecido acuerdos de financiación con inctancias culturales y educativas de la cuidad" ] }
         , { "role": "Promoción de la imagen de la escuela", "competencies": [
-          "He establecido las relaciones con la prensa y otros medios de comunicación. He creado la presencia Web de la escuela"
-          , "He aumentado en 85% las actividades públicas de la escuela (conciertos, exposiciones, actuaciones teatrales)"
-          , "He creado el puesto de la promocion de la escuala en la sociedad" ] } ] }
-    , { "position": "Ayudante de la investigación (becario)"
+          "He establecido relaciones con prensa y otros medios de comunicación. He impulsado la presencia Web de la escuela"
+          , "He aumentado en un 85% las actividades públicas de la escuela (conciertos, exposiciones, representaciones teatrales)"
+          , "He creado el puesto de promotor de actividades de la escuala en la sociedad" ] } ] }
+    , { "position": "Práctica pedegógica"
       , "company": {
-        "name": "[Universidad Carlos III de Madrid](http://www.uc3m.es/Inicio)"
-        , "location": "Madrid"
-        , "description": "Universidad Carlos III de Madrid contribuye a la mejora de la sociedad con una docencia de calidad y una investigación avanzada de acuerdo con exigentes criterios internacionales. La universidad aspira a la excelencia en todas sus actividades, con el objetivo de convertirse en una de las mejores universidades europeas" }
-      , "from": "2012-09-01", "to": "2013-07-01"
+        "name": "[Conservatorio Nacional de Música de Lviv \"Mykola Lysenko\"](http://conservatory.lviv.ua/)"
+        , "location": "Lviv, Ucrania"
+        , "description": "Impartir semanalmente clases de piano a los alumons del Conservatorio y de la Escuela asociada" }
+      , "from": "2005-09-01", "to": "2012-06-01"
       , "accomplishments": [
-         { "role": "Colaborador", "competencies": [
-           "Colaboré en el trabajo de laboratorio e investigación en el departamento de Ingeniería Térmica y de Fluidos de la Universidad"
-           , "Realicé el análisis exploratorio de datos de investigación en varios experimentos aplicando técnicas estadísticas y técnicas visuales adquiriendo excelentes capacidades analíticas y capacidades de resumir los datos experimentales. Automaticé  algunos procesos de análisis de datos de investigación utilizando el entorno de MATLAB confirmando las capacidades informáticas y las capacidades de procesamiento automatizado de datos" ] } ] } ]
+         { "role": "Assistente", "competencies": [
+           "He asistido y he colaborado en las clases de prof. [Maria Kryh](http://conservatory.lviv.ua/departments/kafedri-a-ta-b-specialnogo-fortepiano/) (2009 - 2012)"
+           , "He asistido y he colaborado en las clases de prof. [Irina Pyjyk](http://conservatory.lviv.ua/departments/kafedri-a-ta-b-specialnogo-fortepiano/) (2008 - 2009)"
+           , "He asistido y he colaborado en las clases de prof. [Olena Pylatiuk](http://conservatory.lviv.ua/departments/kafedri-a-ta-b-specialnogo-fortepiano/) (2005 - 2008)"
+           , "He asistido y he colaborado en las clases de prof. Tetiana Kazartseva en el [Instituto de musica de Ivano-Frankivsk \"Denys Sichynskiy\"](http://ifmuds.if.ua/)" ] } ] }
+    , { "position": "Conciertos"
+      , "company": {
+        "name": ""
+        , "location": ""
+        , "description": "" }
+      , "from": "2008-01-01", "to": "actualmente"
+      , "accomplishments": [
+         { "role": "", "competencies": [
+           ""
+           , ""
+           , "" ] }
+         , { "role": "", "competencies": [
+           "" ] }
+         , { "role": "", "competencies": [
+           ""
+           , "" ] } ] }
+    , { "position": "Psicoterapia y coaching"
+      , "company": {
+        "name": "Actividades privadas"
+        , "location": "citas en persona y online"
+        , "description": "Descripción ??" }
+      , "from": "2008-01-01", "to": "actualmente"
+      , "accomplishments": [
+         { "role": "Consultor de clientes individuales", "competencies": [
+           "Harmonización de las realaciones: relaciones en pareja, relaciones íntimas, relaciones familiares, relaciones con amigos y compañeros de trabajo"
+           , "Crecimiento y desarrollo personal: metas en la vida, miedos, aceptación de uno mismo, bienestar, planes y visión del futuro"
+           , "Problemas psicosomáticas: sobrepeso, problemas de sistema óseo, problemas de sistema digestivo, disfunciones sexuales" ] }
+         , { "role": "Consultor de grupos psicoterapéuticos", "competencies": [
+           "Implantación de mi propio programa \"Realización\" en los grupos psicoterapéuticos de desarrollo personal" ] }
+         , { "role": "Coach", "competencies": [
+           "El seminario \"Identidad de genero\" (8 días). Seminarios de trabajo en equipo para las empresas. Seminarios de autorealización para los grupos artísticos"
+           , "Moderador de las reuniones del [Grupo de iniciativas de desarrollo estratégico y de crecimiento sostenible de Yaremche](http://yaremche2025.org.ua/english/)" ] } ] }
+    , { "position": "Proyectos culturales y sociales"
+      , "company": {
+        "name": ""
+        , "location": ""
+        , "description": "" }
+      , "from": "2008-01-01", "to": "actualmente"
+      , "accomplishments": [
+         { "role": "", "competencies": [
+           ""
+           , ""
+           , "" ] }
+         , { "role": "", "competencies": [
+           "" ] }
+         , { "role": "", "competencies": [
+           ""
+           , "" ] } ] }
+    , { "position": "Actividad social"
+      , "company": {
+        "name": ""
+        , "location": ""
+        , "description": "" }
+      , "from": "2008-01-01", "to": "actualmente"
+      , "accomplishments": [
+         { "role": "", "competencies": [
+           ""
+           , ""
+           , "" ] }
+         , { "role": "", "competencies": [
+           "" ] }
+         , { "role": "", "competencies": [
+           ""
+           , "" ] } ] }
+
+  ]
   , "skills": [
     { "domain": "MATLAB"
       , "competencies": [
