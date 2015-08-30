@@ -9,7 +9,7 @@
   , "web": "[http://volodymyrprokopyuk.github.io/newcv/cv-igor.html](http://volodymyrprokopyuk.github.io/newcv/cv-igor.html)"
   , "address": "Alcorcón, Madrid"
   , "objective": "Profesor de piano | Intérprete de música clásica"
-  , "summary": "Soy creativo en todo lo que hago. Comunico con claridad y entusiasmo las ideas. Alto grado de implicación personal y responsabilidad. Tengo excelente capacidad de aplicar la teoría a la práctica haciendo enfásis en el enfoque racional, altamente orientado al resultado final"
+  , "summary": "Soy creativo en todo lo que hago. Comunico con claridad y entusiasmo las ideas. Demuestro un alto grado de implicación personal y responsabilidad. Tengo excelente capacidad de aplicar la teoría a la práctica haciendo enfásis en el enfoque racional, altamente orientado al resultado final"
   , "formats": {
     "pdf": "[PDF](https://www.dropbox.com/s/8nw3c0qd51f9yoc/cv-igor.pdf?dl=0)"
     , "html": "[HTML](https://www.dropbox.com/s/lh08zre0ezpsvlh/cv-igor.html?dl=0)"
@@ -147,19 +147,19 @@
   , "skills": [
     { "domain": "Profesor de piano"
       , "competencies": [
-        "Tengo más de 8 años de experiencia en impartir clases de piano a los aloumnos de diferentes edades y niveles de preparación. En las clases aplico mi propia metodología de enseñanza basada en los principios de psicoterapia positiva" ] }
+        "Tengo más de 8 años de experiencia en impartir clases de piano a alumnos de diferentes edades y niveles. En las clases aplico mi propia metodología de enseñanza, basada en los principios de psicoterapia positiva" ] }
     , { "domain": "Intérprete de música clásica"
       , "competencies": [
-        "Tengo extensa experiencia en interpretación de obras musicales de los siguientes estílos: baroco, clasicismo, romatismo y música de siglo XX" ] }
+        "Tengo extensa experiencia en interpretación de obras musicales de los siguientes estilos: barroco, clasicismo, romantisismo y música de siglo XX" ] }
     , { "domain": "Repertorista"
       , "competencies": [
-        "Domino las peculiaridades de trabajo con los instrumentos de cuerda y viento. Tengo experiencia de acompañamiento y trabajo con los cantantes" ] }
+        "Domino las peculiaridades de trabajo con instrumentos de cuerda y viento. Tengo experiencia de acompañamiento y trabajo con cantantes" ] }
     , { "domain": "Consultor de psicoterapia y coaching"
       , "competencies": [
-        "Aplico todas las técnicas de psicoterapia positiva. Utiliza los principios de terapia Gestalt. Hago uso de las metodologías propias" ] }
+        "Aplico todas las técnicas de psicoterapia positiva. Utilizo los principios de terapia Gestalt. Hago uso de metodologías propias" ] }
     , { "domain": "Organización y gestión de proyectos culturales y sociales"
       , "competencies": [
-        "Tengo experiencia en dirección estrategíca, gestión y moderación de proyectos culturales y sociales" ] }
+        "Tengo experiencia en dirección estratégica, gestión y moderación de proyectos culturales y sociales" ] }
     , { "domain": "Idiomas"
       , "competencies": [
         "Español --- nivel alto"
