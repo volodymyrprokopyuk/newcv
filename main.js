@@ -34,6 +34,10 @@ var pipe = function(tasks, seed) {
     , function(arg, task) { return task(arg); }, seed || null);
 };
 
+var tryPipe = function(tasks, seed) {
+  return Promise.try(_.partial(pipe, tasks, seed));
+};
+
 var pwhile = function(pred, act, seed) {
   return new Promise(function(resolve, reject) {
     (function loop(item) {
