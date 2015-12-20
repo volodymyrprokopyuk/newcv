@@ -2,56 +2,51 @@ doctype html
 html(lang=meta.locale)
   head
     meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0")
-    title #{ firstName } #{ lastName } CV
+    meta(name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1")
+    meta(name="author" content="#{ firstName } #{ lastName } <#{ email }>")
     meta(name="description" content="#{ firstName } #{ lastName } CV")
     meta(name="keywords" content="#{ firstName } #{ lastName }, CV, #{ objective }")
-    meta(name="author" content="#{ firstName } #{ lastName } <#{ email }>")
+    title #{ firstName } #{ lastName } CV
+    link(href="https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin" rel="stylesheet")
     style
-      include css/reset.min.css
-      include css/site.min.css
-      include css/grid.min.css
-      include css/header.min.css
-      include css/list.min.css
-      include css/table.min.css
-      include css/image.min.css
+      include ../semantic/dist/components/reset.min.css
+      include ../semantic/dist/components/site.min.css
+      include ../semantic/dist/components/container.min.css
+      include ../semantic/dist/components/grid.min.css
+      include ../semantic/dist/components/header.min.css
+      include ../semantic/dist/components/list.min.css
+      include ../semantic/dist/components/image.min.css
+      include ../semantic/dist/components/icon.min.css
+      include ../semantic/dist/components/table.min.css
+      include ../html/css/style.css
   body
-    .ui.page.padded.grid
+    .ui.stackable.relaxed.grid.container
       // profile
       .sixteen.wide.right.aligned.column
         p #{ locale.formats }: !{ formats.pdf } !{ formats.txt }
-      .two.wide.column
+      .three.wide.column
         if photo
           .ui.image
             img(src=photo)
-      .eight.wide.column
-        .ui.large.blue.header #{ firstName } #{ lastName }
+      .seven.wide.column
+        .ui.huge.blue.header #{ firstName } #{ lastName }
           .sub.header=objective
       .six.wide.column
-        table.ui.very.basic.small.table
-          tbody
-            tr
-              td.right.aligned=locale.email
-              td=email
-            tr
-              td.right.aligned=locale.mobile
-              td=mobile
-            tr
-              td.right.aligned=locale.web
-              td !{web}
-            tr
-              td.right.aligned=locale.address
-              td=address
+        .ui.relaxed.list
+          .item
+            a(href="mailto:#{email}") #[i.mail.icon] #{ email }
+          .item #[i.grey.phone.icon] #{ mobile }
+          .item #[i.grey.home.icon] #{ address }
       if slides
         .sixteen.wide
-          h3
-            a(href=slides) #{ locale.intro }
+          .ui.medimum.header
+            a(href=slides target="_blank") #{ locale.intro }
       .sixteen.wide.column
-        .ui.large.list
-          .item=summary
+        .summary=summary
       // target
       if target
-        .twelve.wide.centered.column
+        .two.wide.column
+        .twelve.wide.column
           table.ui.very.basic.table
             thead
               tr
@@ -59,52 +54,56 @@ html(lang=meta.locale)
                 th.seven.wide=locale.offer
             tbody
               for req in target.requirements
-                tr
+                tr.top.aligned
                   td
-                    .ui.bulleted.list
-                      .item=req.requirement
+                    .ui.list
+                      .item
+                        i.grey.checkmark.icon
+                        .content=req.requirement
                   td
-                    .ui.bulleted.list
-                      .item=req.competency
+                    .ui.list
+                      .item
+                        i.grey.checkmark.icon
+                        .content=req.competency
       // education
-      .right.aligned.four.wide.column
+      .sixteen.wide.column
         .ui.large.blue.header=locale.education
-      .twelve.wide.column
       for edu in education
-        .right.aligned.four.wide.column
-          .ui.small.header
-            .sub.header #{ edu.from } &ndash; #{ edu.to }
-        .twelve.wide.column
-          .ui.small.blue.header=edu.degree
-          p !{ edu.school.name }, #{ edu.school.location }
-          p !{ edu.description }
+        .sixteen.wide.column
+          .ui.medium.blue.header=edu.degree
+            .sub.header !{ edu.school.name }, #{ edu.school.location }
+          p.
+            #[span.date #{ edu.from } &ndash; #{ edu.to }]#[br]
+            !{ edu.description }
       // employment
-      .right.aligned.four.wide.column
+      .sixteen.wide.column
         .ui.large.blue.header=locale.employment
-      .twelve.wide.column
       for emp in employment
-        .right.aligned.four.wide.column
-          .ui.small.header
-            .sub.header #{ emp.from } &ndash; #{ emp.to }
-        .twelve.wide.column
-          .ui.small.blue.header=emp.position
-          p !{ emp.company.name }, #{ emp.company.location }
-          p=emp.company.description
-          .ui.list
+        .sixteen.wide.column
+          .ui.medium.blue.header=emp.position
+            .sub.header.
+              !{ emp.company.name }, #{ emp.company.location }#[br]
+              #{emp.company.description}
+          .date #{ emp.from } &ndash; #{ emp.to }
+          .ui.relaxed.list
             for acc in emp.accomplishments
               .item
                 .header=acc.role
-                .ui.bulleted.list
+                .ui.relaxed.list
                   for comp in acc.competencies
-                    .item !{comp}
+                    .item
+                      i.grey.checkmark.icon
+                      .content !{comp}
       // skills
-      .right.aligned.four.wide.column
+      .sixteen.wide.column
         .ui.large.blue.header=locale.skills
-      .twelve.wide.column
       for skill in skills
-        .right.aligned.four.wide.column
-          .ui.tiny.header=skill.domain
-        .twelve.wide.column
-          .ui.bulleted.list
-            for comp in skill.competencies
-              .item !{comp}
+        .sixteen.wide.column
+          .ui.relaxed.list
+            .item
+              .header=skill.domain
+              .ui.relaxed.list
+                for comp in skill.competencies
+                  .item
+                    i.grey.checkmark.icon
+                    .content !{comp}
