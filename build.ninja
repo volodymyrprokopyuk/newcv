@@ -2,7 +2,8 @@ rule tex
   command = ./bin/render --source=$in --target=$out
   description = [ $out ]
 
-build tex/cv-volodymyr.tex: tex json/cv-volodymyr.json | tex/cv.tex main.js bin/render
+build tex/cv-volodymyr.tex: tex json/cv-volodymyr.json | tex/cv.tex $
+  main.js bin/render
 build tex/cv-igor.tex: tex json/cv-igor.json | tex/cv.tex main.js bin/render
 build tex/cv-deysi.tex: tex json/cv-deysi.json | tex/cv.tex main.js bin/render
 build tex/cv-leonel.tex: tex json/cv-leonel.json | tex/cv.tex main.js bin/render
@@ -18,29 +19,49 @@ build pdf/cv-leonel.pdf: pdf tex/cv-leonel.tex
 build pdf/ad-piano.pdf: pdf tex/ad-piano.tex
 build pdf/ad-cleaning.pdf: pdf tex/ad-cleaning.tex
 
+rule semantic-site
+  command = cp site/globals/site.variables semantic/src/site/globals $
+    && cd semantic && gulp build
+  description = [ Building Semantic UI ]
+
+build semantic/dist/semantic.min.css: semantic-site | $
+  site/globals/site.variables
+
+rule css
+  command = stylus --compress --out html/css $in
+  description = [ $out ]
+
+build html/css/style.css: css html/css/style.styl
+
 rule html
   command = ./bin/render --source=$in --target=$out
   description = [ $out ]
 
-build html/cv-volodymyr.html: html json/cv-volodymyr.json | html/cv.html main.js bin/render
-build html/cv-igor.html: html json/cv-igor.json | html/cv.html main.js bin/render
-build html/cv-deysi.html: html json/cv-deysi.json | html/cv.html main.js bin/render
-build html/cv-leonel.html: html json/cv-leonel.json | html/cv.html main.js bin/render
+build html/cv-volodymyr.html: html json/cv-volodymyr.json | html/cv.html $
+  semantic/dist/semantic.min.css html/css/style.css main.js bin/render
+build html/cv-igor.html: html json/cv-igor.json | html/cv.html $
+  semantic/dist/semantic.min.css html/css/style.css main.js bin/render
+build html/cv-deysi.html: html json/cv-deysi.json | html/cv.html $
+  semantic/dist/semantic.min.css html/css/style.css main.js bin/render
+build html/cv-leonel.html: html json/cv-leonel.json | html/cv.html $
+  semantic/dist/semantic.min.css html/css/style.css main.js bin/render
 
 rule txt
   command = ./bin/render --source=$in --target=$out
   description = [ $out ]
 
-build txt/cv-volodymyr.txt: txt json/cv-volodymyr.json | txt/cv.txt main.js bin/render
+build txt/cv-volodymyr.txt: txt json/cv-volodymyr.json | txt/cv.txt $
+  main.js bin/render
 build txt/cv-igor.txt: txt json/cv-igor.json | txt/cv.txt main.js bin/render
 build txt/cv-deysi.txt: txt json/cv-deysi.json | txt/cv.txt main.js bin/render
 build txt/cv-leonel.txt: txt json/cv-leonel.json | txt/cv.txt main.js bin/render
 
-rule jade
+rule slides
   command = jade --pretty $in
   description = [ $out ]
 
-build html/slides-volodymyr.html: jade html/slides-volodymyr.jade | html/slides.jade
+build html/slides-volodymyr.html: slides html/slides-volodymyr.jade | $
+  html/slides.jade
 
 rule upload
   command = cp json/cv-*.json ~/Dropbox/git-newcv; $
@@ -60,10 +81,24 @@ rule deploy
 
 build deploy: deploy
 
-default $
+rule clean
+  command = rm $
+    pdf/cv-volodymyr.pdf html/cv-volodymyr.html txt/cv-volodymyr.txt $
+    html/slides-volodymyr.html $
+    pdf/cv-igor.pdf html/cv-igor.html txt/cv-igor.txt $
+    pdf/cv-deysi.pdf html/cv-deysi.html txt/cv-deysi.txt $
+    pdf/cv-leonel.pdf html/cv-leonel.html txt/cv-leonel.txt $
+    pdf/ad-piano.pdf pdf/ad-cleaning.pdf
+  description = [ Cleaning... ]
+
+build clean: clean
+
+build all: phony $
   pdf/cv-volodymyr.pdf html/cv-volodymyr.html txt/cv-volodymyr.txt $
   html/slides-volodymyr.html $
   pdf/cv-igor.pdf html/cv-igor.html txt/cv-igor.txt $
   pdf/cv-deysi.pdf html/cv-deysi.html txt/cv-deysi.txt $
   pdf/cv-leonel.pdf html/cv-leonel.html txt/cv-leonel.txt $
   pdf/ad-piano.pdf pdf/ad-cleaning.pdf
+
+default all

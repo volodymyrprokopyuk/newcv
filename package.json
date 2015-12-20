@@ -9,11 +9,12 @@
     "type": "git", "url": "https://github.com/volodymyrprokopyuk/newcv.git"
   }, "licence": "MIT"
   , "dependencies": {
-    "moment": "^2.9.x"
-    , "lodash": "^3.6.x"
-    , "bluebird": "^2.9.x"
-    , "commander": "^2.7.x"
-    , "nunjucks": "^1.2.x"
-    , "jade": "^1.9.x"
+    "moment": "^2.10.x"
+    , "lodash": "^3.10.x"
+    , "bluebird": "^3.1.x"
+    , "yargs": "^3.31.x"
+    , "nunjucks": "^2.2.x"
+    , "jade": "^1.11.x"
+    , "semantic-ui": "^2.1.x"
   }
 }

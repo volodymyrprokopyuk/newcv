@@ -14,7 +14,7 @@
 \definefontsynonym[Awesome][name:fontawesome]
 \definesymbol[AwItem][\getnamedglyphdirect{Awesome}{ok}]
 \define\AwItem{\symbol[AwItem]}
-\definesymbol[AwEmail][\getnamedglyphdirect{Awesome}{envelope}]
+\definesymbol[AwEmail][\getnamedglyphdirect{Awesome}{envelope_alt}]
 \define\AwEmail{\symbol[AwEmail]}
 \definesymbol[AwPhone][\getnamedglyphdirect{Awesome}{phone}]
 \define\AwPhone{\symbol[AwPhone]}
@@ -22,6 +22,9 @@
 \define\AwWeb{\symbol[AwWeb]}
 \definesymbol[AwAddress][\getnamedglyphdirect{Awesome}{map_marker}]
 \define\AwAddress{\symbol[AwAddress]}
+
+%% Images
+\setupexternalfigures[directory={../html}]
 
 %% SourcePro font
 \starttypescript[sans][SourcePro]
@@ -70,8 +73,9 @@
   backgroundcolor=white]
 
 %% Profile
-\defineparagraphs[Profile][n=2,distance=10pt]
-\setupparagraphs[Profile][1][width=0.45\textwidth]
+\defineparagraphs[Profile][n=3,distance=10pt]
+\setupparagraphs[Profile][1][width=0.15\textwidth]
+\setupparagraphs[Profile][2][width=0.45\textwidth]
 
 %% Section
 \defineparagraphs[Section][n=2,distance=10pt]
@@ -105,6 +109,7 @@
 %% PROFILE %%
 \rightaligned{ {{ locale.formats }}: {{ formats.html }} {{ formats.txt }} }
 \startProfile
+\externalfigure[{{ photo }}][width=70pt]\Profile
 {\bfc\Dark {{ firstName }} {{ lastName }} }\blank
 {\tfb\Base {{ objective }} }\Profile
 \starttable[|rs2|l|]

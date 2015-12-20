@@ -3,14 +3,10 @@ var fs = require('fs');
 var moment = require('moment');
 var _ = require('lodash');
 var Promise = require('bluebird');
-var commander = require('commander');
+var argv = require('yargs').argv;
 var nunjucks = require('nunjucks');
+nunjucks.configure({ autoescape: false });
 var jade = require('jade');
-
-commander
-  .option('--source <fileName>', 'source file name (JSON)')
-  .option('--target <fileName>', 'target file name (TeX)')
-  .parse(process.argv);
 
 var readFile = Promise.promisify(fs.readFile);
 var render = Promise.promisify(nunjucks.render);
@@ -69,22 +65,21 @@ locales.es = { typesetWith: 'Tipografía', formats: 'Formatos', profile: 'Perfil
   , employment: 'Experiencia laboral', skills: 'Habilidades y Competencias'
 };
 
-var readSourceFile = function(opts) {
+var readSourceFile = function() {
   var getSourceFile = function() {
     return new Promise(function(resolve, reject) {
-      opts.source ? resolve(opts.source)
+      argv.source ? resolve(argv.source)
         : reject('no source file supplied');
     });
   };
   var readFileUTF8 = _.partial(readFile, _, 'utf8');
   return pipe([ getSourceFile, readFileUTF8, JSON.parse ]);
 };
-readSourceFile = _.partial(readSourceFile, commander);
 
-var getTargetFormat = function(opts) {
+var getTargetFormat = function() {
   var rFileExt = /\.(\w{3,4})$/;
-  return opts.target && rFileExt.test(opts.target)
-    ? opts.target.match(rFileExt)[1] : '';
+  return argv.target && rFileExt.test(argv.target)
+    ? argv.target.match(rFileExt)[1] : '';
 };
 
 var processTeX = function(cv) {
@@ -255,35 +250,33 @@ var processSourceFile = function(format, processFormat, cv) {
     , processFormat);
   return process(cv);
 };
-processSourceFile = _.partial(processSourceFile, getTargetFormat(commander)
-  , formats[getTargetFormat(commander) || 'err' ]);
+processSourceFile = _.partial(processSourceFile, getTargetFormat()
+  , formats[getTargetFormat() || 'err' ]);
 
-var renderTargetFile = function(opts, cv) {
+var renderTargetFile = function(cv) {
   var getTemplate = function() {
-    var format = getTargetFormat(opts);
+    var format = getTargetFormat();
     return format + '/cv.' + format;
   };
-  var renderCV = (getTargetFormat(opts) === 'html')
-    ? _.partial(jade.renderFile, _, _.merge(cv, { pretty: true }))
+  var renderCV = (getTargetFormat() === 'html')
+    ? _.partial(jade.renderFile, _, _.merge(cv, { pretty: false }))
     : _.partial(render, _, cv);
   return pipe([ getTemplate, renderCV ]);
 };
-renderTargetFile = _.partial(renderTargetFile, commander);
 
-var writeTargetFile = function(opts, content) {
+var writeTargetFile = function(content) {
   content = content.replace(/ +$/mg, '');
-  (getTargetFormat(opts) === 'txt')
+  (getTargetFormat() === 'txt')
     && (content = content.replace(/\n/g, '\r\n'));
   var getTargetFile = function() {
     return new Promise(function(resolve, reject) {
-      opts.target ? resolve(opts.target)
+      argv.target ? resolve(argv.target)
         : reject('no target file supplied');
     });
   };
   var writeFileContent = _.partial(writeFile, _, content);
   return pipe([ getTargetFile, writeFileContent ]);
 };
-writeTargetFile = _.partial(writeTargetFile, commander);
 
 var renderCV = function() {
   return pipe([ readSourceFile, processSourceFile, renderTargetFile
