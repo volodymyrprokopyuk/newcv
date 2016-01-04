@@ -5,7 +5,6 @@ var _ = require('lodash');
 var Promise = require('bluebird');
 var argv = require('yargs').argv;
 var nunjucks = require('nunjucks');
-nunjucks.configure({ autoescape: false });
 var jade = require('jade');
 
 var readFile = Promise.promisify(fs.readFile);
@@ -73,7 +72,7 @@ var readSourceFile = function() {
     });
   };
   var readFileUTF8 = _.partial(readFile, _, 'utf8');
-  return pipe([ getSourceFile, readFileUTF8, JSON.parse ]);
+  return tryPipe([ getSourceFile, readFileUTF8, JSON.parse ]);
 };
 
 var getTargetFormat = function() {
@@ -261,7 +260,7 @@ var renderTargetFile = function(cv) {
   var renderCV = (getTargetFormat() === 'html')
     ? _.partial(jade.renderFile, _, _.merge(cv, { pretty: false }))
     : _.partial(render, _, cv);
-  return pipe([ getTemplate, renderCV ]);
+  return tryPipe([ getTemplate, renderCV ]);
 };
 
 var writeTargetFile = function(content) {
@@ -275,12 +274,12 @@ var writeTargetFile = function(content) {
     });
   };
   var writeFileContent = _.partial(writeFile, _, content);
-  return pipe([ getTargetFile, writeFileContent ]);
+  return tryPipe([ getTargetFile, writeFileContent ]);
 };
 
 var renderCV = function() {
-  return pipe([ readSourceFile, processSourceFile, renderTargetFile
-    , writeTargetFile, process.exit ]).catch(logError);
+  return tryPipe([ readSourceFile, processSourceFile, renderTargetFile
+    , writeTargetFile ]).catch(logError);
 };
 
 module.exports = { renderCV: renderCV };
