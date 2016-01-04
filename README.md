@@ -27,3 +27,11 @@ Application for generating CVs in PDF/HTML/TXT/TEX from JSON using
   | [TXT](https://www.dropbox.com/s/dtfjny7dk9kihid/cv-leonel.txt?dl=0)
   | [TEX](https://www.dropbox.com/s/gqddi8o6nkwnrdy/cv-leonel.tex?dl=0)
   | [JSON](https://www.dropbox.com/s/fm0qei5dukxrq3q/cv-leonel.json?dl=0)
+
+## Install fonts
+
+```bash
+$ export OSFONTDIR=/usr/local/share/fonts
+$ mtxrun --script fonts --reload
+$ mtxrun --script fonts --list --all | grep calibri
+```
