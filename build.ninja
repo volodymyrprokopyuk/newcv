@@ -82,7 +82,7 @@ rule deploy
 build deploy: deploy
 
 rule clean
-  command = rm $
+  command = rm -f $
     pdf/cv-volodymyr.pdf html/cv-volodymyr.html txt/cv-volodymyr.txt $
     html/slides-volodymyr.html $
     pdf/cv-igor.pdf html/cv-igor.html txt/cv-igor.txt $

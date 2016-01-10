@@ -5,6 +5,7 @@ var _ = require('lodash');
 var Promise = require('bluebird');
 var argv = require('yargs').argv;
 var nunjucks = require('nunjucks');
+nunjucks.configure({ autoescape: false });
 var jade = require('jade');
 
 var readFile = Promise.promisify(fs.readFile);
