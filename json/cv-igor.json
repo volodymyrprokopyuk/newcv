@@ -77,7 +77,7 @@
     , { "position": "Intérprete de musica clásica"
       , "company": {
         "name": "Conciertos"
-        , "location": "Ucrania"
+        , "location": "Ucrania -- España"
         , "description": "" }
       , "from": "2009-01-01", "to": "actualmente"
       , "accomplishments": [
@@ -100,7 +100,6 @@
            , "S. Rachmaninov, Momentos musicales op. 16, n. 3 y n. 4"
            , "A. Scriabin, Estudios op. 2, n. 1 y op. 42, n. 5"
            , "L. Revutsky, Preludios op. 4, 7 y 11" ] }
-
         , { "role": "Actividades recientes (como repertorista)", "competencies": [
            "Pianista acompañante de La Coral Cristóbal de Morales y la sección infantil Coro CRESCENDO en los conciertos de Navidad"
            , "Gerónimo Giménez, Escena y Polonesa: \"Me llaman la primorosa\" (El barbero de Sevilla)"
@@ -111,14 +110,13 @@
            , "G. F. Handel, Messiah \"He was despised\""
            , "G. Rossini, L'italiana in Algeri \"Cruda sorte\""
            , "C. Saint-Saëns, Sansón y Dalila \"Mon cœur s'ouvre à ta voix\"" ] }
-
-        , { "role": "Piano solo", "competencies": [
+        , { "role": "Piano solo (conciertos, Ucrania)", "competencies": [
            "Recital 2009. Programa: S.~Rachmaninov, Variaciones sobre un tema de Chopin op.~22./D.~Shostakovich, Preludio y fuga en si~b~menor op.~87./B.~Lyatoshynsky, Cinco Preludios op.~44"
            , "Recital 2011, Programa: J.~S.~Bach, Partita para teclado n.~2 en do~menor, BWV~826/W.~A.~Mozart, Fantasía n.~2 en do~menor, K~396(385f)/M.~Clementi, Sonata op.~26, n.~2/L.~v~Beethoven, 32 Variaciones en do~menor"
            , "Recital 2012. Programa: F.~Chopin, Sonata op.~35, n.~2/F.~Chopin, Nocturnos op.~48/J.~Brahms, Variaciones sobre un tema de Schumann op.~9"
            , "Concierto con orquesta de cámara, 2014. Programa: J.~S.~Bach, Concierto para teclado en la~mayor, BWV~1055/ J.~S.~Bach, Concierto para dos teclados en do~menor, BWV~1060/J.~S.~Bach, Concierto para dos teclados en do~menor, BWV~1062"
            , "Recital 2014. Programa: J.~S.~Bach - F.~Busoni, Chacona de Partita para violín n.~2 en re~menor, BWV~1004/F.~Chopin, Dos Baladas op.~23 y op.~38/F.~Chopin, Impromptu Fantasía op.~póstumo~66/F.~Chopin, Dos valses op.~64, n.~2 y op.~póstumo mi~menor" ] }
-        , { "role": "Música de cámara", "competencies": [
+        , { "role": "Música de cámara (conciertos, Ucrania)", "competencies": [
            "Concierto con violín, 2013. Programa: L.~v~Beethoven, Sonata para violín y piano en la~mayor op.~47, n.~9/ J.~Brahms, Sonata para violín y piano en re~menor op.~108, n.~3"
            , "Concierto con cuarteto de cuerdas, 2014. Programa: J.~Brahms, Cuarteto con piano op.~60/R.~Schumann, Quinteto con piano op.~44"
            , "Concierto con violín y violonchelo, 2014. Programa: A.~Piazzolla, Cuatro Estaciones Porteñas para trío con piano (J.~Bragato)" ] } ] }
