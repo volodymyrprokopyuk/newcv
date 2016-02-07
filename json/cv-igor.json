@@ -81,7 +81,17 @@
         , "description": "" }
       , "from": "2009-01-01", "to": "actualmente"
       , "accomplishments": [
-         { "role": "Programa actual", "competencies": [
+        { "role": "Programa actual (piano, violín, soprano)", "competencies": [
+           "N. Niyankivsky, “Preludio y fuga”"
+          , "V. Kosenko, Dos Poemas, op. 12"
+          , "V. Barvinsky, Cinco Preludios "
+          , "L. Revutsky, Tres preludios, op. 4"
+          , "M. Skoryk, “Melodía” "
+          , "M. Skoryk, “Danza española”"
+          , "E. Stancovich, “Poema ucraniano”"
+          , "A. Kos-Anatolsky, Tres romances: “El canto de ruiseñor”, “Oh, iré por las montañas” y “Cuatro bueyes”"
+          , "L. Yaschenko, Dos canciones folcloricas: “El pozo profundo” y “Oh, ¿a dónde vas, a dónde irás?”" ] }
+        , { "role": "Actividades recientes (piano)", "competencies": [
            "L.~v~Beethoven, Sonata para piano en do~menor \"Patética\" op.~13"
            , "W.~A.~Mozart, Fantasía y Sonata para piano en do~menor n.~14, K~457/475"
            , "J. S. Bach, Partita para teclado n. 2 en do menor, BWV 826"
@@ -90,13 +100,25 @@
            , "S. Rachmaninov, Momentos musicales op. 16, n. 3 y n. 4"
            , "A. Scriabin, Estudios op. 2, n. 1 y op. 42, n. 5"
            , "L. Revutsky, Preludios op. 4, 7 y 11" ] }
-         , { "role": "Piano solo", "competencies": [
+
+        , { "role": "Actividades recientes (como repertorista)", "competencies": [
+           "Pianista acompañante de La Coral Cristóbal de Morales y la sección infantil Coro CRESCENDO en los conciertos de Navidad"
+           , "Gerónimo Giménez, Escena y Polonesa: \"Me llaman la primorosa\" (El barbero de Sevilla)"
+           , "W. A. Mozart, Aria de Constanza \"Ach ich liebte, war so Glücklich\""
+           , "W. A. Mozart, Sedunda aria de la Reina de la Noche \"Der Hölle Rache kocht in meinem Herzen\""
+           , "W. A. Mozart, Mitridate Re Di Ponto \"Venga Pur Minacci E Frema\""
+           , "G. F. Handel, Orestes \"Agitato da fiere tempeste\""
+           , "G. F. Handel, Messiah \"He was despised\""
+           , "G. Rossini, L'italiana in Algeri \"Cruda sorte\""
+           , "C. Saint-Saëns, Sansón y Dalila \"Mon cœur s'ouvre à ta voix\"" ] }
+
+        , { "role": "Piano solo", "competencies": [
            "Recital 2009. Programa: S.~Rachmaninov, Variaciones sobre un tema de Chopin op.~22./D.~Shostakovich, Preludio y fuga en si~b~menor op.~87./B.~Lyatoshynsky, Cinco Preludios op.~44"
            , "Recital 2011, Programa: J.~S.~Bach, Partita para teclado n.~2 en do~menor, BWV~826/W.~A.~Mozart, Fantasía n.~2 en do~menor, K~396(385f)/M.~Clementi, Sonata op.~26, n.~2/L.~v~Beethoven, 32 Variaciones en do~menor"
            , "Recital 2012. Programa: F.~Chopin, Sonata op.~35, n.~2/F.~Chopin, Nocturnos op.~48/J.~Brahms, Variaciones sobre un tema de Schumann op.~9"
            , "Concierto con orquesta de cámara, 2014. Programa: J.~S.~Bach, Concierto para teclado en la~mayor, BWV~1055/ J.~S.~Bach, Concierto para dos teclados en do~menor, BWV~1060/J.~S.~Bach, Concierto para dos teclados en do~menor, BWV~1062"
            , "Recital 2014. Programa: J.~S.~Bach - F.~Busoni, Chacona de Partita para violín n.~2 en re~menor, BWV~1004/F.~Chopin, Dos Baladas op.~23 y op.~38/F.~Chopin, Impromptu Fantasía op.~póstumo~66/F.~Chopin, Dos valses op.~64, n.~2 y op.~póstumo mi~menor" ] }
-         , { "role": "Música de cámara", "competencies": [
+        , { "role": "Música de cámara", "competencies": [
            "Concierto con violín, 2013. Programa: L.~v~Beethoven, Sonata para violín y piano en la~mayor op.~47, n.~9/ J.~Brahms, Sonata para violín y piano en re~menor op.~108, n.~3"
            , "Concierto con cuarteto de cuerdas, 2014. Programa: J.~Brahms, Cuarteto con piano op.~60/R.~Schumann, Quinteto con piano op.~44"
            , "Concierto con violín y violonchelo, 2014. Programa: A.~Piazzolla, Cuatro Estaciones Porteñas para trío con piano (J.~Bragato)" ] } ] }
@@ -115,7 +137,9 @@
            "Implantación de mi propio programa \"Realización\" en los grupos psicoterapéuticos de desarrollo personal" ] }
          , { "role": "Coach", "competencies": [
            "El seminario \"Identidad de genero\" (8 días). Seminarios de trabajo en equipo para las empresas. Seminarios de autorrealización para grupos artísticos"
-           , "Moderador de las reuniones del [\"Grupo de iniciativas de desarrollo estratégico y de crecimiento sostenible\" de Yaremche](http://yaremche2025.org.ua/english/)" ] } ] }
+           , "Moderador de las reuniones del [\"Grupo de iniciativas de desarrollo estratégico y de crecimiento sostenible\" de Yaremche](http://yaremche2025.org.ua/english/)" ] }
+         , { "role": "Trabajos de investigación", "competencies": [
+           "He comenzado a publicar una serie de artículos dedicados al tema del miedo escénico en la revista Mundoclásico. El enlace a la primera entrega de esta serie (Introducción) es el siguiente: [El miedo escénico. Mitos y realidad](https://www.mundoclasico.com/ed3/documentos/28117/miedo-escenico-Mitos-realidad-Introduccion)" ] } ] }
     , { "position": "Proyectos propios"
       , "company": {
         "name": "Proyectos culturales y sociales"
