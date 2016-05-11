@@ -31,17 +31,7 @@
       , "accomplishments": [
          { "role": "Colaborador", "competencies": [
            "Colaboré en el trabajo de laboratorio e investigación en el Departamento de Ingeniería Mecánica de la Universidad"
-           , "Realicé la toma de medidas en diferentes experimentos para analizar y estudiar la resistencia mecánica de ciertos materiales utilizados en la industria con el objetivo de obtener una muestra representativa y así poder diseñar un escenario que pueda servir de ayuda para predecir los cambios que pueden sufrir estos materiales cuando están sometidos a diferentes cargas. Adquirí destreza en la toma de datos en laboratorio así como en realizar un registro minucioso de la información recopilada para que posteriormente sea procesada" ] } ] }
-    , { "position": "Ayudante de la investigación (becario)"
-      , "company": {
-        "name": "[Universidad Carlos III de Madrid](http://www.uc3m.es/Inicio)"
-        , "location": "Madrid"
-        , "description": "Universidad Carlos III de Madrid contribuye a la mejora de la sociedad con una docencia de calidad y una investigación avanzada de acuerdo con exigentes criterios internacionales. La universidad aspira a la excelencia en todas sus actividades, con el objetivo de convertirse en una de las mejores universidades europeas" }
-      , "from": "2012-09-01", "to": "2013-07-01"
-      , "accomplishments": [
-         { "role": "Colaborador", "competencies": [
-           "Colaboré en el trabajo de laboratorio e investigación en el departamento de Ingeniería Térmica y de Fluidos de la Universidad"
-           , "Realicé el análisis exploratorio de datos de investigación en varios experimentos aplicando técnicas estadísticas y técnicas visuales adquiriendo excelentes capacidades analíticas y capacidades de resumir los datos experimentales. Automaticé  algunos procesos de análisis de datos de investigación utilizando el entorno de MATLAB confirmando las capacidades informáticas y las capacidades de procesamiento automatizado de datos" ] } ] } ]
+           , "Realicé la toma de medidas en diferentes experimentos para analizar y estudiar la resistencia mecánica de ciertos materiales utilizados en la industria con el objetivo de obtener una muestra representativa y así poder diseñar un escenario que pueda servir de ayuda para predecir los cambios que pueden sufrir estos materiales cuando están sometidos a diferentes cargas. Adquirí destreza en la toma de datos en laboratorio así como en realizar un registro minucioso de la información recopilada para que posteriormente sea procesada" ] } ] } ]
   , "skills": [
     { "domain": "MATLAB"
       , "competencies": [
