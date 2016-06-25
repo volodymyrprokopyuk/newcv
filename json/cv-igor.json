@@ -47,9 +47,6 @@
         , { "role": "Comunicación con dirección y representantes del Estado", "competencies": [
           "He convocado 12 reuniones dedicadas a la revisión de la financiación de la escuela, cuyo presupuesto he logrado a aumentar. En 2 años hemos conseguido crear dos puestos nuevos de trabajo y hemos aumentado en un 15% el sueldo a todos los profesores"
           , "He realizado el renove del inventario de la escuela (2 pianos nuevos)" ] }
-        , { "role": "Actividad pedagógica", "competencies": [
-          "He impartido clases a cuatro alumnos durante dos años. Después del primer año de clases, los cuatro han conseguido resultar seleccionados para participar en señalados festivales musicales de la región"
-          , "He impartido más de 40 clases magistrales de piano consiguiendo una mejora del 35% en la nota media de los alumnos" ] }
         , { "role": "Planificación estratégica", "competencies": [
           "He diseñado un modelo de crecimiento estratégico de la escuela para los siguientes 5 años. Dicho modelo consta de 7 etapas, 5 de las cuales han sido ya finalizadas durante mis 2 años de labor" ] }
         , { "role": "Análisis de las metodologías de enseñanza en la escuela", "competencies": [
@@ -64,62 +61,37 @@
           , "He creado el puesto de promotor de actividades de la escuela en la sociedad" ] } ] }
     , { "position": "Práctica pedegógica"
       , "company": {
-        "name": "[Conservatorio Nacional de Música de Lviv \"Mykola Lysenko\"](http://conservatory.lviv.ua/)"
-        , "location": "Lviv, Ucrania"
-        , "description": "Impartir semanalmente clases de piano a los alumnos del Conservatorio y de la Escuela asociada" }
-      , "from": "2005-09-01", "to": "2012-06-01"
+        "name": "Clases particulares de piano"
+        , "location": "Madrid, Lviv(Ucrania)"
+        , "description": "" }
+      , "from": "2005-09-01", "to": "actualmente"
       , "accomplishments": [
-         { "role": "Asistente", "competencies": [
+         { "role": "Profesor de piano", "competencies": [
+           "Impartiendo clases con tres alumnos de 10 - 12 años en Madrid"
+           , "Profesor de piano en la [Escuela de artes de Yaremche](https://www.facebook.com/artyaremcheschool) (2013 - 2015)" ] }
+        , { "role": "Asistente", "competencies": [
            "He asistido y colaborado en las clases de la Prof. [Maria Kryh](http://conservatory.lviv.ua/departments/kafedri-a-ta-b-specialnogo-fortepiano/) (2009 - 2012)"
            , "He asistido y colaborado en las clases de la Prof. [Irina Pyjyk](http://conservatory.lviv.ua/departments/kafedri-a-ta-b-specialnogo-fortepiano/) (2008 - 2009)"
            , "He asistido y colaborado en las clases de la Prof. [Olena Pylatiuk](http://conservatory.lviv.ua/departments/kafedri-a-ta-b-specialnogo-fortepiano/) (2005 - 2008)"
-           , "He asistido y colaborado en las clases de la Prof. Tetiana Kazartseva en el [Instituto de musica de Ivano-Frankivsk \"Denys Sichynskiy\"](http://ifmuds.if.ua/)" ] } ] }
-    , { "position": "Intérprete de musica clásica"
+           , "He asistido y colaborado en las clases de la Prof. Tetiana Kazartseva en el [Instituto de música de Ivano-Frankivsk \"Denys Sichynskiy\"](http://ifmuds.if.ua/)" ] } ] }
+    , { "position": "Intérprete de música clásica"
       , "company": {
         "name": "Conciertos"
         , "location": "Ucrania -- España"
         , "description": "" }
       , "from": "2009-01-01", "to": "actualmente"
       , "accomplishments": [
-        { "role": "Programa actual (piano, violín, soprano)", "competencies": [
-           "N. Niyankivsky, “Preludio y fuga”"
-          , "V. Kosenko, Dos Poemas, op. 12"
-          , "V. Barvinsky, Cinco Preludios "
-          , "L. Revutsky, Tres preludios, op. 4"
-          , "M. Skoryk, “Melodía” "
-          , "M. Skoryk, “Danza española”"
-          , "E. Stancovich, “Poema ucraniano”"
-          , "A. Kos-Anatolsky, Tres romances: “El canto de ruiseñor”, “Oh, iré por las montañas” y “Cuatro bueyes”"
-          , "L. Yaschenko, Dos canciones folcloricas: “El pozo profundo” y “Oh, ¿a dónde vas, a dónde irás?”" ] }
-        , { "role": "Actividades recientes (piano)", "competencies": [
-           "L.~v~Beethoven, Sonata para piano en do~menor \"Patética\" op.~13"
-           , "W.~A.~Mozart, Fantasía y Sonata para piano en do~menor n.~14, K~457/475"
-           , "J. S. Bach, Partita para teclado n. 2 en do menor, BWV 826"
-           , "F. Chopin, Estudios op. 10, n. 4 y n. 12; op. 25, n. 23 y n. 24"
-           , "S. Rachmaninov, Preludios op. 3, n. 2 y op. 32, n. 10"
-           , "S. Rachmaninov, Momentos musicales op. 16, n. 3 y n. 4"
-           , "A. Scriabin, Estudios op. 2, n. 1 y op. 42, n. 5"
-           , "L. Revutsky, Preludios op. 4, 7 y 11" ] }
-        , { "role": "Actividades recientes (como repertorista)", "competencies": [
-           "Pianista acompañante de La Coral Cristóbal de Morales y la sección infantil Coro CRESCENDO en los conciertos de Navidad"
-           , "Gerónimo Giménez, Escena y Polonesa: \"Me llaman la primorosa\" (El barbero de Sevilla)"
-           , "W. A. Mozart, Aria de Constanza \"Ach ich liebte, war so Glücklich\""
-           , "W. A. Mozart, Sedunda aria de la Reina de la Noche \"Der Hölle Rache kocht in meinem Herzen\""
-           , "W. A. Mozart, Mitridate Re Di Ponto \"Venga Pur Minacci E Frema\""
-           , "G. F. Handel, Orestes \"Agitato da fiere tempeste\""
-           , "G. F. Handel, Messiah \"He was despised\""
-           , "G. Rossini, L'italiana in Algeri \"Cruda sorte\""
-           , "C. Saint-Saëns, Sansón y Dalila \"Mon cœur s'ouvre à ta voix\"" ] }
-        , { "role": "Piano solo (conciertos, Ucrania)", "competencies": [
-           "Recital 2009. Programa: S.~Rachmaninov, Variaciones sobre un tema de Chopin op.~22./D.~Shostakovich, Preludio y fuga en si~b~menor op.~87./B.~Lyatoshynsky, Cinco Preludios op.~44"
-           , "Recital 2011, Programa: J.~S.~Bach, Partita para teclado n.~2 en do~menor, BWV~826/W.~A.~Mozart, Fantasía n.~2 en do~menor, K~396(385f)/M.~Clementi, Sonata op.~26, n.~2/L.~v~Beethoven, 32 Variaciones en do~menor"
-           , "Recital 2012. Programa: F.~Chopin, Sonata op.~35, n.~2/F.~Chopin, Nocturnos op.~48/J.~Brahms, Variaciones sobre un tema de Schumann op.~9"
-           , "Concierto con orquesta de cámara, 2014. Programa: J.~S.~Bach, Concierto para teclado en la~mayor, BWV~1055/ J.~S.~Bach, Concierto para dos teclados en do~menor, BWV~1060/J.~S.~Bach, Concierto para dos teclados en do~menor, BWV~1062"
-           , "Recital 2014. Programa: J.~S.~Bach - F.~Busoni, Chacona de Partita para violín n.~2 en re~menor, BWV~1004/F.~Chopin, Dos Baladas op.~23 y op.~38/F.~Chopin, Impromptu Fantasía op.~póstumo~66/F.~Chopin, Dos valses op.~64, n.~2 y op.~póstumo mi~menor" ] }
-        , { "role": "Música de cámara (conciertos, Ucrania)", "competencies": [
-           "Concierto con violín, 2013. Programa: L.~v~Beethoven, Sonata para violín y piano en la~mayor op.~47, n.~9/ J.~Brahms, Sonata para violín y piano en re~menor op.~108, n.~3"
-           , "Concierto con cuarteto de cuerdas, 2014. Programa: J.~Brahms, Cuarteto con piano op.~60/R.~Schumann, Quinteto con piano op.~44"
-           , "Concierto con violín y violonchelo, 2014. Programa: A.~Piazzolla, Cuatro Estaciones Porteñas para trío con piano (J.~Bragato)" ] } ] }
+        { "role": "Proyectos en marcha", "competencies": [
+          "Curso coral organizado por [Cantate mundi](https://www.facebook.com/CantateMundi/?fref=ts) (pianista del proyecto)"
+          , "Concierto con pianista Asís Márquez (España)"
+          , "Concierto con violinista Adrian Pineda (España)"
+          , "Concierto de música clásica de Ucrania en Madrid"
+          , "Concierto de música de romanticismo con barítono Antonio Serrano (España)" ] }
+        , { "role": "Actividades recientes como repertorista", "competencies": [
+          "Concierto con [Agrupación Coral Torrecanto](http://www.torrecanto.es/) en Torrelodones"
+          , "Pianista acompañante de La Coral Cristóbal de Morales y la sección infantil Coro CRESCENDO en los conciertos de Navidad" ] }
+        , { "role": "Mi repertorio", "competencies": [
+          "[Ver el documento](https://docs.google.com/document/d/1ZP92XpWwItt0MgAngrWoEahaV8JxnRBiHjmZBkJNy7w/pub)" ] } ] }
     , { "position": "Psicoterapia y coaching"
       , "company": {
         "name": "Actividades privadas"
@@ -137,7 +109,8 @@
            "El seminario \"Identidad de genero\" (8 días). Seminarios de trabajo en equipo para las empresas. Seminarios de autorrealización para grupos artísticos"
            , "Moderador de las reuniones del [\"Grupo de iniciativas de desarrollo estratégico y de crecimiento sostenible\" de Yaremche](http://yaremche2025.org.ua/english/)" ] }
          , { "role": "Trabajos de investigación", "competencies": [
-           "He comenzado a publicar una serie de artículos dedicados al tema del miedo escénico en la revista Mundoclásico. El enlace a la primera entrega de esta serie (Introducción) es el siguiente: [El miedo escénico. Mitos y realidad](https://www.mundoclasico.com/ed3/documentos/28117/miedo-escenico-Mitos-realidad-Introduccion)" ] } ] }
+           "Recientemente he creado mi propio método psicoterapéutico \"16 palabras\", un sistema único basado en mi experiencia terapéutica y en los entendimientos principales de varios enfoques de la psicología humana. Actualmente estoy aplicándolo en el trabajo con mis clientes"
+           , "He comenzado a publicar una serie de artículos dedicados al tema del miedo escénico en la revista Mundoclásico. El enlace a la primera entrega de esta serie (Introducción) es el siguiente: [El miedo escénico. Mitos y realidad](https://www.mundoclasico.com/ed3/documentos/28117/miedo-escenico-Mitos-realidad-Introduccion)" ] } ] }
     , { "position": "Proyectos propios"
       , "company": {
         "name": "Proyectos culturales y sociales"
@@ -165,7 +138,10 @@
          { "role": "Miembro de las siguientes organizaciones sociales", "competencies": [
            "Miembro de la organización social \"Osmomysly\", Ivano-Frankivsk (desde 2006). La organización se dedica al desarrollo de iniciativas culturales y educativas"
            , "Miembro de la organización social \"Mystetska Rada Dialog\", Lviv (desde 2008). La organización apoya los proyectos culturales de Lviv"
-           , "Miembro del [\"Grupo de iniciativas de desarrollo estratégico y de crecimiento sostenible\" de Yaremche](http://yaremche2025.org.ua/english/) (desde 2014)" ] } ] } ]
+           , "Miembro del [\"Grupo de iniciativas de desarrollo estratégico y de crecimiento sostenible\" de Yaremche](http://yaremche2025.org.ua/english/) (desde 2014)" ] }
+
+         , { "role": "Entrevistas conmigo", "competencies": [
+           "Entrevista al pianista Igor Prokopyuk [Sierra Norte Digital](http://www.sierranortedigital.com/622856697/Entrevista-al-pianista-Igor-Prokopyuk.html)" ] } ] } ]
   , "skills": [
     { "domain": "Profesor de piano"
       , "competencies": [
@@ -182,6 +158,10 @@
     , { "domain": "Organización y gestión de proyectos culturales y sociales"
       , "competencies": [
         "Tengo experiencia en dirección estratégica, gestión y moderación de proyectos culturales y sociales" ] }
+    , { "domain": "Supervisor de grabaciones"
+      , "competencies": [
+        "Serie de sesiones de grabación del disco que lleva nombre \"La danza que bailó Don Quijote\" con [Delirium música](https://www.facebook.com/delirium.musica?fref=ts)"
+        , "Grabación del disco de musica barocca con ensemble [ArcoTasto](https://www.facebook.com/Ensemble-ArcoTasto-656768201107501/?fref=ts)" ] }
     , { "domain": "Idiomas"
       , "competencies": [
         "Español --- nivel alto"
